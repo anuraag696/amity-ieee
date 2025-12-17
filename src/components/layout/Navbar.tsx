@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import logo from "@/assets/logo.png";
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -38,20 +39,12 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-3 group">
-          <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
-            <span className="text-primary-foreground font-heading font-bold text-lg">
-              IEEE
-            </span>
-          </div>
-          <div className="hidden sm:block">
-            <p className="font-heading font-bold text-foreground text-sm leading-tight">
-              IEEE Student Branch
-            </p>
-            <p className="text-xs text-muted-foreground">
-              Amity University Rajasthan
-            </p>
-          </div>
+        <Link to="/" className="flex items-center group">
+          <img 
+            src={logo} 
+            alt="IEEE SB Amity University Rajasthan" 
+            className="h-12 w-auto object-contain group-hover:scale-105 transition-transform"
+          />
         </Link>
 
         {/* Desktop Navigation */}
