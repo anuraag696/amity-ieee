@@ -5,19 +5,18 @@ import { Linkedin, Instagram, Mail } from "lucide-react";
 const facultyAdvisors = [
   {
     id: 1,
-    name: "Faculty Advisor",
-    role: "Branch Counselor",
-    department: "Department of Engineering",
+    name: "Prof. (Dr.) Manju Kaushik",
+    role: "Faculty Advisor",
+    department: "Amity University Rajasthan",
     linkedin: "#",
-    email: "advisor@amity.edu",
+    email: "mkaushik@amity.edu",
   },
 ];
 
 const executiveTeam = [
-  { id: 1, name: "Chairperson", role: "Student Chair", linkedin: "#", instagram: "#" },
-  { id: 2, name: "Vice Chairperson", role: "Vice Chair", linkedin: "#", instagram: "#" },
-  { id: 3, name: "Secretary", role: "Branch Secretary", linkedin: "#", instagram: "#" },
-  { id: 4, name: "Treasurer", role: "Finance Head", linkedin: "#", instagram: "#" },
+  { id: 1, name: "Anuraag Gupta", role: "Chairperson", linkedin: "#", instagram: "#" },
+  { id: 2, name: "Madhusmita", role: "General Secretary", linkedin: "#", instagram: "#" },
+  { id: 3, name: "Ishan Verma", role: "Treasurer", linkedin: "#", instagram: "#" },
 ];
 
 const coreTeam = [
