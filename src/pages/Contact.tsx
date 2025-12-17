@@ -83,7 +83,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <h3 className="font-semibold text-foreground mb-1">Email</h3>
-                        <p className="text-sm text-muted-foreground">ieee.sb@amity.edu</p>
+                        <p className="text-sm text-muted-foreground">ieee.aur@gmail.com</p>
                       </div>
                     </div>
 
@@ -93,7 +93,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <h3 className="font-semibold text-foreground mb-1">Phone</h3>
-                        <p className="text-sm text-muted-foreground">+91 XXXXX XXXXX</p>
+                        <p className="text-sm text-muted-foreground">+91 85294 85483</p>
                       </div>
                     </div>
                   </div>
@@ -106,7 +106,7 @@ const Contact = () => {
                   </h3>
                   <div className="flex gap-3">
                     <a
-                      href="https://instagram.com"
+                      href="https://www.instagram.com/ieee.aurjpr/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-12 h-12 rounded-xl bg-background border border-border hover:border-primary/30 hover:bg-primary/10 flex items-center justify-center transition-all duration-300"
@@ -115,7 +115,7 @@ const Contact = () => {
                       <Instagram size={20} className="text-foreground" />
                     </a>
                     <a
-                      href="https://linkedin.com"
+                      href="https://www.linkedin.com/company/ieeeaurjpr/posts/?feedView=all"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-12 h-12 rounded-xl bg-background border border-border hover:border-primary/30 hover:bg-primary/10 flex items-center justify-center transition-all duration-300"
