@@ -9,15 +9,15 @@ const teamMembers = [
     role: "Faculty Advisor",
     image: null,
     linkedin: "#",
-    instagram: "#",
+    instagram: "https://www.instagram.com/manjukaushik19/",
   },
   {
     id: 2,
     name: "Anuraag Gupta",
     role: "Chairperson",
     image: null,
-    linkedin: "#",
-    instagram: "#",
+    linkedin: "https://www.linkedin.com/in/anuraag-gupta-a4877527a/",
+    instagram: "https://www.instagram.com/anuraag_037/",
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ const teamMembers = [
     role: "General Secretary",
     image: null,
     linkedin: "#",
-    instagram: "#",
+    instagram: "https://www.instagram.com/palak__1114/",
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ const teamMembers = [
     role: "Treasurer",
     image: null,
     linkedin: "#",
-    instagram: "#",
+    instagram: "https://www.instagram.com/eeshan_verma/",
   },
 ];
 
