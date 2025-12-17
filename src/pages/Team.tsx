@@ -6,9 +6,9 @@ const facultyAdvisors = [
   {
     id: 1,
     name: "Prof. (Dr.) Manju Kaushik",
-    role: "Faculty Advisor",
+    role: "Branch counsellor",
     department: "Amity University Rajasthan",
-    linkedin: "#",
+    linkedin: "https://www.linkedin.com/in/prof-dr-manju-kaushik-675a7070/",
     email: "mkaushik@amity.edu",
   },
 ];
@@ -21,11 +21,11 @@ const executiveTeam = [
 
 const coreTeam = [
   { id: 1, name: "Mr. Dushyant", role: "Tech Team", linkedin: "https://www.linkedin.com/in/b-dushyant-rajawat-69872a36b/", instagram: "#" },
-  { id: 2, name: "Ms. Divyanka Agarwal", role: "Media Team", linkedin: "https://www.linkedin.com/in/divyanka-agarwal-5b7a8b316/", instagram: "#" },
-  { id: 3, name: "Mr. Devyansh Sharma", role: "Public Relations", linkedin: "https://www.linkedin.com/in/devyansh-sharma-a677b730b/", instagram: "#" },
-  { id: 4, name: "Mr. Nitin Mishra", role: "Operations Team", linkedin: "https://www.linkedin.com/in/nitin-mishra-104124178/", instagram: "#" },
+  { id: 2, name: "Ms. Divyanka Agarwal", role: "Media Team", linkedin: "https://www.linkedin.com/in/divyanka-agarwal-5b7a8b316/", instagram: "https://www.instagram.com/simply.divyanka/" },
+  { id: 3, name: "Mr. Devyansh Sharma", role: "Public Relations", linkedin: "https://www.linkedin.com/in/devyansh-sharma-a677b730b/", instagram: "https://www.instagram.com/devyansh1004/" },
+  { id: 4, name: "Mr. Nitin Mishra", role: "Operations Team", linkedin: "https://www.linkedin.com/in/nitin-mishra-104124178/", instagram: "https://www.instagram.com/nitin_mishra188/" },
   { id: 5, name: "Mr. Ishan Verma", role: "Finance Team", linkedin: "https://www.linkedin.com/in/ishanvermaa/", instagram: "https://www.instagram.com/eeshan_verma/" },
-  { id: 6, name: "Mr. Veer Rohra", role: "Marketing Team", linkedin: "https://www.linkedin.com/in/veer-rohra/", instagram: "#" },
+  { id: 6, name: "Mr. Veer Rohra", role: "Marketing Team", linkedin: "https://www.linkedin.com/in/veer-rohra/", instagram: "https://www.instagram.com/vvveeerrrrrrrr/" },
 ];
 
 const TeamMemberCard = ({
