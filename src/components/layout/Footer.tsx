@@ -25,7 +25,7 @@ const Footer = () => {
             {/* Social Links */}
             <div className="flex gap-3 pt-2">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/ieee.aurjpr/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-lg bg-secondary-foreground/10 hover:bg-accent hover:text-accent-foreground flex items-center justify-center transition-all duration-300"
@@ -34,7 +34,7 @@ const Footer = () => {
                 <Instagram size={18} />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/company/ieeeaurjpr/posts/?feedView=all"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-lg bg-secondary-foreground/10 hover:bg-accent hover:text-accent-foreground flex items-center justify-center transition-all duration-300"
@@ -93,11 +93,11 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3 text-sm text-secondary-foreground/80">
                 <Mail size={18} className="text-accent flex-shrink-0" />
-                <span>ieee.sb@amity.edu</span>
+                <span>ieee.aur@gmail.com</span>
               </li>
               <li className="flex items-center gap-3 text-sm text-secondary-foreground/80">
                 <Phone size={18} className="text-accent flex-shrink-0" />
-                <span>+91 XXXXX XXXXX</span>
+                <span>+91 85294 85483</span>
               </li>
             </ul>
           </div>
