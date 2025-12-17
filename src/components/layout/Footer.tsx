@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Instagram, Linkedin, Twitter, Mail, MapPin, Phone } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -11,16 +12,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center">
-                <span className="text-primary-foreground font-heading font-bold text-lg">
-                  IEEE
-                </span>
-              </div>
-              <div>
-                <p className="font-heading font-bold text-sm">IEEE Student Branch</p>
-                <p className="text-xs text-secondary-foreground/70">Amity University Rajasthan</p>
-              </div>
+            <div className="flex items-center">
+              <img 
+                src={logo} 
+                alt="IEEE SB Amity University Rajasthan" 
+                className="h-12 w-auto object-contain"
+              />
             </div>
             <p className="text-sm text-secondary-foreground/80 leading-relaxed">
               Where Ideas Meet Innovation. Empowering students to advance technology for humanity.
