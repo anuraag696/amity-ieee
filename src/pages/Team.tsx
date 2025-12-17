@@ -14,18 +14,18 @@ const facultyAdvisors = [
 ];
 
 const executiveTeam = [
-  { id: 1, name: "Anuraag Gupta", role: "Chairperson", linkedin: "#", instagram: "#" },
-  { id: 2, name: "Madhusmita", role: "General Secretary", linkedin: "#", instagram: "#" },
-  { id: 3, name: "Ishan Verma", role: "Treasurer", linkedin: "#", instagram: "#" },
+  { id: 1, name: "Mr. Anuraag Gupta", role: "Chairperson", linkedin: "https://www.linkedin.com/in/anuraag-gupta-a4877527a/", instagram: "https://www.instagram.com/anuraag_037/" },
+  { id: 2, name: "Ms. Madhusmita", role: "General Secretary", linkedin: "https://www.linkedin.com/in/madhusmita-p1114/", instagram: "https://www.instagram.com/palak__1114/" },
+  { id: 3, name: "Mr. Ishan Verma", role: "Treasurer", linkedin: "https://www.linkedin.com/in/ishanvermaa/", instagram: "https://www.instagram.com/eeshan_verma/" },
 ];
 
 const coreTeam = [
-  { id: 1, name: "Technical Lead", role: "Tech Team", linkedin: "#", instagram: "#" },
-  { id: 2, name: "Events Lead", role: "Events Team", linkedin: "#", instagram: "#" },
-  { id: 3, name: "PR Lead", role: "Public Relations", linkedin: "#", instagram: "#" },
-  { id: 4, name: "Design Lead", role: "Creative Team", linkedin: "#", instagram: "#" },
-  { id: 5, name: "Content Lead", role: "Content Team", linkedin: "#", instagram: "#" },
-  { id: 6, name: "Social Media Lead", role: "Marketing", linkedin: "#", instagram: "#" },
+  { id: 1, name: "Mr. Dushyant", role: "Tech Team", linkedin: "https://www.linkedin.com/in/b-dushyant-rajawat-69872a36b/", instagram: "#" },
+  { id: 2, name: "Ms. Divyanka Agarwal", role: "Media Team", linkedin: "https://www.linkedin.com/in/divyanka-agarwal-5b7a8b316/", instagram: "#" },
+  { id: 3, name: "Mr. Devyansh Sharma", role: "Public Relations", linkedin: "https://www.linkedin.com/in/devyansh-sharma-a677b730b/", instagram: "#" },
+  { id: 4, name: "Mr. Nitin Mishra", role: "Operations Team", linkedin: "https://www.linkedin.com/in/nitin-mishra-104124178/", instagram: "#" },
+  { id: 5, name: "Mr. Ishan Verma", role: "Finance Team", linkedin: "https://www.linkedin.com/in/ishanvermaa/", instagram: "https://www.instagram.com/eeshan_verma/" },
+  { id: 6, name: "Mr. Veer Rohra", role: "Marketing Team", linkedin: "https://www.linkedin.com/in/veer-rohra/", instagram: "#" },
 ];
 
 const TeamMemberCard = ({
