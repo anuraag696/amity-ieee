@@ -1,7 +1,8 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import { Calendar, MapPin, Clock, Users, Trophy, Code, Presentation, Lightbulb, ArrowRight } from "lucide-react";
+import { Calendar, MapPin, Clock, Users, Trophy, Code, Presentation, Lightbulb, ArrowRight, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import whackLogo from "@/assets/whack-hackathon-logo.jpeg";
 
 const timeline = [
   {
@@ -57,6 +58,15 @@ const WhackHackathon = () => {
           
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
+              {/* Hackathon Logo */}
+              <div className="mb-8">
+                <img 
+                  src={whackLogo} 
+                  alt="Whack-Hackathon 4.0 Logo" 
+                  className="w-32 h-32 sm:w-40 sm:h-40 mx-auto rounded-full shadow-2xl border-4 border-primary/30"
+                />
+              </div>
+
               <div className="inline-flex items-center gap-2 bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-semibold mb-6">
                 <Calendar size={16} />
                 February 17-18, 2025
@@ -91,6 +101,19 @@ const WhackHackathon = () => {
                 <Button variant="default" size="lg" disabled className="opacity-75">
                   Coming Soon
                 </Button>
+              </div>
+
+              {/* Social Links */}
+              <div className="mt-8 flex justify-center">
+                <a
+                  href="https://www.instagram.com/whack_hack4.0/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity"
+                >
+                  <Instagram size={20} />
+                  Follow on Instagram
+                </a>
               </div>
             </div>
           </div>
