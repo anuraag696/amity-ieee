@@ -111,10 +111,9 @@ const AboutSection = () => {
 
                   <div className="grid grid-cols-2 gap-6">
                     {[
-                      { value: "500+", label: "Active Members" },
-                      { value: "50+", label: "Events Organized" },
-                      { value: "20+", label: "Awards Won" },
-                      { value: "100+", label: "Workshops" },
+                      { value: "50+", label: "Active Members" },
+                      { value: "10+", label: "Events Organized" },
+                      { value: "15+", label: "Workshops" },
                     ].map((stat) => (
                       <div key={stat.label}>
                         <p className="font-heading text-3xl font-bold">
@@ -131,7 +130,8 @@ const AboutSection = () => {
 
               {/* Floating Badge */}
               <div className="absolute -top-4 -right-4 bg-accent text-accent-foreground px-4 py-2 rounded-full font-semibold text-sm shadow-lg shadow-glow">
-                ✨ Award Winning Chapter
+                ✨ Growing Community
+                
               </div>
 
               {/* Background Decoration */}

@@ -3,16 +3,20 @@ import Footer from "@/components/layout/Footer";
 import { Calendar, MapPin, Clock, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+import { Link } from "react-router-dom";
+
 const upcomingEvents = [
   {
     id: 1,
-    title: "TechVista 2024",
+    title: "Whack-Hackathon 4.0",
     type: "Hackathon",
-    date: "Jan 15-16, 2025",
+    date: "Feb 17-18, 2025",
     time: "9:00 AM",
-    location: "Main Auditorium",
+    location: "Amity Campus",
     description:
-      "A 24-hour coding marathon to build innovative solutions for real-world problems. Team up with fellow developers and showcase your skills.",
+      "A 24-hour coding marathon with 3 rounds - idea submission, presentation, and final coding round. Form teams of 4-6 and build innovative solutions!",
+    hasPage: true,
+    link: "/whack-hackathon",
   },
   {
     id: 2,
@@ -23,6 +27,7 @@ const upcomingEvents = [
     location: "CS Lab 301",
     description:
       "Hands-on workshop covering machine learning fundamentals, neural networks, and practical applications with Python.",
+    hasPage: false,
   },
   {
     id: 3,
@@ -33,6 +38,7 @@ const upcomingEvents = [
     location: "Conference Hall",
     description:
       "Expert session with industry leaders discussing career opportunities, emerging technologies, and professional growth.",
+    hasPage: false,
   },
 ];
 
@@ -135,13 +141,25 @@ const Events = () => {
                       </div>
                     </div>
 
-                    <Button variant="default" className="w-full group/btn">
-                      Register Now
-                      <ArrowRight
-                        size={16}
-                        className="ml-2 group-hover/btn:translate-x-1 transition-transform"
-                      />
-                    </Button>
+                    {event.hasPage ? (
+                      <Link to={event.link}>
+                        <Button variant="default" className="w-full group/btn">
+                          View Details
+                          <ArrowRight
+                            size={16}
+                            className="ml-2 group-hover/btn:translate-x-1 transition-transform"
+                          />
+                        </Button>
+                      </Link>
+                    ) : (
+                      <Button variant="default" className="w-full group/btn">
+                        Register Now
+                        <ArrowRight
+                          size={16}
+                          className="ml-2 group-hover/btn:translate-x-1 transition-transform"
+                        />
+                      </Button>
+                    )}
                   </div>
                 </div>
               ))}
