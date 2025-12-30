@@ -7,22 +7,38 @@ import introspect2 from "@/assets/introspect-2.jpg";
 import introspect3 from "@/assets/introspect-3.jpg";
 import introspect4 from "@/assets/introspect-4.jpg";
 import introspect5 from "@/assets/introspect-5.jpg";
+import spark1 from "@/assets/spark-1.jpg";
+import spark2 from "@/assets/spark-2.jpg";
+import spark3 from "@/assets/spark-3.jpg";
+import spark4 from "@/assets/spark-4.jpg";
+import spark5 from "@/assets/spark-5.jpg";
+import spark6 from "@/assets/spark-6.jpg";
+import spark7 from "@/assets/spark-7.jpg";
+import spark8 from "@/assets/spark-8.jpg";
+import spark9 from "@/assets/spark-9.jpg";
+import spark10 from "@/assets/spark-10.jpg";
 
-const galleryCategories = ["All", "Hackathons", "Workshops", "Seminars", "Team"];
+const galleryCategories = ["All", "Hackathons", "Workshops", "Seminars", "Events", "Team"];
 
 const galleryImages = [
-  { id: 1, category: "Hackathons", title: "TechVista 2024", description: "Participants during the 24-hour hackathon", image: null },
-  { id: 2, category: "Workshops", title: "Introspect 6 - Session", description: "Cyber security workshop in progress", image: introspect1 },
-  { id: 3, category: "Workshops", title: "Introspect 6 - Presentation", description: "Expert session at Amity Innovation Incubator", image: introspect2 },
-  { id: 4, category: "Workshops", title: "Introspect 6 - Learning", description: "Participants engaged in the workshop", image: introspect3 },
-  { id: 5, category: "Workshops", title: "Introspect 6 - Interactive", description: "Interactive Q&A session with attendees", image: introspect4 },
-  { id: 6, category: "Workshops", title: "Introspect 6 - Felicitation", description: "Speaker felicitation ceremony", image: introspect5 },
-  { id: 7, category: "Seminars", title: "Industry Connect", description: "Expert session with tech leaders", image: null },
-  { id: 8, category: "Team", title: "Team Building", description: "IEEE SB core team bonding event", image: null },
-  { id: 9, category: "Hackathons", title: "Code Sprint", description: "Teams brainstorming solutions", image: null },
-  { id: 10, category: "Seminars", title: "IEEE Day", description: "Annual IEEE Day celebration", image: null },
-  { id: 11, category: "Team", title: "Award Ceremony", description: "Recognizing outstanding members", image: null },
-  { id: 12, category: "Hackathons", title: "Winner Announcement", description: "TechVista winners celebration", image: null },
+  { id: 1, category: "Events", title: "Spark 2025 - Faculty Group", description: "Faculty members at IEEE Day celebration", image: spark1 },
+  { id: 2, category: "Events", title: "Spark 2025 - Inauguration", description: "Lamp lighting ceremony at IEEE Day", image: spark2 },
+  { id: 3, category: "Events", title: "Spark 2025 - Felicitation", description: "Guest felicitation at IEEE Day", image: spark3 },
+  { id: 4, category: "Events", title: "Spark 2025 - Award", description: "Award ceremony at IEEE Day celebration", image: spark4 },
+  { id: 5, category: "Events", title: "Spark 2025 - Recognition", description: "Recognition ceremony at IEEE Day", image: spark5 },
+  { id: 6, category: "Events", title: "Spark 2025 - Networking", description: "Networking at IEEE Day event", image: spark6 },
+  { id: 7, category: "Events", title: "Spark 2025 - Keynote", description: "Keynote session at IEEE Day", image: spark7 },
+  { id: 8, category: "Events", title: "Spark 2025 - Presentation", description: "Student presentation at IEEE Day", image: spark8 },
+  { id: 9, category: "Events", title: "Spark 2025 - Speaker", description: "Speaker session at IEEE Day celebration", image: spark9 },
+  { id: 10, category: "Events", title: "Spark 2025 - Group Photo", description: "Group photo at IEEE Day celebration", image: spark10 },
+  { id: 11, category: "Workshops", title: "Introspect 6 - Session", description: "Cyber security workshop in progress", image: introspect1 },
+  { id: 12, category: "Workshops", title: "Introspect 6 - Presentation", description: "Expert session at Amity Innovation Incubator", image: introspect2 },
+  { id: 13, category: "Workshops", title: "Introspect 6 - Learning", description: "Participants engaged in the workshop", image: introspect3 },
+  { id: 14, category: "Workshops", title: "Introspect 6 - Interactive", description: "Interactive Q&A session with attendees", image: introspect4 },
+  { id: 15, category: "Workshops", title: "Introspect 6 - Felicitation", description: "Speaker felicitation ceremony", image: introspect5 },
+  { id: 16, category: "Hackathons", title: "TechVista 2024", description: "Participants during the 24-hour hackathon", image: null },
+  { id: 17, category: "Seminars", title: "Industry Connect", description: "Expert session with tech leaders", image: null },
+  { id: 18, category: "Team", title: "Team Building", description: "IEEE SB core team bonding event", image: null },
 ];
 
 const Gallery = () => {
