@@ -1,6 +1,7 @@
 import { ArrowRight, Linkedin, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import anuraagPhoto from "@/assets/anuraag-gupta.jpg";
 
 const teamMembers = [
   {
@@ -15,7 +16,7 @@ const teamMembers = [
     id: 2,
     name: "Anuraag Gupta",
     role: "Chairperson",
-    image: null,
+    image: anuraagPhoto,
     linkedin: "https://www.linkedin.com/in/anuraag-gupta-a4877527a/",
     instagram: "https://www.instagram.com/anuraag_037/",
   },
@@ -69,11 +70,19 @@ const TeamPreview = () => {
               {/* Member Image */}
               <div className="aspect-square bg-gradient-to-br from-primary/10 to-accent/10 relative overflow-hidden">
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center">
-                    <span className="font-heading text-2xl font-bold text-primary">
-                      {member.name.charAt(0)}
-                    </span>
-                  </div>
+                  {member.image ? (
+                    <img 
+                      src={member.image} 
+                      alt={member.name}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center">
+                      <span className="font-heading text-2xl font-bold text-primary">
+                        {member.name.charAt(0)}
+                      </span>
+                    </div>
+                  )}
                 </div>
 
                 {/* Social Links Overlay */}
