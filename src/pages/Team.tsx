@@ -1,7 +1,7 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Linkedin, Instagram, Mail } from "lucide-react";
-
+import anuraagPhoto from "@/assets/anuraag-gupta.jpg";
 const facultyAdvisors = [
   {
     id: 1,
@@ -14,7 +14,7 @@ const facultyAdvisors = [
 ];
 
 const executiveTeam = [
-  { id: 1, name: "Mr. Anuraag Gupta", role: "Chairperson", linkedin: "https://www.linkedin.com/in/anuraag-gupta-a4877527a/", instagram: "https://www.instagram.com/anuraag_037/" },
+  { id: 1, name: "Mr. Anuraag Gupta", role: "Chairperson", linkedin: "https://www.linkedin.com/in/anuraag-gupta-a4877527a/", instagram: "https://www.instagram.com/anuraag_037/", image: anuraagPhoto },
   { id: 2, name: "Ms. Madhusmita", role: "General Secretary", linkedin: "https://www.linkedin.com/in/madhusmita-p1114/", instagram: "https://www.instagram.com/palak__1114/" },
   { id: 3, name: "Mr. Ishan Verma", role: "Treasurer", linkedin: "https://www.linkedin.com/in/ishanvermaa/", instagram: "https://www.instagram.com/eeshan_verma/" },
 ];
@@ -40,17 +40,26 @@ const TeamMemberCard = ({
     linkedin?: string;
     instagram?: string;
     email?: string;
+    image?: string;
   };
   showEmail?: boolean;
 }) => (
   <div className="group bg-card rounded-2xl overflow-hidden border border-border hover:border-primary/30 hover:shadow-lg transition-all duration-300">
     <div className="aspect-square bg-gradient-to-br from-primary/10 to-accent/10 relative overflow-hidden">
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center">
-          <span className="font-heading text-2xl font-bold text-primary">
-            {member.name.charAt(0)}
-          </span>
-        </div>
+        {member.image ? (
+          <img 
+            src={member.image} 
+            alt={member.name}
+            className="w-full h-full object-cover"
+          />
+        ) : (
+          <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center">
+            <span className="font-heading text-2xl font-bold text-primary">
+              {member.name.charAt(0)}
+            </span>
+          </div>
+        )}
       </div>
       
       <div className="absolute inset-0 bg-secondary/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-3">
