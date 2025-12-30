@@ -2,6 +2,7 @@ import { ArrowRight, Calendar, MapPin, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import introspectImage from "@/assets/introspect-2.jpg";
+import sparkImage from "@/assets/spark-2.jpg";
 
 const upcomingEvents = [
   {
@@ -18,15 +19,15 @@ const upcomingEvents = [
   },
   {
     id: 3,
-    title: "Spark 2025 @IEEE-Day",
-    type: "Panel Discussion",
-    date: "Oct 07, 2025",
+    title: "Spark 2025 @IEEE Day",
+    type: "Event",
+    date: "Oct 7, 2025",
     time: "10:00 AM",
     location: "Main Auditorium",
     description:
-      "Expert session with industry leaders discussing career opportunities in tech.",
+      "Annual IEEE Day celebration with panel discussions, technical quizzes, and networking.",
     featured: false,
-    image: null,
+    image: sparkImage,
   },
   {
     id: 2,
