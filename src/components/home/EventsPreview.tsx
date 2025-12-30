@@ -1,6 +1,7 @@
 import { ArrowRight, Calendar, MapPin, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import introspectImage from "@/assets/introspect-2.jpg";
 
 const upcomingEvents = [
   {
@@ -13,6 +14,7 @@ const upcomingEvents = [
     description:
       "A 24-hour coding marathon to build innovative solutions for real-world problems.",
     featured: true,
+    image: null,
   },
   {
     id: 3,
@@ -24,6 +26,7 @@ const upcomingEvents = [
     description:
       "Expert session with industry leaders discussing career opportunities in tech.",
     featured: false,
+    image: null,
   },
   {
     id: 2,
@@ -35,6 +38,7 @@ const upcomingEvents = [
     description:
       "Hands-on workshop covering cyber security and practical applications.",
     featured: false,
+    image: introspectImage,
   },
 ];
 
@@ -87,14 +91,22 @@ const EventsPreview = () => {
                 </span>
               </div>
 
-              {/* Event Image Placeholder */}
-              <div className="h-40 bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center">
-                <div className="text-center">
-                  <Calendar className="w-12 h-12 text-primary/40 mx-auto mb-2" />
-                  <p className="text-sm font-medium text-muted-foreground">
-                    {event.date}
-                  </p>
-                </div>
+              {/* Event Image */}
+              <div className="h-40 bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center overflow-hidden">
+                {event.image ? (
+                  <img 
+                    src={event.image} 
+                    alt={event.title}
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <div className="text-center">
+                    <Calendar className="w-12 h-12 text-primary/40 mx-auto mb-2" />
+                    <p className="text-sm font-medium text-muted-foreground">
+                      {event.date}
+                    </p>
+                  </div>
+                )}
               </div>
 
               {/* Event Content */}
