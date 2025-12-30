@@ -45,24 +45,24 @@ const upcomingEvents = [
 const pastEvents = [
   {
     id: 4,
+    title: "Introspect 6",
+    type: "Workshop",
+    date: "Sep 26, 2024",
+    description: "Cybersecurity Awareness workshop featuring expert talk on cybersecurity threats, best practices, and career opportunities in security.",
+  },
+  {
+    id: 5,
     title: "Web Development Bootcamp",
     type: "Workshop",
     date: "Dec 10, 2024",
     description: "Intensive workshop on modern web development with React, Node.js, and cloud deployment.",
   },
   {
-    id: 5,
+    id: 6,
     title: "IEEE Day Celebration",
     type: "Event",
     date: "Oct 1, 2024",
     description: "Annual IEEE Day celebration with technical competitions, quizzes, and networking sessions.",
-  },
-  {
-    id: 6,
-    title: "Cybersecurity Awareness",
-    type: "Seminar",
-    date: "Sep 15, 2024",
-    description: "Expert talk on cybersecurity threats, best practices, and career opportunities in security.",
   },
 ];
 
