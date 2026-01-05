@@ -1,37 +1,25 @@
 import { ArrowRight, Target, Users, Lightbulb, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-
-const features = [
-  {
-    icon: Target,
-    title: "Our Mission",
-    description:
-      "To foster technological innovation and excellence among students by providing a platform for learning and collaboration.",
-  },
-  {
-    icon: Users,
-    title: "Community",
-    description:
-      "A vibrant community of tech enthusiasts, innovators, and future leaders working together to make a difference.",
-  },
-  {
-    icon: Lightbulb,
-    title: "Innovation",
-    description:
-      "Encouraging creative thinking and practical application of technology to solve real-world problems.",
-  },
-  {
-    icon: Award,
-    title: "Excellence",
-    description:
-      "Striving for excellence in everything we do, from events to workshops to technical competitions.",
-  },
-];
-
+const features = [{
+  icon: Target,
+  title: "Our Mission",
+  description: "To foster technological innovation and excellence among students by providing a platform for learning and collaboration."
+}, {
+  icon: Users,
+  title: "Community",
+  description: "A vibrant community of tech enthusiasts, innovators, and future leaders working together to make a difference."
+}, {
+  icon: Lightbulb,
+  title: "Innovation",
+  description: "Encouraging creative thinking and practical application of technology to solve real-world problems."
+}, {
+  icon: Award,
+  title: "Excellence",
+  description: "Striving for excellence in everything we do, from events to workshops to technical competitions."
+}];
 const AboutSection = () => {
-  return (
-    <section className="py-20 bg-card">
+  return <section className="py-20 bg-card">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Content Side */}
@@ -55,11 +43,7 @@ const AboutSection = () => {
             </div>
 
             <div className="grid sm:grid-cols-2 gap-4">
-              {features.map((feature, index) => (
-                <div
-                  key={feature.title}
-                  className={`group p-5 rounded-xl bg-background hover:bg-gradient-to-br hover:from-primary/5 hover:to-accent/5 border border-border hover:border-primary/20 transition-all duration-300 hover-lift animate-scale-in stagger-${index + 2}`}
-                >
+              {features.map((feature, index) => <div key={feature.title} className={`group p-5 rounded-xl bg-background hover:bg-gradient-to-br hover:from-primary/5 hover:to-accent/5 border border-border hover:border-primary/20 transition-all duration-300 hover-lift animate-scale-in stagger-${index + 2}`}>
                   <div className="w-12 h-12 rounded-lg bg-primary/10 group-hover:bg-primary/20 flex items-center justify-center mb-4 transition-colors group-hover:scale-110 duration-300">
                     <feature.icon className="w-6 h-6 text-primary" />
                   </div>
@@ -69,17 +53,13 @@ const AboutSection = () => {
                   <p className="text-sm text-muted-foreground leading-relaxed">
                     {feature.description}
                   </p>
-                </div>
-              ))}
+                </div>)}
             </div>
 
             <Link to="/about" className="inline-block animate-fade-in stagger-6">
               <Button variant="default" className="group hover-scale">
                 Learn More About Us
-                <ArrowRight
-                  size={16}
-                  className="group-hover:translate-x-1 transition-transform"
-                />
+                <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
           </div>
@@ -100,29 +80,30 @@ const AboutSection = () => {
                       <p className="font-heading font-semibold text-lg">
                         Student Branch
                       </p>
-                      <p className="text-primary-foreground/80 text-sm">
-                        Est. Since Inception
-                      </p>
+                      <p className="text-primary-foreground/80 text-sm">Est. Since 2019</p>
                     </div>
                   </div>
 
                   <div className="h-px bg-primary-foreground/20" />
 
                   <div className="grid grid-cols-2 gap-6">
-                    {[
-                      { value: "50+", label: "Active Members" },
-                      { value: "10+", label: "Events Organized" },
-                      { value: "15+", label: "Workshops" },
-                    ].map((stat, index) => (
-                      <div key={stat.label} className={`animate-slide-up stagger-${index + 4}`}>
+                    {[{
+                    value: "50+",
+                    label: "Active Members"
+                  }, {
+                    value: "10+",
+                    label: "Events Organized"
+                  }, {
+                    value: "15+",
+                    label: "Workshops"
+                  }].map((stat, index) => <div key={stat.label} className={`animate-slide-up stagger-${index + 4}`}>
                         <p className="font-heading text-3xl font-bold">
                           {stat.value}
                         </p>
                         <p className="text-sm text-primary-foreground/70">
                           {stat.label}
                         </p>
-                      </div>
-                    ))}
+                      </div>)}
                   </div>
                 </div>
               </div>
@@ -139,8 +120,6 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
