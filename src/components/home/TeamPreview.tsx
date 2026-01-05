@@ -2,14 +2,15 @@ import { ArrowRight, Linkedin, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import anuraagPhoto from "@/assets/anuraag-gupta.jpg";
+import manjuKaushikPhoto from "@/assets/manju-kaushik.jpg";
 
 const teamMembers = [
   {
     id: 1,
     name: "Prof. (Dr.) Manju Kaushik",
     role: "Faculty Advisor",
-    image: null,
-    linkedin: "#",
+    image: manjuKaushikPhoto,
+    linkedin: "https://www.linkedin.com/in/prof-dr-manju-kaushik-675a7070/",
     instagram: "https://www.instagram.com/manjukaushik19/",
   },
   {
