@@ -6,6 +6,7 @@ import manjuKaushikPhoto from "@/assets/manju-kaushik.jpg";
 import dhruvPhoto from "@/assets/dhruv-mittal.jpg";
 import saurabhPhoto from "@/assets/saurabh-bagaria.jpg";
 import ambarPhoto from "@/assets/ambar-bansal.jpg";
+import nitinPhoto from "@/assets/nitin-mishra.jpeg";
 
 const facultyAdvisors = [
   {
@@ -35,7 +36,7 @@ const coreTeam = [
   { id: 1, name: "Mr. Dushyant", role: "Tech Team", linkedin: "https://www.linkedin.com/in/b-dushyant-rajawat-69872a36b/", instagram: "#" },
   { id: 2, name: "Ms. Divyanka Agarwal", role: "Media Team", linkedin: "https://www.linkedin.com/in/divyanka-agarwal-5b7a8b316/", instagram: "https://www.instagram.com/simply.divyanka/" },
   { id: 3, name: "Mr. Devyansh Sharma", role: "Public Relations", linkedin: "https://www.linkedin.com/in/devyansh-sharma-a677b730b/", instagram: "https://www.instagram.com/devyansh1004/" },
-  { id: 4, name: "Mr. Nitin Mishra", role: "Operations Team", linkedin: "https://www.linkedin.com/in/nitin-mishra-104124178/", instagram: "https://www.instagram.com/nitin_mishra188/" },
+  { id: 4, name: "Mr. Nitin Mishra", role: "Operations Team", linkedin: "https://www.linkedin.com/in/nitin-mishra-104124178/", instagram: "https://www.instagram.com/nitin_mishra188/", image: nitinPhoto},
   { id: 5, name: "Mr. Ishan Verma", role: "Finance Team", linkedin: "https://www.linkedin.com/in/ishanvermaa/", instagram: "https://www.instagram.com/eeshan_verma/" },
   { id: 6, name: "Mr. Veer Rohra", role: "Marketing Team", linkedin: "https://www.linkedin.com/in/veer-rohra/", instagram: "https://www.instagram.com/vvveeerrrrrrrr/" },
 ];
