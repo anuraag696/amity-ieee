@@ -2,6 +2,8 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Linkedin, Instagram, Mail } from "lucide-react";
 import anuraagPhoto from "@/assets/anuraag-gupta.jpg";
+import manjuKaushikPhoto from "@/assets/manju-kaushik.jpg";
+
 const facultyAdvisors = [
   {
     id: 1,
@@ -10,6 +12,7 @@ const facultyAdvisors = [
     department: "Amity University Rajasthan",
     linkedin: "https://www.linkedin.com/in/prof-dr-manju-kaushik-675a7070/",
     email: "mkaushik@amity.edu",
+    image: manjuKaushikPhoto,
   },
 ];
 
