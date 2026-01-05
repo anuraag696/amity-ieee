@@ -16,6 +16,12 @@ const facultyAdvisors = [
   },
 ];
 
+const studentAdvisors = [
+  { id: 1, name: "Mr. Dhruv Mittal", role: "Student Advisor" },
+  { id: 2, name: "Mr. Ambar Bansal", role: "Student Advisor" },
+  { id: 3, name: "Mr. Saurabh Bagaria", role: "Student Advisor" },
+];
+
 const executiveTeam = [
   { id: 1, name: "Mr. Anuraag Gupta", role: "Chairperson", linkedin: "https://www.linkedin.com/in/anuraag-gupta-a4877527a/", instagram: "https://www.instagram.com/anuraag_037/", image: anuraagPhoto },
   { id: 2, name: "Ms. Madhusmita", role: "General Secretary", linkedin: "https://www.linkedin.com/in/madhusmita-p1114/", instagram: "https://www.instagram.com/palak__1114/" },
@@ -147,13 +153,27 @@ const Team = () => {
           </div>
         </section>
 
-        {/* Executive Team */}
+        {/* Student Advisors */}
         <section className="py-16 bg-background">
+          <div className="container mx-auto px-4">
+            <h2 className="font-heading text-2xl font-bold text-foreground mb-8 text-center">
+              Student <span className="text-primary">Advisors</span>
+            </h2>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-3xl mx-auto">
+              {studentAdvisors.map((member) => (
+                <TeamMemberCard key={member.id} member={member} />
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Executive Team */}
+        <section className="py-16 bg-card">
           <div className="container mx-auto px-4">
             <h2 className="font-heading text-2xl font-bold text-foreground mb-8 text-center">
               Executive <span className="text-primary">Committee</span>
             </h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-3xl mx-auto">
               {executiveTeam.map((member) => (
                 <TeamMemberCard key={member.id} member={member} />
               ))}
