@@ -48,14 +48,14 @@ const TeamPreview = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4">
+        <div className="text-center max-w-2xl mx-auto mb-16 animate-slide-up">
+          <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4 animate-fade-in stagger-1">
             Our Team
           </span>
-          <h2 className="font-heading text-3xl sm:text-4xl font-bold text-foreground mb-4">
+          <h2 className="font-heading text-3xl sm:text-4xl font-bold text-foreground mb-4 animate-slide-up stagger-2">
             Meet the <span className="text-primary">Leaders</span>
           </h2>
-          <p className="text-muted-foreground">
+          <p className="text-muted-foreground animate-fade-in stagger-3">
             Dedicated students working together to make IEEE SB Amity Rajasthan
             a hub for innovation and excellence.
           </p>
@@ -63,10 +63,10 @@ const TeamPreview = () => {
 
         {/* Team Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          {teamMembers.map((member) => (
+          {teamMembers.map((member, index) => (
             <div
               key={member.id}
-              className="group bg-card rounded-2xl overflow-hidden border border-border hover:border-primary/30 hover:shadow-lg transition-all duration-300"
+              className={`group bg-card rounded-2xl overflow-hidden border border-border hover:border-primary/30 transition-all duration-300 hover-lift animate-scale-in stagger-${index + 1}`}
             >
               {/* Member Image */}
               <div className="aspect-square bg-gradient-to-br from-primary/10 to-accent/10 relative overflow-hidden">
@@ -75,10 +75,10 @@ const TeamPreview = () => {
                     <img 
                       src={member.image} 
                       alt={member.name}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                   ) : (
-                    <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center">
+                    <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                       <span className="font-heading text-2xl font-bold text-primary">
                         {member.name.charAt(0)}
                       </span>
@@ -87,17 +87,17 @@ const TeamPreview = () => {
                 </div>
 
                 {/* Social Links Overlay */}
-                <div className="absolute inset-0 bg-secondary/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-3">
+                <div className="absolute inset-0 bg-secondary/80 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center gap-3">
                   <a
                     href={member.linkedin}
-                    className="w-10 h-10 bg-primary-foreground/20 hover:bg-primary-foreground/30 rounded-lg flex items-center justify-center text-primary-foreground transition-colors"
+                    className="w-10 h-10 bg-primary-foreground/20 hover:bg-primary-foreground/30 rounded-lg flex items-center justify-center text-primary-foreground transition-all duration-300 hover:scale-110 animate-bounce-in"
                     aria-label="LinkedIn"
                   >
                     <Linkedin size={18} />
                   </a>
                   <a
                     href={member.instagram}
-                    className="w-10 h-10 bg-primary-foreground/20 hover:bg-primary-foreground/30 rounded-lg flex items-center justify-center text-primary-foreground transition-colors"
+                    className="w-10 h-10 bg-primary-foreground/20 hover:bg-primary-foreground/30 rounded-lg flex items-center justify-center text-primary-foreground transition-all duration-300 hover:scale-110 animate-bounce-in"
                     aria-label="Instagram"
                   >
                     <Instagram size={18} />
@@ -107,7 +107,7 @@ const TeamPreview = () => {
 
               {/* Member Info */}
               <div className="p-5 text-center">
-                <h3 className="font-heading font-semibold text-lg text-foreground mb-1">
+                <h3 className="font-heading font-semibold text-lg text-foreground mb-1 group-hover:text-primary transition-colors">
                   {member.name}
                 </h3>
                 <p className="text-sm text-muted-foreground">{member.role}</p>
@@ -117,9 +117,9 @@ const TeamPreview = () => {
         </div>
 
         {/* CTA */}
-        <div className="text-center">
+        <div className="text-center animate-fade-in stagger-5">
           <Link to="/team">
-            <Button variant="default" className="group">
+            <Button variant="default" className="group hover-scale">
               View Full Team
               <ArrowRight
                 size={16}

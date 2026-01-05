@@ -21,15 +21,15 @@ const About = () => {
           </div>
           
           <div className="container mx-auto px-4 relative z-10">
-            <div className="max-w-3xl">
-              <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4">
+            <div className="max-w-3xl animate-slide-up">
+              <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4 animate-fade-in stagger-1">
                 About Us
               </span>
-              <h1 className="font-heading text-4xl sm:text-5xl font-bold text-foreground mb-6">
+              <h1 className="font-heading text-4xl sm:text-5xl font-bold text-foreground mb-6 animate-slide-up stagger-2">
                 IEEE Student Branch{" "}
                 <span className="text-primary">Amity University Rajasthan</span>
               </h1>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-lg text-muted-foreground leading-relaxed animate-fade-in stagger-3">
                 A student-driven platform dedicated to advancing technology for humanity
                 through innovation, collaboration, and excellence in technical education.
               </p>
@@ -60,12 +60,12 @@ const About = () => {
                   description:
                     "Innovation, Integrity, Collaboration, Excellence, and Inclusivity form the core principles that guide every initiative and event we undertake.",
                 },
-              ].map((item) => (
+              ].map((item, index) => (
                 <div
                   key={item.title}
-                  className="bg-background rounded-2xl p-8 border border-border hover:border-primary/30 hover:shadow-lg transition-all duration-300"
+                  className={`bg-background rounded-2xl p-8 border border-border hover:border-primary/30 transition-all duration-300 hover-lift animate-scale-in stagger-${index + 1}`}
                 >
-                  <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+                  <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110">
                     <item.icon className="w-7 h-7 text-primary" />
                   </div>
                   <h3 className="font-heading font-semibold text-xl text-foreground mb-4">
@@ -84,15 +84,15 @@ const About = () => {
         <section className="py-20 bg-background">
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
-              <div className="space-y-6">
-                <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider">
+              <div className="space-y-6 animate-slide-in-left stagger-1">
+                <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider animate-fade-in stagger-2">
                   What is IEEE?
                 </span>
-                <h2 className="font-heading text-3xl sm:text-4xl font-bold text-foreground">
+                <h2 className="font-heading text-3xl sm:text-4xl font-bold text-foreground animate-slide-up stagger-3">
                   The World&apos;s Largest Technical{" "}
                   <span className="text-primary">Professional Organization</span>
                 </h2>
-                <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <div className="space-y-4 text-muted-foreground leading-relaxed animate-fade-in stagger-4">
                   <p>
                     IEEE (Institute of Electrical and Electronics Engineers) is the
                     world&apos;s largest technical professional organization dedicated to
@@ -112,8 +112,8 @@ const About = () => {
                 </div>
               </div>
 
-              <div className="bg-gradient-primary rounded-3xl p-8 text-primary-foreground">
-                <h3 className="font-heading font-semibold text-2xl mb-8">
+              <div className="bg-gradient-primary rounded-3xl p-8 text-primary-foreground animate-slide-in-right stagger-2 hover-lift">
+                <h3 className="font-heading font-semibold text-2xl mb-8 animate-fade-in stagger-3">
                   IEEE at a Glance
                 </h3>
                 <div className="grid grid-cols-2 gap-8">
@@ -122,8 +122,8 @@ const About = () => {
                     { value: "160+", label: "Countries" },
                     { value: "39", label: "Technical Societies" },
                     { value: "200+", label: "Annual Conferences" },
-                  ].map((stat) => (
-                    <div key={stat.label}>
+                  ].map((stat, index) => (
+                    <div key={stat.label} className={`animate-scale-in stagger-${index + 4}`}>
                       <p className="font-heading text-3xl font-bold text-accent">
                         {stat.value}
                       </p>
@@ -141,11 +141,11 @@ const About = () => {
         {/* Our Journey */}
         <section className="py-20 bg-card">
           <div className="container mx-auto px-4">
-            <div className="text-center max-w-2xl mx-auto mb-16">
-              <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4">
+            <div className="text-center max-w-2xl mx-auto mb-16 animate-slide-up">
+              <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4 animate-fade-in stagger-1">
                 Our Journey
               </span>
-              <h2 className="font-heading text-3xl sm:text-4xl font-bold text-foreground">
+              <h2 className="font-heading text-3xl sm:text-4xl font-bold text-foreground animate-slide-up stagger-2">
                 Milestones & <span className="text-primary">Achievements</span>
               </h2>
             </div>
@@ -167,12 +167,12 @@ const About = () => {
                   title: "Recognition",
                   description: "Received multiple awards for outstanding chapter activities and student engagement.",
                 },
-              ].map((item) => (
+              ].map((item, index) => (
                 <div
                   key={item.title}
-                  className="bg-background rounded-2xl p-6 border border-border hover:border-primary/30 transition-all duration-300"
+                  className={`bg-background rounded-2xl p-6 border border-border hover:border-primary/30 transition-all duration-300 hover-lift animate-scale-in stagger-${index + 1}`}
                 >
-                  <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4 transition-transform duration-300 hover:scale-110">
                     <item.icon className="w-6 h-6 text-accent" />
                   </div>
                   <h3 className="font-heading font-semibold text-lg text-foreground mb-2">

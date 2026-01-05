@@ -37,14 +37,14 @@ const Contact = () => {
         {/* Hero Section */}
         <section className="pt-32 pb-20 bg-gradient-hero relative overflow-hidden">
           <div className="container mx-auto px-4 relative z-10">
-            <div className="max-w-3xl">
-              <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4">
+            <div className="max-w-3xl animate-slide-up">
+              <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4 animate-fade-in stagger-1">
                 Contact Us
               </span>
-              <h1 className="font-heading text-4xl sm:text-5xl font-bold text-foreground mb-6">
+              <h1 className="font-heading text-4xl sm:text-5xl font-bold text-foreground mb-6 animate-slide-up stagger-2">
                 Get in <span className="text-primary">Touch</span>
               </h1>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-lg text-muted-foreground leading-relaxed animate-fade-in stagger-3">
                 Have questions or want to collaborate? We would love to hear from you.
                 Reach out to us through any of the channels below.
               </p>
@@ -57,14 +57,14 @@ const Contact = () => {
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12">
               {/* Contact Info */}
-              <div className="space-y-8">
+              <div className="space-y-8 animate-slide-in-left stagger-1">
                 <div>
-                  <h2 className="font-heading text-2xl font-bold text-foreground mb-6">
+                  <h2 className="font-heading text-2xl font-bold text-foreground mb-6 animate-fade-in stagger-2">
                     Contact Information
                   </h2>
                   <div className="space-y-4">
-                    <div className="flex items-start gap-4 p-4 bg-background rounded-xl border border-border">
-                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <div className="flex items-start gap-4 p-4 bg-background rounded-xl border border-border hover:border-primary/30 transition-all duration-300 hover-lift animate-scale-in stagger-1">
+                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 transition-transform duration-300 hover:scale-110">
                         <MapPin className="w-6 h-6 text-primary" />
                       </div>
                       <div>
@@ -77,8 +77,8 @@ const Contact = () => {
                       </div>
                     </div>
 
-                    <div className="flex items-start gap-4 p-4 bg-background rounded-xl border border-border">
-                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <div className="flex items-start gap-4 p-4 bg-background rounded-xl border border-border hover:border-primary/30 transition-all duration-300 hover-lift animate-scale-in stagger-2">
+                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 transition-transform duration-300 hover:scale-110">
                         <Mail className="w-6 h-6 text-primary" />
                       </div>
                       <div>
@@ -87,8 +87,8 @@ const Contact = () => {
                       </div>
                     </div>
 
-                    <div className="flex items-start gap-4 p-4 bg-background rounded-xl border border-border">
-                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <div className="flex items-start gap-4 p-4 bg-background rounded-xl border border-border hover:border-primary/30 transition-all duration-300 hover-lift animate-scale-in stagger-3">
+                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 transition-transform duration-300 hover:scale-110">
                         <Phone className="w-6 h-6 text-primary" />
                       </div>
                       <div>
@@ -100,7 +100,7 @@ const Contact = () => {
                 </div>
 
                 {/* Social Links */}
-                <div>
+                <div className="animate-fade-in stagger-4">
                   <h3 className="font-heading font-semibold text-lg text-foreground mb-4">
                     Follow Us
                   </h3>
@@ -109,7 +109,7 @@ const Contact = () => {
                       href="https://www.instagram.com/ieee.aurjpr/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-12 h-12 rounded-xl bg-background border border-border hover:border-primary/30 hover:bg-primary/10 flex items-center justify-center transition-all duration-300"
+                      className="w-12 h-12 rounded-xl bg-background border border-border hover:border-primary/30 hover:bg-primary/10 flex items-center justify-center transition-all duration-300 hover:scale-110"
                       aria-label="Instagram"
                     >
                       <Instagram size={20} className="text-foreground" />
@@ -118,7 +118,7 @@ const Contact = () => {
                       href="https://www.linkedin.com/company/ieeeaurjpr/posts/?feedView=all"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-12 h-12 rounded-xl bg-background border border-border hover:border-primary/30 hover:bg-primary/10 flex items-center justify-center transition-all duration-300"
+                      className="w-12 h-12 rounded-xl bg-background border border-border hover:border-primary/30 hover:bg-primary/10 flex items-center justify-center transition-all duration-300 hover:scale-110"
                       aria-label="LinkedIn"
                     >
                       <Linkedin size={20} className="text-foreground" />
@@ -127,7 +127,7 @@ const Contact = () => {
                       href="https://twitter.com"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-12 h-12 rounded-xl bg-background border border-border hover:border-primary/30 hover:bg-primary/10 flex items-center justify-center transition-all duration-300"
+                      className="w-12 h-12 rounded-xl bg-background border border-border hover:border-primary/30 hover:bg-primary/10 flex items-center justify-center transition-all duration-300 hover:scale-110"
                       aria-label="Twitter"
                     >
                       <Twitter size={20} className="text-foreground" />
@@ -137,13 +137,13 @@ const Contact = () => {
               </div>
 
               {/* Contact Form */}
-              <div className="bg-background rounded-2xl p-8 border border-border">
+              <div className="bg-background rounded-2xl p-8 border border-border animate-slide-in-right stagger-2 hover-lift">
                 <h2 className="font-heading text-2xl font-bold text-foreground mb-6">
                   Send us a Message
                 </h2>
                 <form onSubmit={handleSubmit} className="space-y-5">
                   <div className="grid sm:grid-cols-2 gap-4">
-                    <div>
+                    <div className="animate-fade-in stagger-1">
                       <label
                         htmlFor="name"
                         className="block text-sm font-medium text-foreground mb-2"
@@ -157,10 +157,10 @@ const Contact = () => {
                         onChange={handleChange}
                         placeholder="John Doe"
                         required
-                        className="bg-card"
+                        className="bg-card transition-all duration-300 focus:scale-[1.02]"
                       />
                     </div>
-                    <div>
+                    <div className="animate-fade-in stagger-2">
                       <label
                         htmlFor="email"
                         className="block text-sm font-medium text-foreground mb-2"
@@ -175,12 +175,12 @@ const Contact = () => {
                         onChange={handleChange}
                         placeholder="john@example.com"
                         required
-                        className="bg-card"
+                        className="bg-card transition-all duration-300 focus:scale-[1.02]"
                       />
                     </div>
                   </div>
 
-                  <div>
+                  <div className="animate-fade-in stagger-3">
                     <label
                       htmlFor="subject"
                       className="block text-sm font-medium text-foreground mb-2"
@@ -194,11 +194,11 @@ const Contact = () => {
                       onChange={handleChange}
                       placeholder="How can we help?"
                       required
-                      className="bg-card"
+                      className="bg-card transition-all duration-300 focus:scale-[1.02]"
                     />
                   </div>
 
-                  <div>
+                  <div className="animate-fade-in stagger-4">
                     <label
                       htmlFor="message"
                       className="block text-sm font-medium text-foreground mb-2"
@@ -213,11 +213,11 @@ const Contact = () => {
                       placeholder="Write your message here..."
                       rows={5}
                       required
-                      className="bg-card resize-none"
+                      className="bg-card resize-none transition-all duration-300 focus:scale-[1.01]"
                     />
                   </div>
 
-                  <Button type="submit" variant="default" size="lg" className="w-full group">
+                  <Button type="submit" variant="default" size="lg" className="w-full group hover-scale animate-fade-in stagger-5">
                     Send Message
                     <Send
                       size={16}

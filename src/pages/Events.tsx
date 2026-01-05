@@ -74,15 +74,15 @@ const Events = () => {
         {/* Hero Section */}
         <section className="pt-32 pb-20 bg-gradient-hero relative overflow-hidden">
           <div className="container mx-auto px-4 relative z-10">
-            <div className="max-w-3xl">
-              <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4">
+            <div className="max-w-3xl animate-slide-up">
+              <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4 animate-fade-in stagger-1">
                 Events
               </span>
-              <h1 className="font-heading text-4xl sm:text-5xl font-bold text-foreground mb-6">
+              <h1 className="font-heading text-4xl sm:text-5xl font-bold text-foreground mb-6 animate-slide-up stagger-2">
                 Workshops, Hackathons &{" "}
                 <span className="text-primary">Technical Events</span>
               </h1>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-lg text-muted-foreground leading-relaxed animate-fade-in stagger-3">
                 Join us for exciting events that foster learning, innovation, and networking
                 among tech enthusiasts.
               </p>
@@ -93,19 +93,19 @@ const Events = () => {
         {/* Upcoming Events */}
         <section className="py-20 bg-card">
           <div className="container mx-auto px-4">
-            <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-8">
+            <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-8 animate-slide-up">
               Upcoming <span className="text-primary">Events</span>
             </h2>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {upcomingEvents.map((event) => (
+              {upcomingEvents.map((event, index) => (
                 <div
                   key={event.id}
-                  className="group bg-background rounded-2xl overflow-hidden border border-border hover:border-primary/30 hover:shadow-lg transition-all duration-300"
+                  className={`group bg-background rounded-2xl overflow-hidden border border-border hover:border-primary/30 transition-all duration-300 hover-lift animate-scale-in stagger-${index + 1}`}
                 >
-                  <div className="h-40 bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center relative">
+                  <div className="h-40 bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center relative overflow-hidden">
                     <span
-                      className={`absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-semibold ${
+                      className={`absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-semibold transition-transform duration-300 group-hover:scale-110 ${
                         event.type === "Hackathon"
                           ? "bg-primary text-primary-foreground"
                           : event.type === "Workshop"
@@ -115,7 +115,7 @@ const Events = () => {
                     >
                       {event.type}
                     </span>
-                    <Calendar className="w-12 h-12 text-primary/40" />
+                    <Calendar className="w-12 h-12 text-primary/40 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12" />
                   </div>
 
                   <div className="p-6 space-y-4">
@@ -143,7 +143,7 @@ const Events = () => {
 
                     {event.hasPage ? (
                       <Link to={event.link}>
-                        <Button variant="default" className="w-full group/btn">
+                        <Button variant="default" className="w-full group/btn hover-scale">
                           View Details
                           <ArrowRight
                             size={16}
@@ -152,7 +152,7 @@ const Events = () => {
                         </Button>
                       </Link>
                     ) : (
-                      <Button variant="default" className="w-full group/btn">
+                      <Button variant="default" className="w-full group/btn hover-scale">
                         Register Now
                         <ArrowRight
                           size={16}
@@ -170,19 +170,19 @@ const Events = () => {
         {/* Past Events */}
         <section className="py-20 bg-background">
           <div className="container mx-auto px-4">
-            <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-8">
+            <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-8 animate-slide-up">
               Past <span className="text-primary">Events</span>
             </h2>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {pastEvents.map((event) => (
+              {pastEvents.map((event, index) => (
                 <div
                   key={event.id}
-                  className="bg-card rounded-2xl p-6 border border-border hover:border-primary/20 transition-all duration-300"
+                  className={`bg-card rounded-2xl p-6 border border-border hover:border-primary/20 transition-all duration-300 hover-lift animate-scale-in stagger-${index + 1}`}
                 >
                   <div className="flex items-center gap-3 mb-4">
                     <span
-                      className={`px-3 py-1 rounded-full text-xs font-semibold ${
+                      className={`px-3 py-1 rounded-full text-xs font-semibold transition-transform duration-300 hover:scale-110 ${
                         event.type === "Workshop"
                           ? "bg-accent/20 text-accent-foreground"
                           : event.type === "Event"
@@ -194,7 +194,7 @@ const Events = () => {
                     </span>
                     <span className="text-sm text-muted-foreground">{event.date}</span>
                   </div>
-                  <h3 className="font-heading font-semibold text-lg text-foreground mb-2">
+                  <h3 className="font-heading font-semibold text-lg text-foreground mb-2 group-hover:text-primary transition-colors">
                     {event.title}
                   </h3>
                   <p className="text-sm text-muted-foreground">{event.description}</p>

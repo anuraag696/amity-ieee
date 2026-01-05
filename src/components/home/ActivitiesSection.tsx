@@ -47,14 +47,14 @@ const ActivitiesSection = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4">
+        <div className="text-center max-w-2xl mx-auto mb-16 animate-slide-up">
+          <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4 animate-fade-in stagger-1">
             What We Do
           </span>
-          <h2 className="font-heading text-3xl sm:text-4xl font-bold text-foreground mb-4">
+          <h2 className="font-heading text-3xl sm:text-4xl font-bold text-foreground mb-4 animate-slide-up stagger-2">
             Our Key <span className="text-primary">Activities</span>
           </h2>
-          <p className="text-muted-foreground">
+          <p className="text-muted-foreground animate-fade-in stagger-3">
             Empowering students through diverse technical activities and events
             that foster innovation and professional growth.
           </p>
@@ -65,19 +65,18 @@ const ActivitiesSection = () => {
           {activities.map((activity, index) => (
             <div
               key={activity.title}
-              className="group relative bg-card rounded-2xl p-6 border border-border hover:border-primary/30 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-              style={{ animationDelay: `${index * 100}ms` }}
+              className={`group relative bg-card rounded-2xl p-6 border border-border hover:border-primary/30 transition-all duration-300 hover-lift animate-scale-in stagger-${index + 1}`}
             >
               {/* Icon */}
               <div
-                className={`w-14 h-14 rounded-xl mb-5 flex items-center justify-center transition-colors ${
+                className={`w-14 h-14 rounded-xl mb-5 flex items-center justify-center transition-all duration-300 group-hover:scale-110 ${
                   activity.color === "primary"
                     ? "bg-primary/10 group-hover:bg-primary/20"
                     : "bg-accent/10 group-hover:bg-accent/20"
                 }`}
               >
                 <activity.icon
-                  className={`w-7 h-7 ${
+                  className={`w-7 h-7 transition-transform duration-300 group-hover:rotate-12 ${
                     activity.color === "primary" ? "text-primary" : "text-accent"
                   }`}
                 />
@@ -93,7 +92,7 @@ const ActivitiesSection = () => {
 
               {/* Hover Accent */}
               <div
-                className={`absolute bottom-0 left-0 right-0 h-1 rounded-b-2xl opacity-0 group-hover:opacity-100 transition-opacity ${
+                className={`absolute bottom-0 left-0 right-0 h-1 rounded-b-2xl opacity-0 group-hover:opacity-100 transition-all duration-300 ${
                   activity.color === "primary" ? "bg-primary" : "bg-accent"
                 }`}
               />
