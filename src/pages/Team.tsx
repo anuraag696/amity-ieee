@@ -3,6 +3,9 @@ import Footer from "@/components/layout/Footer";
 import { Linkedin, Instagram, Mail } from "lucide-react";
 import anuraagPhoto from "@/assets/anuraag-gupta.jpg";
 import manjuKaushikPhoto from "@/assets/manju-kaushik.jpg";
+import dhruvPhoto from "@/assets/dhruv-mittal.jpg";
+import saurabhPhoto from "@/assets/saurabh-bagaria.jpg";
+import ambarPhoto from "@/assets/ambar-bansal.jpg";
 
 const facultyAdvisors = [
   {
@@ -17,9 +20,9 @@ const facultyAdvisors = [
 ];
 
 const studentAdvisors = [
-  { id: 1, name: "Mr. Dhruv Mittal", role: "Student Advisor" },
-  { id: 2, name: "Mr. Ambar Bansal", role: "Student Advisor" },
-  { id: 3, name: "Mr. Saurabh Bagaria", role: "Student Advisor" },
+  { id: 1, name: "Mr. Dhruv Mittal", role: "Student Advisor", linkedin: "https://www.linkedin.com/in/dhruv-mittal-64945328b/", instagram: "https://www.instagram.com/anuraag_037/", image: dhruvPhoto},
+  { id: 2, name: "Mr. Ambar Bansal", role: "Student Advisor", linkedin: "https://www.linkedin.com/in/ambar-bansal/", instagram: "https://www.instagram.com/ambarbansal1/", image: ambarPhoto},
+  { id: 3, name: "Mr. Saurabh Bagaria", role: "Student Advisor", linkedin: "https://www.linkedin.com/in/saurab-bagaria-a20587296/", instagram: "https://www.instagram.com/saurab2407/", image: saurabhPhoto},
 ];
 
 const executiveTeam = [
