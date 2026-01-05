@@ -73,14 +73,14 @@ const Gallery = () => {
         {/* Hero Section */}
         <section className="pt-32 pb-20 bg-gradient-hero relative overflow-hidden">
           <div className="container mx-auto px-4 relative z-10">
-            <div className="max-w-3xl">
-              <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4">
+            <div className="max-w-3xl animate-slide-up">
+              <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4 animate-fade-in stagger-1">
                 Gallery
               </span>
-              <h1 className="font-heading text-4xl sm:text-5xl font-bold text-foreground mb-6">
+              <h1 className="font-heading text-4xl sm:text-5xl font-bold text-foreground mb-6 animate-slide-up stagger-2">
                 Capturing <span className="text-primary">Moments</span>
               </h1>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-lg text-muted-foreground leading-relaxed animate-fade-in stagger-3">
                 A visual journey through our events, workshops, and memorable moments
                 at IEEE SB Amity Rajasthan.
               </p>
@@ -92,12 +92,12 @@ const Gallery = () => {
         <section className="py-20 bg-card">
           <div className="container mx-auto px-4">
             {/* Category Filter */}
-            <div className="flex flex-wrap justify-center gap-2 mb-12">
-              {galleryCategories.map((category) => (
+            <div className="flex flex-wrap justify-center gap-2 mb-12 animate-fade-in">
+              {galleryCategories.map((category, index) => (
                 <button
                   key={category}
                   onClick={() => setActiveCategory(category)}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:scale-105 animate-scale-in stagger-${index + 1} ${
                     activeCategory === category
                       ? "bg-primary text-primary-foreground"
                       : "bg-background text-muted-foreground hover:bg-muted"
@@ -110,22 +110,22 @@ const Gallery = () => {
 
             {/* Gallery Grid */}
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {filteredImages.map((image) => (
+              {filteredImages.map((image, index) => (
                 <div
                   key={image.id}
                   onClick={() => setSelectedImage(image.id)}
-                  className="group cursor-pointer rounded-2xl overflow-hidden border border-border hover:border-primary/30 hover:shadow-lg transition-all duration-300"
+                  className={`group cursor-pointer rounded-2xl overflow-hidden border border-border hover:border-primary/30 transition-all duration-300 hover-lift animate-scale-in stagger-${(index % 6) + 1}`}
                 >
-                  <div className="aspect-[4/3] bg-gradient-to-br from-primary/10 to-accent/10 relative">
+                  <div className="aspect-[4/3] bg-gradient-to-br from-primary/10 to-accent/10 relative overflow-hidden">
                     {image.image ? (
                       <img 
                         src={image.image} 
                         alt={image.title}
-                        className="absolute inset-0 w-full h-full object-cover"
+                        className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                       />
                     ) : (
                       <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="w-20 h-20 bg-primary/20 rounded-2xl flex items-center justify-center">
+                        <div className="w-20 h-20 bg-primary/20 rounded-2xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12">
                           <span className="font-heading text-2xl font-bold text-primary">
                             {image.category.charAt(0)}
                           </span>
@@ -134,8 +134,8 @@ const Gallery = () => {
                     )}
 
                     {/* Overlay */}
-                    <div className="absolute inset-0 bg-secondary/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                      <div className="text-center text-primary-foreground p-4">
+                    <div className="absolute inset-0 bg-secondary/80 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
+                      <div className="text-center text-primary-foreground p-4 animate-scale-in">
                         <h3 className="font-heading font-semibold text-lg mb-1">
                           {image.title}
                         </h3>
@@ -154,18 +154,18 @@ const Gallery = () => {
         {/* Lightbox */}
         {selectedImage !== null && selectedImageData && (
           <div
-            className="fixed inset-0 bg-foreground/90 z-50 flex items-center justify-center p-4"
+            className="fixed inset-0 bg-foreground/90 z-50 flex items-center justify-center p-4 animate-fade-in"
             onClick={() => setSelectedImage(null)}
           >
             <button
-              className="absolute top-4 right-4 text-primary-foreground hover:text-accent transition-colors"
+              className="absolute top-4 right-4 text-primary-foreground hover:text-accent transition-all duration-300 hover:scale-110"
               onClick={() => setSelectedImage(null)}
             >
               <X size={32} />
             </button>
 
             <button
-              className="absolute left-4 text-primary-foreground hover:text-accent transition-colors"
+              className="absolute left-4 text-primary-foreground hover:text-accent transition-all duration-300 hover:scale-110"
               onClick={(e) => {
                 e.stopPropagation();
                 handlePrev();
@@ -175,10 +175,10 @@ const Gallery = () => {
             </button>
 
             <div
-              className="max-w-4xl w-full bg-card rounded-2xl overflow-hidden"
+              className="max-w-4xl w-full bg-card rounded-2xl overflow-hidden animate-scale-in"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="aspect-video bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center">
+              <div className="aspect-video bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center overflow-hidden">
                 {selectedImageData.image ? (
                   <img 
                     src={selectedImageData.image} 
@@ -210,7 +210,7 @@ const Gallery = () => {
             </div>
 
             <button
-              className="absolute right-4 text-primary-foreground hover:text-accent transition-colors"
+              className="absolute right-4 text-primary-foreground hover:text-accent transition-all duration-300 hover:scale-110"
               onClick={(e) => {
                 e.stopPropagation();
                 handleNext();

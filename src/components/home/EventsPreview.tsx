@@ -48,17 +48,17 @@ const EventsPreview = () => {
     <section className="py-20 bg-card">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-12">
+        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-12 animate-slide-up">
           <div>
-            <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-2">
+            <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-2 animate-fade-in stagger-1">
               Upcoming Events
             </span>
-            <h2 className="font-heading text-3xl sm:text-4xl font-bold text-foreground">
+            <h2 className="font-heading text-3xl sm:text-4xl font-bold text-foreground animate-slide-up stagger-2">
               Join Our <span className="text-primary">Next Events</span>
             </h2>
           </div>
-          <Link to="/events">
-            <Button variant="outline" className="group">
+          <Link to="/events" className="animate-fade-in stagger-3">
+            <Button variant="outline" className="group hover-scale">
               View All Events
               <ArrowRight
                 size={16}
@@ -70,17 +70,17 @@ const EventsPreview = () => {
 
         {/* Events Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {upcomingEvents.map((event) => (
+          {upcomingEvents.map((event, index) => (
             <div
               key={event.id}
-              className={`group relative bg-background rounded-2xl overflow-hidden border border-border hover:border-primary/30 hover:shadow-lg transition-all duration-300 ${
+              className={`group relative bg-background rounded-2xl overflow-hidden border border-border hover:border-primary/30 transition-all duration-300 hover-lift animate-scale-in stagger-${index + 1} ${
                 event.featured ? "md:col-span-2 lg:col-span-1" : ""
               }`}
             >
               {/* Event Type Badge */}
               <div className="absolute top-4 right-4 z-10">
                 <span
-                  className={`px-3 py-1 rounded-full text-xs font-semibold ${
+                  className={`px-3 py-1 rounded-full text-xs font-semibold transition-transform duration-300 group-hover:scale-110 ${
                     event.type === "Hackathon"
                       ? "bg-primary text-primary-foreground"
                       : event.type === "Workshop"
@@ -98,11 +98,11 @@ const EventsPreview = () => {
                   <img 
                     src={event.image} 
                     alt={event.title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                 ) : (
                   <div className="text-center">
-                    <Calendar className="w-12 h-12 text-primary/40 mx-auto mb-2" />
+                    <Calendar className="w-12 h-12 text-primary/40 mx-auto mb-2 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12" />
                     <p className="text-sm font-medium text-muted-foreground">
                       {event.date}
                     </p>

@@ -35,16 +35,16 @@ const AboutSection = () => {
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Content Side */}
-          <div className="space-y-8">
+          <div className="space-y-8 animate-slide-in-left stagger-1">
             <div className="space-y-4">
-              <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider">
+              <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider animate-fade-in stagger-2">
                 About Us
               </span>
-              <h2 className="font-heading text-3xl sm:text-4xl font-bold text-foreground">
+              <h2 className="font-heading text-3xl sm:text-4xl font-bold text-foreground animate-slide-up stagger-3">
                 Advancing Technology for{" "}
                 <span className="text-primary">Humanity</span>
               </h2>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed animate-fade-in stagger-4">
                 IEEE Student Branch at Amity University Rajasthan is a dynamic
                 student-driven platform that connects ambitious individuals with
                 industry experts, mentors, and like-minded peers. We strive to
@@ -58,10 +58,9 @@ const AboutSection = () => {
               {features.map((feature, index) => (
                 <div
                   key={feature.title}
-                  className="group p-5 rounded-xl bg-background hover:bg-gradient-to-br hover:from-primary/5 hover:to-accent/5 border border-border hover:border-primary/20 transition-all duration-300"
-                  style={{ animationDelay: `${index * 100}ms` }}
+                  className={`group p-5 rounded-xl bg-background hover:bg-gradient-to-br hover:from-primary/5 hover:to-accent/5 border border-border hover:border-primary/20 transition-all duration-300 hover-lift animate-scale-in stagger-${index + 2}`}
                 >
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 group-hover:bg-primary/20 flex items-center justify-center mb-4 transition-colors">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 group-hover:bg-primary/20 flex items-center justify-center mb-4 transition-colors group-hover:scale-110 duration-300">
                     <feature.icon className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="font-heading font-semibold text-foreground mb-2">
@@ -74,8 +73,8 @@ const AboutSection = () => {
               ))}
             </div>
 
-            <Link to="/about">
-              <Button variant="default" className="group">
+            <Link to="/about" className="inline-block animate-fade-in stagger-6">
+              <Button variant="default" className="group hover-scale">
                 Learn More About Us
                 <ArrowRight
                   size={16}
@@ -86,13 +85,13 @@ const AboutSection = () => {
           </div>
 
           {/* Visual Side */}
-          <div className="relative">
-            <div className="relative">
+          <div className="relative animate-slide-in-right stagger-2">
+            <div className="relative hover-lift">
               {/* Main Card */}
-              <div className="bg-gradient-primary rounded-3xl p-8 text-primary-foreground">
+              <div className="bg-gradient-primary rounded-3xl p-8 text-primary-foreground animate-scale-in stagger-3">
                 <div className="space-y-6">
                   <div className="flex items-center gap-4">
-                    <div className="w-16 h-16 bg-primary-foreground/20 rounded-2xl flex items-center justify-center">
+                    <div className="w-16 h-16 bg-primary-foreground/20 rounded-2xl flex items-center justify-center animate-bounce-in stagger-4">
                       <span className="font-heading font-bold text-2xl">
                         IEEE
                       </span>
@@ -114,8 +113,8 @@ const AboutSection = () => {
                       { value: "50+", label: "Active Members" },
                       { value: "10+", label: "Events Organized" },
                       { value: "15+", label: "Workshops" },
-                    ].map((stat) => (
-                      <div key={stat.label}>
+                    ].map((stat, index) => (
+                      <div key={stat.label} className={`animate-slide-up stagger-${index + 4}`}>
                         <p className="font-heading text-3xl font-bold">
                           {stat.value}
                         </p>
@@ -129,13 +128,13 @@ const AboutSection = () => {
               </div>
 
               {/* Floating Badge */}
-              <div className="absolute -top-4 -right-4 bg-accent text-accent-foreground px-4 py-2 rounded-full font-semibold text-sm shadow-lg shadow-glow">
+              <div className="absolute -top-4 -right-4 bg-accent text-accent-foreground px-4 py-2 rounded-full font-semibold text-sm shadow-lg shadow-glow animate-float hover-glow">
                 ✨ Growing Community
                 
               </div>
 
               {/* Background Decoration */}
-              <div className="absolute -z-10 -bottom-8 -left-8 w-full h-full bg-accent/10 rounded-3xl" />
+              <div className="absolute -z-10 -bottom-8 -left-8 w-full h-full bg-accent/10 rounded-3xl animate-pulse-slow" />
             </div>
           </div>
         </div>

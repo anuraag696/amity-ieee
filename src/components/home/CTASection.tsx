@@ -27,29 +27,29 @@ const CTASection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto text-center text-primary-foreground">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-primary-foreground/10 rounded-full px-4 py-2 text-sm mb-6">
-            <Users size={16} />
+          <div className="inline-flex items-center gap-2 bg-primary-foreground/10 rounded-full px-4 py-2 text-sm mb-6 animate-bounce-in stagger-1 hover-glow">
+            <Users size={16} className="animate-pulse-slow" />
             <span>Join 500+ Members</span>
           </div>
 
           {/* Heading */}
-          <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+          <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 animate-slide-up stagger-2">
             Ready to Shape the{" "}
             <span className="text-accent">Future of Technology?</span>
           </h2>
 
           {/* Description */}
-          <p className="text-lg text-primary-foreground/80 mb-10 max-w-xl mx-auto">
+          <p className="text-lg text-primary-foreground/80 mb-10 max-w-xl mx-auto animate-fade-in stagger-3">
             Become a part of IEEE Student Branch, Amity University Rajasthan and
             unlock opportunities for growth, learning, and innovation.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-wrap justify-center gap-4 animate-scale-in stagger-4">
             <Button
               variant="gold"
               size="xl"
-              className="group"
+              className="group hover-scale hover-glow"
             >
               Join IEEE Now
               <ArrowRight
@@ -61,7 +61,7 @@ const CTASection = () => {
               <Button
                 variant="outline"
                 size="xl"
-                className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground"
+                className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground hover-scale"
               >
                 <Mail size={18} className="mr-2" />
                 Contact Us
@@ -71,18 +71,16 @@ const CTASection = () => {
 
           {/* Trust Indicators */}
           <div className="mt-12 flex flex-wrap justify-center gap-8 text-sm text-primary-foreground/70">
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-accent rounded-full" />
-              <span>Free Membership Benefits</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-accent rounded-full" />
-              <span>Global IEEE Network</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-accent rounded-full" />
-              <span>Exclusive Resources</span>
-            </div>
+            {[
+              "Free Membership Benefits",
+              "Global IEEE Network",
+              "Exclusive Resources"
+            ].map((item, index) => (
+              <div key={item} className={`flex items-center gap-2 animate-fade-in stagger-${index + 5}`}>
+                <div className="w-2 h-2 bg-accent rounded-full animate-pulse-slow" />
+                <span>{item}</span>
+              </div>
+            ))}
           </div>
         </div>
       </div>
