@@ -16,23 +16,27 @@ const supportingPillars = [{
   name: "Dr. Ashok K Chauhan",
   role: "Founder President",
   department: "Amity Education Group",
+  email: "#",
   image: ashokPhoto
 }, {
   id: 2,
   name: "Dr. Aseem Chauhan",
   role: "Chancellor",
-  department: "Amity University Rajasthan, Jaipur"
+  department: "Amity University Rajasthan, Jaipur",
+  email: "#"
 }, {
   id: 3,
   name: "Prof. (Dr.) Amit Jain",
   role: "Vice-Chancellor",
   department: "Amity University Rajasthan, Jaipur",
+  email: "#",
   image: amitPhoto
 }, {
   id: 4,
   name: "Prof. (Dr.) G. K. Aseri",
   role: "Pro-Vice Chancellor",
   department: "Amity University Rajasthan, Jaipur",
+  email: "#",
   image: aseriPhoto
 }];
 
@@ -73,19 +77,22 @@ const executiveTeam = [{
   role: "Chairperson",
   linkedin: "https://www.linkedin.com/in/anuraag-gupta-a4877527a/",
   instagram: "https://www.instagram.com/anuraag_037/",
+  email: "anuraag.gupta@s.amity.edu",
   image: anuraagPhoto
 }, {
   id: 2,
   name: "Ms. Madhusmita",
   role: "General Secretary",
   linkedin: "https://www.linkedin.com/in/madhusmita-p1114/",
-  instagram: "https://www.instagram.com/palak__1114/"
+  instagram: "https://www.instagram.com/palak__1114/",
+  email: "madhusmita@s.ammity.edu"
 }, {
   id: 3,
   name: "Mr. Ishan Verma",
   role: "Treasurer",
   linkedin: "https://www.linkedin.com/in/ishanvermaa/",
-  instagram: "https://www.instagram.com/eeshan_verma/"
+  instagram: "https://www.instagram.com/eeshan_verma/",
+  email: "ishan.verma1@s.amity.edu"
 }];
 const coreTeam = [{
   id: 1,
@@ -203,7 +210,7 @@ const Team = () => {
             </h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
               {supportingPillars.map((member, index) => (
-                <TeamMemberCard key={member.id} member={member} index={index} />
+                <TeamMemberCard key={member.id} member={member} showEmail index={index} />
               ))}
             </div>
           </div>
@@ -242,7 +249,7 @@ const Team = () => {
               Executive <span className="text-primary">Committee</span>
             </h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-3xl mx-auto">
-              {executiveTeam.map((member, index) => <TeamMemberCard key={member.id} member={member} index={index} />)}
+              {executiveTeam.map((member, index) => <TeamMemberCard key={member.id} member={member} showEmail index={index} />)}
             </div>
           </div>
         </section>
