@@ -35,7 +35,7 @@ const facultyAdvisors = [{
   role: "Branch counsellor",
   department: "Amity University Rajasthan",
   linkedin: "https://www.linkedin.com/in/prof-dr-manju-kaushik-675a7070/",
-  email: "mkaushik@amity.edu",
+  email: "mkaushik@jpr.amity.edu",
   image: manjuKaushikPhoto
 }];
 const studentAdvisors = [{
