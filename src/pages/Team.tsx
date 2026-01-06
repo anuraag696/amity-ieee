@@ -7,11 +7,16 @@ import dhruvPhoto from "@/assets/dhruv-mittal.jpg";
 import saurabhPhoto from "@/assets/saurabh-bagaria.jpg";
 import ambarPhoto from "@/assets/ambar-bansal.jpg";
 import nitinPhoto from "@/assets/nitin-mishra.jpeg";
+import ashokPhoto from "@/assets/ashok-chauhan.png";
+import amitPhoto from "@/assets/amit-jain.png";
+import aseriPhoto from "@/assets/aseri.png";
+
 const supportingPillars = [{
   id: 1,
   name: "Dr. Ashok K Chauhan",
   role: "Founder President",
-  department: "Amity Education Group"
+  department: "Amity Education Group",
+  image: ashokPhoto
 }, {
   id: 2,
   name: "Dr. Aseem Chauhan",
@@ -21,12 +26,14 @@ const supportingPillars = [{
   id: 3,
   name: "Prof. (Dr.) Amit Jain",
   role: "Vice-Chancellor",
-  department: "Amity University Rajasthan, Jaipur"
+  department: "Amity University Rajasthan, Jaipur",
+  image: amitPhoto
 }, {
   id: 4,
   name: "Prof. (Dr.) G. K. Aseri",
   role: "Pro-Vice Chancellor",
-  department: "Amity University Rajasthan, Jaipur"
+  department: "Amity University Rajasthan, Jaipur",
+  image: aseriPhoto
 }];
 
 const facultyAdvisors = [{
