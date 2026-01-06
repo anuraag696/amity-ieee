@@ -54,7 +54,7 @@ const studentAdvisors = [{
   name: "Mr. Dhruv Mittal",
   role: "Student Advisor",
   linkedin: "https://www.linkedin.com/in/dhruv-mittal-64945328b/",
-  instagram: "https://www.instagram.com/anuraag_037/",
+  instagram: "https://www.instagram.com/",
   image: dhruvPhoto
 }, {
   id: 2,
