@@ -7,6 +7,28 @@ import dhruvPhoto from "@/assets/dhruv-mittal.jpg";
 import saurabhPhoto from "@/assets/saurabh-bagaria.jpg";
 import ambarPhoto from "@/assets/ambar-bansal.jpg";
 import nitinPhoto from "@/assets/nitin-mishra.jpeg";
+const supportingPillars = [{
+  id: 1,
+  name: "Dr. Ashok K Chauhan",
+  role: "Founder President",
+  department: "Amity Education Group"
+}, {
+  id: 2,
+  name: "Dr. Aseem Chauhan",
+  role: "Chancellor",
+  department: "Amity University Rajasthan, Jaipur"
+}, {
+  id: 3,
+  name: "Prof. (Dr.) Amit Jain",
+  role: "Vice-Chancellor",
+  department: "Amity University Rajasthan, Jaipur"
+}, {
+  id: 4,
+  name: "Prof. (Dr.) G. K. Aseri",
+  role: "Pro-Vice Chancellor",
+  department: "Amity University Rajasthan, Jaipur"
+}];
+
 const facultyAdvisors = [{
   id: 1,
   name: "Prof. (Dr.) Manju Kaushik",
@@ -162,6 +184,20 @@ const Team = () => {
                 Dedicated individuals working together to make IEEE SB Amity Rajasthan
                 a hub for innovation and excellence.
               </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Supporting Pillars */}
+        <section className="py-16 bg-card">
+          <div className="container mx-auto px-4">
+            <h2 className="font-heading text-2xl font-bold text-foreground mb-8 text-center animate-slide-up">
+              Supporting <span className="text-primary">Pillars</span>
+            </h2>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+              {supportingPillars.map((member, index) => (
+                <TeamMemberCard key={member.id} member={member} index={index} />
+              ))}
             </div>
           </div>
         </section>
