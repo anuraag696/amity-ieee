@@ -89,7 +89,7 @@ const HeroSection = () => {
             {/* Main Visual Container */}
             <div className="relative w-full max-w-lg">
               {/* Floating Cards */}
-              <div className="absolute -top-4 -left-4 bg-card p-4 rounded-2xl shadow-lg animate-float z-10 hover-lift">
+              <div className="absolute -top-4 -left-4 bg-card p-4 rounded-2xl shadow-lg z-10">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-accent/20 rounded-lg flex items-center justify-center">
                     <span className="text-accent text-lg">🎯</span>
