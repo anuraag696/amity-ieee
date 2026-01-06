@@ -28,33 +28,33 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 pt-24 pb-16 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
-          <div className="space-y-8 animate-slide-up">
+          <div className="space-y-8">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 bg-accent/10 border border-accent/20 rounded-full px-4 py-2 text-sm font-medium text-accent-foreground">
-              <Sparkles size={16} className="text-accent" />
+            <div className="inline-flex items-center gap-2 bg-accent/10 border border-accent/20 rounded-full px-4 py-2 text-sm font-medium text-accent-foreground animate-fade-in stagger-1 hover-lift">
+              <Sparkles size={16} className="text-accent animate-pulse" />
               <span>Where Ideas Meet Innovation</span>
             </div>
 
             {/* Heading */}
             <div className="space-y-4">
-              <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-foreground">
+              <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-foreground animate-slide-up stagger-2">
                 Welcome to{" "}
                 <span className="text-gradient">IEEE Student Branch</span>
               </h1>
-              <p className="font-heading text-2xl sm:text-3xl font-semibold text-muted-foreground">
+              <p className="font-heading text-2xl sm:text-3xl font-semibold text-muted-foreground animate-fade-in stagger-3">
                 Amity University Rajasthan
               </p>
             </div>
 
             {/* Description */}
-            <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
+            <p className="text-lg text-muted-foreground max-w-xl leading-relaxed animate-fade-in stagger-4">
               IEEE SB AUR is dedicated to advancing technology for humanity through workshops, seminars, and technical events. Join us in shaping the future of technology.
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 animate-scale-in stagger-5">
               <Link to="/events">
-                <Button variant="hero" className="group">
+                <Button variant="hero" className="group hover-glow">
                   Explore Events
                   <ArrowRight
                     size={18}
@@ -63,7 +63,7 @@ const HeroSection = () => {
                 </Button>
               </Link>
               <Link to="/about">
-                <Button variant="heroOutline">Learn More</Button>
+                <Button variant="heroOutline" className="hover-lift">Learn More</Button>
               </Link>
             </div>
 
@@ -73,8 +73,8 @@ const HeroSection = () => {
                 { value: "500+", label: "Members" },
                 { value: "50+", label: "Events" },
                 { value: "20+", label: "Awards" },
-              ].map((stat) => (
-                <div key={stat.label} className="text-center">
+              ].map((stat, index) => (
+                <div key={stat.label} className={`text-center animate-bounce-in stagger-${index + 1} hover-lift`}>
                   <p className="font-heading text-3xl font-bold text-primary">
                     {stat.value}
                   </p>
@@ -85,11 +85,11 @@ const HeroSection = () => {
           </div>
 
           {/* Hero Visual */}
-          <div className="relative hidden lg:flex items-center justify-center">
+          <div className="relative hidden lg:flex items-center justify-center animate-slide-in-right">
             {/* Main Visual Container */}
             <div className="relative w-full max-w-lg">
               {/* Floating Cards */}
-              <div className="absolute -top-4 -left-4 bg-card p-4 rounded-2xl shadow-lg animate-float z-10">
+              <div className="absolute -top-4 -left-4 bg-card p-4 rounded-2xl shadow-lg animate-float z-10 hover-lift">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-accent/20 rounded-lg flex items-center justify-center">
                     <span className="text-accent text-lg">🎯</span>
@@ -101,7 +101,7 @@ const HeroSection = () => {
                 </div>
               </div>
 
-              <div className="absolute -bottom-4 -right-4 bg-card p-4 rounded-2xl shadow-lg animate-float-delayed z-10">
+              <div className="absolute -bottom-4 -right-4 bg-card p-4 rounded-2xl shadow-lg animate-float-delayed z-10 hover-lift">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center">
                     <span className="text-primary text-lg">🏆</span>

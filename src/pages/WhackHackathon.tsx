@@ -59,44 +59,44 @@ const WhackHackathon = () => {
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
               {/* Hackathon Logo */}
-              <div className="mb-8">
+              <div className="mb-8 animate-bounce-in">
                 <img 
                   src={whackLogo} 
                   alt="Whack-Hackathon 4.0 Logo" 
-                  className="w-32 h-32 sm:w-40 sm:h-40 mx-auto rounded-full shadow-2xl border-4 border-primary/30"
+                  className="w-32 h-32 sm:w-40 sm:h-40 mx-auto rounded-full shadow-2xl border-4 border-primary/30 hover:scale-110 transition-transform duration-300"
                 />
               </div>
 
-              <div className="inline-flex items-center gap-2 bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-semibold mb-6">
+              <div className="inline-flex items-center gap-2 bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-semibold mb-6 animate-fade-in stagger-1 animate-pulse-slow">
                 <Calendar size={16} />
                 February 17-18, 2025
               </div>
               
-              <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6">
+              <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 animate-slide-up stagger-2">
                 Whack-Hackathon <span className="text-primary">4.0</span>
               </h1>
               
-              <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed mb-8 max-w-2xl mx-auto">
+              <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed mb-8 max-w-2xl mx-auto animate-fade-in stagger-3">
                 A 3-round hackathon culminating in a 24-hour coding marathon. Bring your ideas to life, 
                 compete with the best, and win exciting prizes!
               </p>
 
-              <div className="flex flex-wrap justify-center gap-6 mb-10">
-                <div className="flex items-center gap-2 text-muted-foreground">
+              <div className="flex flex-wrap justify-center gap-6 mb-10 animate-fade-in stagger-4">
+                <div className="flex items-center gap-2 text-muted-foreground hover-lift">
                   <Users className="text-primary" size={20} />
                   <span>Teams of 4-6</span>
                 </div>
-                <div className="flex items-center gap-2 text-muted-foreground">
+                <div className="flex items-center gap-2 text-muted-foreground hover-lift">
                   <MapPin className="text-accent" size={20} />
                   <span>Amity Campus (Final Round)</span>
                 </div>
-                <div className="flex items-center gap-2 text-muted-foreground">
+                <div className="flex items-center gap-2 text-muted-foreground hover-lift">
                   <Trophy className="text-primary" size={20} />
                   <span>Exciting Prizes</span>
                 </div>
               </div>
 
-              <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-6 inline-block">
+              <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-6 inline-block animate-scale-in stagger-5 hover-lift">
                 <p className="text-muted-foreground mb-3">Registration Opening Soon</p>
                 <Button variant="default" size="lg" disabled className="opacity-75">
                   Coming Soon
@@ -104,12 +104,12 @@ const WhackHackathon = () => {
               </div>
 
               {/* Social Links */}
-              <div className="mt-8 flex justify-center">
+              <div className="mt-8 flex justify-center animate-fade-in stagger-6">
                 <a
                   href="https://www.instagram.com/whack_hack4.0/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity"
+                  className="flex items-center gap-2 bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-all duration-300 hover:scale-105"
                 >
                   <Instagram size={20} />
                   Follow on Instagram
@@ -123,10 +123,10 @@ const WhackHackathon = () => {
         <section className="py-20 bg-card">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4">
+              <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4 animate-fade-in">
                 Event Structure
               </span>
-              <h2 className="font-heading text-3xl sm:text-4xl font-bold text-foreground">
+              <h2 className="font-heading text-3xl sm:text-4xl font-bold text-foreground animate-slide-up stagger-1">
                 Three Rounds to <span className="text-primary">Victory</span>
               </h2>
             </div>
@@ -138,14 +138,14 @@ const WhackHackathon = () => {
 
                 <div className="space-y-8">
                   {timeline.map((item, index) => (
-                    <div key={item.round} className="relative flex gap-6 md:gap-10">
+                    <div key={item.round} className={`relative flex gap-6 md:gap-10 animate-slide-in-left stagger-${index + 1}`}>
                       {/* Timeline Dot */}
-                      <div className="hidden md:flex w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-accent items-center justify-center flex-shrink-0 z-10">
+                      <div className="hidden md:flex w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-accent items-center justify-center flex-shrink-0 z-10 hover-lift">
                         <item.icon className="w-7 h-7 text-primary-foreground" />
                       </div>
 
                       {/* Content Card */}
-                      <div className="flex-1 bg-background rounded-2xl p-6 border border-border hover:border-primary/30 transition-all duration-300">
+                      <div className="flex-1 bg-background rounded-2xl p-6 border border-border hover:border-primary/30 transition-all duration-300 hover-lift">
                         <div className="flex flex-wrap items-center gap-3 mb-3">
                           <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-semibold">
                             {item.round}
@@ -177,13 +177,13 @@ const WhackHackathon = () => {
         <section className="py-20 bg-background">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4">
+              <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4 animate-fade-in">
                 Rewards
               </span>
-              <h2 className="font-heading text-3xl sm:text-4xl font-bold text-foreground">
+              <h2 className="font-heading text-3xl sm:text-4xl font-bold text-foreground animate-slide-up stagger-1">
                 Exciting <span className="text-primary">Prizes</span> Await
               </h2>
-              <p className="text-muted-foreground mt-4 max-w-xl mx-auto">
+              <p className="text-muted-foreground mt-4 max-w-xl mx-auto animate-fade-in stagger-2">
                 Cash prizes, certificates, and exclusive goodies for the top performers!
               </p>
             </div>
@@ -192,14 +192,14 @@ const WhackHackathon = () => {
               {prizes.map((prize, index) => (
                 <div
                   key={prize.position}
-                  className={`relative bg-card rounded-2xl p-6 border transition-all duration-300 hover:shadow-lg ${
+                  className={`relative bg-card rounded-2xl p-6 border transition-all duration-300 hover:shadow-lg hover-lift animate-scale-in stagger-${index + 1} ${
                     index === 0
                       ? "border-accent md:-mt-4 md:mb-4"
                       : "border-border hover:border-primary/30"
                   }`}
                 >
                   {index === 0 && (
-                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent text-accent-foreground px-4 py-1 rounded-full text-sm font-semibold">
+                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent text-accent-foreground px-4 py-1 rounded-full text-sm font-semibold animate-pulse-slow">
                       🏆 Grand Prize
                     </div>
                   )}
@@ -232,13 +232,13 @@ const WhackHackathon = () => {
         <section className="py-20 bg-card">
           <div className="container mx-auto px-4">
             <div className="text-center">
-              <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4">
+              <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4 animate-fade-in">
                 Partners
               </span>
-              <h2 className="font-heading text-3xl sm:text-4xl font-bold text-foreground mb-6">
+              <h2 className="font-heading text-3xl sm:text-4xl font-bold text-foreground mb-6 animate-slide-up stagger-1">
                 Our <span className="text-primary">Sponsors</span>
               </h2>
-              <div className="bg-background rounded-2xl border border-dashed border-border p-12 max-w-2xl mx-auto">
+              <div className="bg-background rounded-2xl border border-dashed border-border p-12 max-w-2xl mx-auto animate-scale-in stagger-2 hover-lift">
                 <p className="text-muted-foreground text-lg">
                   Sponsor announcements coming soon!
                 </p>
@@ -253,13 +253,13 @@ const WhackHackathon = () => {
         {/* CTA Section */}
         <section className="py-20 bg-gradient-primary">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="font-heading text-3xl sm:text-4xl font-bold text-primary-foreground mb-6">
+            <h2 className="font-heading text-3xl sm:text-4xl font-bold text-primary-foreground mb-6 animate-slide-up">
               Ready to Hack?
             </h2>
-            <p className="text-primary-foreground/80 text-lg mb-8 max-w-xl mx-auto">
+            <p className="text-primary-foreground/80 text-lg mb-8 max-w-xl mx-auto animate-fade-in stagger-1">
               Form your team of 4-6 members and get ready for an incredible hackathon experience!
             </p>
-            <Button variant="gold" size="lg" disabled className="opacity-75">
+            <Button variant="gold" size="lg" disabled className="opacity-75 animate-scale-in stagger-2 hover-glow">
               Registration Opening Soon
             </Button>
           </div>

@@ -49,11 +49,12 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden lg:flex items-center gap-1">
-          {navLinks.map((link) => (
-            <Link key={link.path} to={link.path}>
+          {navLinks.map((link, index) => (
+            <Link key={link.path} to={link.path} className={`animate-fade-in stagger-${index + 1}`}>
               <Button
                 variant={location.pathname === link.path ? "navActive" : "nav"}
                 size="sm"
+                className="hover:scale-105 transition-transform"
               >
                 {link.name}
               </Button>
@@ -62,8 +63,8 @@ const Navbar = () => {
         </div>
 
         {/* CTA Button */}
-        <div className="hidden lg:block">
-          <Button variant="gold" size="sm">
+        <div className="hidden lg:block animate-scale-in">
+          <Button variant="gold" size="sm" className="hover:scale-105 transition-transform hover-glow">
             Join IEEE
           </Button>
         </div>
