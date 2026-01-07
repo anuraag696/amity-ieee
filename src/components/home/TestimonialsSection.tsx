@@ -40,7 +40,7 @@ const testimonials = [
   {
     id: 1,
     quote: "The mentorship and guidance from IEEE seniors helped me land my dream internship. Forever grateful to this community for believing in me when I was just starting out. The mock interview sessions, resume building workshops, and networking events gave me a competitive edge. IEEE taught me that success is not just about technical skills, but also about building meaningful relationships and contributing to the community.",
-    name: "Ms Madhusmita",
+    name: "Ms. Madhusmita",
     role: "General Secretary IEEE SB AUR",
     year: "2026"
   }
