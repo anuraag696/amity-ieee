@@ -17,11 +17,17 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    const { name, email, subject, message } = formData;
+    const emailBody = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0AMessage:%0D%0A${encodeURIComponent(message)}`;
+    const mailtoLink = `mailto:ieee.aur@gmail.com?subject=${encodeURIComponent(subject)}&body=${emailBody}`;
+    
+    window.open(mailtoLink, '_blank');
+    
     toast({
-      title: "Message Sent!",
-      description: "Thank you for reaching out. We will get back to you soon.",
+      title: "Opening Email Client",
+      description: "Your default email application will open with the message ready to send.",
     });
-    setFormData({ name: "", email: "", subject: "", message: "" });
   };
 
   const handleChange = (
