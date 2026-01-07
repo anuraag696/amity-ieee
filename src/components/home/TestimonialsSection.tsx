@@ -4,7 +4,7 @@ import { Quote } from "lucide-react";
 const testimonials = [
   {
     id: 1,
-    quote: "The mentorship and guidance from IEEE seniors helped me land my dream internship. Forever grateful to this community for believing in me when I was just starting out. The mock interview sessions, resume building workshops, and networking events gave me a competitive edge. IEEE taught me that success is not just about technical skills, but also about building meaningful relationships and contributing to the community.",
+    quote: "As the General Secretary of the IEEE Student Branch at Amity University Rajasthan, I feel honored to work alongside a team driven by purpose, innovation, and commitment. IEEE has given me the opportunity to contribute to initiatives that inspire learning, leadership, and technical growth among students. Coordinating with members, planning events, and ensuring smooth operations have helped me grow both personally and professionally. The energy and enthusiasm within our branch motivate me every day. I am grateful for the trust placed in me, and I look forward to continuing this journey of excellence and impact.",
     name: "Ms. Madhusmita",
     role: "General Secretary IEEE SB AUR",
     year: "2026"
@@ -43,6 +43,13 @@ const testimonials = [
     name: "Mr. Dhruv Mittal",
     role: "Ex-Chairperson IEEE SB AUR",
     year: "2025"
+  },
+  {
+    id: 7,
+    quote: "As the Chairperson of the IEEE Student Branch at Amity University Rajasthan, I am proud to witness the passion, innovation, and dedication our members bring to every initiative. IEEE has given us a platform to explore ideas beyond the classroom and transform them into impactful projects and events. Leading this vibrant community has strengthened my belief in collaboration, leadership, and continuous learning. Every achievement of our branch reflects the collective effort of students who strive to push boundaries. I am grateful to be a part of this journey, and I look forward to building an even stronger culture of technology, creativity, and excellence.",
+    name: "Mr. Anuraag Gupta",
+    role: "Chairperson IEEE SB AUR",
+    year: "2026"
   }
 ];
 
