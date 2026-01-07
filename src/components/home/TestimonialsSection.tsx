@@ -34,7 +34,7 @@ const testimonials = [
     id: 5,
     quote: "From technical workshops to leadership opportunities, IEEE has been the cornerstone of my college journey.",
     name: "Mr. Dhruv Mittal",
-    role: "Ex-Chairperson",
+    role: "Ex-Chairperson IEEE SB AUR",
     year: "2025"
   },
   /*{
