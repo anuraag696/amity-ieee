@@ -40,10 +40,17 @@ const testimonials = [
   /*{
     id: 6,
     quote: "The mentorship and guidance from IEEE seniors helped me land my dream internship. Forever grateful to this community.",
-    name: "Arjun Mehta",
-    role: "Computer Science Student",
-    year: "2024"
+    name: "Mr. Anuraag Gupta",
+    role: "Chairperson",
+    year: "2026"
   }*/
+  {
+    id: 6,
+    quote: "The mentorship and guidance from IEEE seniors helped me land my dream internship. Forever grateful to this community.",
+    name: "Ms Madhusmita",
+    role: "General Secretary",
+    year: "2026"
+  }
 ];
 
 const TestimonialsSection = () => {
@@ -128,9 +135,9 @@ const TestimonialsSection = () => {
       </div>
 
       <div className="container mx-auto px-4 mt-8">
-        <p className="text-center text-sm text-muted-foreground">
+        {/* <p className="text-center text-sm text-muted-foreground">
           Hover to pause • Scroll automatically
-        </p>
+        </p> */}
       </div>
     </section>
   );
