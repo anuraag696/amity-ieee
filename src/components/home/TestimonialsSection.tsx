@@ -16,21 +16,21 @@ const testimonials = [
     role: "Ex-VC IEEE SB AUR",
     year: "2023"
   },
-  /*{
+  {
     id: 3,
     quote: "The community here is amazing. I've made lifelong connections and learned skills that no classroom could teach me.",
-    name: "Ananya Gupta",
-    role: "IT Student",
-    year: "2023"
+    name: "Ms. Manasvini Garg",
+    role: "Ex-Chairperson IEEE SB AUR",
+    year: "2024"
   },
   {
     id: 4,
     quote: "IEEE events gave me the confidence to present my ideas and collaborate with like-minded individuals. Truly a transformative experience.",
-    name: "Vikram Singh",
-    role: "Mechanical Engineering Student",
+    name: "Mr. Kapil Dhama",
+    role: "Ex-VC IEEE SB AUR",
     year: "2024"
   },
-  {
+  /*{
     id: 5,
     quote: "From technical workshops to leadership opportunities, IEEE has been the cornerstone of my college journey.",
     name: "Sneha Patel",
