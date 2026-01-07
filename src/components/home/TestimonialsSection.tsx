@@ -30,14 +30,14 @@ const testimonials = [
     role: "Ex-VC IEEE SB AUR",
     year: "2024"
   },
-  /*{
+  {
     id: 5,
     quote: "From technical workshops to leadership opportunities, IEEE has been the cornerstone of my college journey.",
-    name: "Sneha Patel",
-    role: "Electrical Engineering Student",
-    year: "2023"
+    name: "Mr. Dhruv Mittal",
+    role: "Ex-Chairperson",
+    year: "2025"
   },
-  {
+  /*{
     id: 6,
     quote: "The mentorship and guidance from IEEE seniors helped me land my dream internship. Forever grateful to this community.",
     name: "Arjun Mehta",
