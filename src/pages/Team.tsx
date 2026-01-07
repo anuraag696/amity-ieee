@@ -10,6 +10,7 @@ import nitinPhoto from "@/assets/nitin-mishra.jpeg";
 import ashokPhoto from "@/assets/ashok-chauhan.png";
 import amitPhoto from "@/assets/amit-jain.png";
 import aseriPhoto from "@/assets/aseri.png";
+import aseemPhoto from "@/assets/aseem-chauhan.jpg";
 
 const supportingPillars = [{
   id: 1,
@@ -23,7 +24,8 @@ const supportingPillars = [{
   name: "Dr. Aseem Chauhan",
   role: "Chancellor",
   department: "Amity University Rajasthan, Jaipur",
-  email: "#"
+  email: "#",
+  image: aseemPhoto
 }, {
   id: 3,
   name: "Prof. (Dr.) Amit Jain",
