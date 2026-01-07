@@ -7,6 +7,7 @@ import EventsPreview from "@/components/home/EventsPreview";
 import TeamPreview from "@/components/home/TeamPreview";
 import CTASection from "@/components/home/CTASection";
 import HackathonHighlight from "@/components/home/HackathonHighlight";
+import TestimonialsSection from "@/components/home/TestimonialsSection";
 
 const Index = () => {
   return (
@@ -19,6 +20,7 @@ const Index = () => {
         <ActivitiesSection />
         <EventsPreview />
         <TeamPreview />
+        <TestimonialsSection />
         <CTASection />
       </main>
       <Footer />
