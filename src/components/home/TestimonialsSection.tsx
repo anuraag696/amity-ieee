@@ -3,6 +3,13 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
   {
+    id: 1,
+    quote: "The mentorship and guidance from IEEE seniors helped me land my dream internship. Forever grateful to this community for believing in me when I was just starting out. The mock interview sessions, resume building workshops, and networking events gave me a competitive edge. IEEE taught me that success is not just about technical skills, but also about building meaningful relationships and contributing to the community.",
+    name: "Ms. Madhusmita",
+    role: "General Secretary IEEE SB AUR",
+    year: "2026"
+  },
+  {
     id: 2,
     quote: "IEEE has been instrumental in shaping my technical skills and professional network. The workshops and events are truly world-class. From hands-on coding sessions to leadership development programs, every experience has added immense value to my journey. The mentorship from seniors and the collaborative spirit among members made my time here unforgettable. I've grown not just as an engineer, but as a leader and communicator.",
     name: "Mr. Yashaswi Diwakar Sinha",
@@ -36,13 +43,6 @@ const testimonials = [
     name: "Mr. Dhruv Mittal",
     role: "Ex-Chairperson IEEE SB AUR",
     year: "2025"
-  },
-  {
-    id: 1,
-    quote: "The mentorship and guidance from IEEE seniors helped me land my dream internship. Forever grateful to this community for believing in me when I was just starting out. The mock interview sessions, resume building workshops, and networking events gave me a competitive edge. IEEE taught me that success is not just about technical skills, but also about building meaningful relationships and contributing to the community.",
-    name: "Ms. Madhusmita",
-    role: "General Secretary IEEE SB AUR",
-    year: "2026"
   }
 ];
 
