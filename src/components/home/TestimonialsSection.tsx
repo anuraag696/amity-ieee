@@ -4,49 +4,42 @@ import { Quote } from "lucide-react";
 const testimonials = [
   {
     id: 1,
-    quote: "IEEE has been instrumental in shaping my technical skills and professional network. The workshops and events are truly world-class.",
+    quote: "IEEE has been instrumental in shaping my technical skills and professional network. The workshops and events are truly world-class. From hands-on coding sessions to leadership development programs, every experience has added immense value to my journey. The mentorship from seniors and the collaborative spirit among members made my time here unforgettable. I've grown not just as an engineer, but as a leader and communicator.",
     name: "Mr. Yashaswi Diwakar Sinha",
     role: "Ex-Chairperson IEEE SB AUR",
     year: "2023"
   },
   {
     id: 2,
-    quote: "Being part of IEEE Amity Jaipur opened doors to incredible opportunities. The hackathons and technical sessions helped me grow immensely.",
+    quote: "Being part of IEEE Amity Jaipur opened doors to incredible opportunities. The hackathons and technical sessions helped me grow immensely as a developer and problem solver. I got to work with some of the brightest minds on campus, and together we built projects that won recognition at national level competitions. The exposure to industry experts through guest lectures was invaluable for understanding real-world applications of our skills.",
     name: "Mr. Yuvraj Singh Nathawat",
     role: "Ex-VC IEEE SB AUR",
     year: "2023"
   },
   {
     id: 3,
-    quote: "The community here is amazing. I've made lifelong connections and learned skills that no classroom could teach me.",
+    quote: "The community here is amazing. I've made lifelong connections and learned skills that no classroom could teach me. IEEE gave me the platform to explore my interests in emerging technologies like AI and IoT through dedicated workshops and project teams. The support system within the organization helped me overcome challenges and push my boundaries. Every event, whether technical or cultural, was a learning experience in itself.",
     name: "Ms. Manasvini Garg",
     role: "Ex-Chairperson IEEE SB AUR",
     year: "2024"
   },
   {
     id: 4,
-    quote: "IEEE events gave me the confidence to present my ideas and collaborate with like-minded individuals. Truly a transformative experience.",
+    quote: "IEEE events gave me the confidence to present my ideas and collaborate with like-minded individuals. Truly a transformative experience that shaped my career path. The technical paper presentations and research symposiums helped me develop critical thinking and communication skills. Working on inter-college collaborations broadened my perspective and taught me the value of diverse viewpoints in solving complex problems.",
     name: "Mr. Kapil Dhama",
     role: "Ex-VC IEEE SB AUR",
     year: "2024"
   },
   {
     id: 5,
-    quote: "From technical workshops to leadership opportunities, IEEE has been the cornerstone of my college journey.",
+    quote: "From technical workshops to leadership opportunities, IEEE has been the cornerstone of my college journey. The organization provided a perfect blend of learning and fun, with events that challenged us intellectually while building lasting friendships. Leading a team of passionate individuals taught me project management, conflict resolution, and the art of motivating others. These experiences prepared me for the professional world like nothing else could.",
     name: "Mr. Dhruv Mittal",
     role: "Ex-Chairperson IEEE SB AUR",
     year: "2025"
   },
-  /*{
-    id: 6,
-    quote: "The mentorship and guidance from IEEE seniors helped me land my dream internship. Forever grateful to this community.",
-    name: "Mr. Anuraag Gupta",
-    role: "Chairperson",
-    year: "2026"
-  }*/
   {
     id: 6,
-    quote: "The mentorship and guidance from IEEE seniors helped me land my dream internship. Forever grateful to this community.",
+    quote: "The mentorship and guidance from IEEE seniors helped me land my dream internship. Forever grateful to this community for believing in me when I was just starting out. The mock interview sessions, resume building workshops, and networking events gave me a competitive edge. IEEE taught me that success is not just about technical skills, but also about building meaningful relationships and contributing to the community.",
     name: "Ms Madhusmita",
     role: "General Secretary IEEE SB AUR",
     year: "2026"
