@@ -5,18 +5,18 @@ const testimonials = [
   {
     id: 1,
     quote: "IEEE has been instrumental in shaping my technical skills and professional network. The workshops and events are truly world-class.",
-    name: "Priya Sharma",
-    role: "Computer Science Student",
-    year: "2024"
+    name: "Mr. Yashaswi Diwakar Sinha",
+    role: "Ex-Chairperson IEEE SB AUR",
+    year: "2023"
   },
   {
     id: 2,
     quote: "Being part of IEEE Amity Jaipur opened doors to incredible opportunities. The hackathons and technical sessions helped me grow immensely.",
-    name: "Rahul Verma",
-    role: "Electronics Engineering Student",
-    year: "2024"
+    name: "Mr. Yuvraj Singh Nathawat",
+    role: "Ex-VC IEEE SB AUR",
+    year: "2023"
   },
-  {
+  /*{
     id: 3,
     quote: "The community here is amazing. I've made lifelong connections and learned skills that no classroom could teach me.",
     name: "Ananya Gupta",
@@ -43,7 +43,7 @@ const testimonials = [
     name: "Arjun Mehta",
     role: "Computer Science Student",
     year: "2024"
-  }
+  }*/
 ];
 
 const TestimonialsSection = () => {
