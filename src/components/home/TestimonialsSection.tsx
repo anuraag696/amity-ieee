@@ -111,7 +111,7 @@ const TestimonialsSection = () => {
         {[...testimonials, ...testimonials].map((testimonial, index) => (
           <div
             key={`${testimonial.id}-${index}`}
-            className="flex-shrink-0 w-[350px] md:w-[400px] group"
+            className="flex-shrink-0 w-[400px] md:w-[480px] group"
           >
             <div className="bg-card border border-border rounded-2xl p-6 h-full shadow-sm transition-all duration-500 group-hover:shadow-xl group-hover:border-primary/30 group-hover:-translate-y-2 group-hover:bg-card/80">
               <Quote className="h-8 w-8 text-primary/30 mb-4 transition-colors duration-300 group-hover:text-primary/60" />
