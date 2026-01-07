@@ -48,7 +48,7 @@ const testimonials = [
     id: 6,
     quote: "The mentorship and guidance from IEEE seniors helped me land my dream internship. Forever grateful to this community.",
     name: "Ms Madhusmita",
-    role: "General Secretary",
+    role: "General Secretary IEEE SB AUR",
     year: "2026"
   }
 ];
