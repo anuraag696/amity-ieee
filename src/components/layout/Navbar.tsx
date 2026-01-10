@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { cn } from "@/lib/utils";
 import logo from "@/assets/logo.png";
 
@@ -43,7 +44,7 @@ const Navbar = () => {
           <img 
             src={logo} 
             alt="IEEE SB Amity University Rajasthan" 
-            className="h-12 w-auto object-contain group-hover:scale-105 transition-transform"
+            className="h-12 w-auto object-contain group-hover:scale-105 transition-transform dark:brightness-110 dark:contrast-110"
           />
         </Link>
 
@@ -62,21 +63,25 @@ const Navbar = () => {
           ))}
         </div>
 
-        {/* CTA Button */}
-        <div className="hidden lg:block animate-scale-in">
+        {/* Right side: Theme Toggle + CTA */}
+        <div className="hidden lg:flex items-center gap-3 animate-scale-in">
+          <ThemeToggle />
           <Button variant="gold" size="sm" className="hover:scale-105 transition-transform hover-glow">
             Join IEEE
           </Button>
         </div>
 
-        {/* Mobile Menu Button */}
-        <button
-          className="lg:hidden p-2 text-foreground hover:text-primary transition-colors"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          aria-label="Toggle menu"
-        >
-          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        {/* Mobile: Theme Toggle + Menu Button */}
+        <div className="lg:hidden flex items-center gap-2">
+          <ThemeToggle />
+          <button
+            className="p-2 text-foreground hover:text-primary transition-colors"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu */}

@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    /* IEEE Blue & Gold Theme */
+    /* IEEE Blue & Gold Theme - Light Mode */
     --background: 210 20% 98%;
     --foreground: 210 50% 10%;
 
@@ -16,7 +16,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 210 50% 10%;
 
-    /* IEEE Blue - Primary */
+    /* IEEE Blue - Primary (#00629B) */
     --primary: 200 100% 30%;
     --primary-foreground: 0 0% 100%;
     
@@ -70,50 +70,66 @@
     --sidebar-ring: 200 100% 30%;
   }
 
+  /* Dark Mode - #0D0D0D background, #FFFFFF text */
   .dark {
-    --background: 210 60% 8%;
-    --foreground: 210 20% 95%;
+    --background: 0 0% 5%;
+    --foreground: 0 0% 100%;
 
-    --card: 210 50% 12%;
-    --card-foreground: 210 20% 95%;
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 210 50% 12%;
-    --popover-foreground: 210 20% 95%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 200 100% 45%;
+    /* IEEE Blue - Adjusted for dark mode contrast */
+    --primary: 200 100% 50%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 20%;
-    --secondary-foreground: 210 20% 95%;
+    --secondary: 210 30% 15%;
+    --secondary-foreground: 0 0% 100%;
 
+    /* Gold Accent - Brighter for dark mode */
     --accent: 45 100% 55%;
-    --accent-foreground: 210 60% 8%;
+    --accent-foreground: 0 0% 5%;
 
-    --muted: 210 40% 18%;
-    --muted-foreground: 210 20% 65%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 65%;
 
-    --destructive: 0 62% 30%;
-    --destructive-foreground: 210 20% 95%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 210 40% 20%;
-    --input: 210 40% 20%;
-    --ring: 200 100% 45%;
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 200 100% 50%;
 
-    --ieee-blue: 200 100% 45%;
-    --ieee-blue-dark: 200 100% 35%;
+    /* Custom Theme Colors - Dark Mode */
+    --ieee-blue: 200 100% 50%;
+    --ieee-blue-dark: 200 100% 40%;
     --ieee-gold: 45 100% 55%;
     --ieee-gold-light: 45 100% 65%;
-    --navy: 210 60% 12%;
-    --navy-light: 210 50% 20%;
+    --navy: 210 40% 10%;
+    --navy-light: 210 35% 18%;
 
-    --sidebar-background: 210 60% 8%;
-    --sidebar-foreground: 210 20% 95%;
-    --sidebar-primary: 200 100% 45%;
+    /* Gradients - Dark Mode */
+    --gradient-primary: linear-gradient(135deg, hsl(200 100% 50%) 0%, hsl(210 40% 20%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(45 100% 55%) 0%, hsl(35 100% 50%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 5%) 0%, hsl(210 30% 8%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 10%) 0%, hsl(0 0% 6%) 100%);
+
+    /* Shadows - Dark Mode (softer, using primary color glow) */
+    --shadow-sm: 0 2px 8px hsl(0 0% 0% / 0.3);
+    --shadow-md: 0 4px 20px hsl(0 0% 0% / 0.4);
+    --shadow-lg: 0 8px 40px hsl(0 0% 0% / 0.5);
+    --shadow-glow: 0 0 30px hsl(200 100% 50% / 0.25);
+
+    --sidebar-background: 0 0% 5%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 200 100% 50%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 45 100% 55%;
-    --sidebar-accent-foreground: 210 60% 8%;
-    --sidebar-border: 210 40% 20%;
-    --sidebar-ring: 200 100% 45%;
+    --sidebar-accent-foreground: 0 0% 5%;
+    --sidebar-border: 0 0% 18%;
+    --sidebar-ring: 200 100% 50%;
   }
 }
 
@@ -122,14 +138,42 @@
     @apply border-border;
   }
 
+  html {
+    @apply scroll-smooth;
+  }
+
   body {
     @apply bg-background text-foreground font-sans antialiased;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-heading;
   }
+
+  /* Smooth theme transition for all elements */
+  *,
+  *::before,
+  *::after {
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* Accessibility: Focus states */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-primary ring-offset-2 ring-offset-background;
+  }
+
+  /* Dark mode image adjustments */
+  .dark img:not([data-no-filter]) {
+    filter: brightness(0.95) contrast(1.05);
+  }
+
+  /* Transparent background images in dark mode */
+  .dark .dark-invert {
+    filter: invert(1) hue-rotate(180deg);
+  }
 }
+
 
 @layer utilities {
   .text-gradient {
@@ -210,7 +254,7 @@
   }
   .hover-lift:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 40px hsl(200 100% 30% / 0.15);
+    box-shadow: var(--shadow-lg);
   }
 
   .hover-scale {
@@ -224,7 +268,7 @@
     @apply transition-shadow duration-300;
   }
   .hover-glow:hover {
-    box-shadow: 0 0 30px hsl(45 100% 50% / 0.4);
+    box-shadow: var(--shadow-glow);
   }
 
   /* Link underline animation */

@@ -1,20 +1,30 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="light" style="color-scheme: light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
 
     <link rel="icon" href="/favicon.ico" />
 
-    <!-- TODO: Set the document title to the name of your application -->
     <title>IEEE SB AUR</title>
     <meta name="description" content="IEEE Student Branch, Amity University Rajasthan" />
     <meta name="author" content="IEEE" />
 
-    <!-- TODO: Update og:title to match your application name -->
     <meta property="og:title" content="IEEE SB AUR" />
     <meta property="og:description" content="IEEE Student Branch, Amity University Rajasthan" />
     <meta property="og:type" content="website" />
+
+    <!-- Prevent FOUC (Flash of Unstyled Content) -->
+    <script>
+      (function() {
+        const stored = localStorage.getItem('ieee-theme-preference');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const theme = stored === 'dark' || (stored === 'system' && prefersDark) || (!stored && prefersDark) ? 'dark' : 'light';
+        document.documentElement.classList.add(theme);
+        document.documentElement.style.colorScheme = theme;
+      })();
+    </script>
   </head>
 
   <body>
