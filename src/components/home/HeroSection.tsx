@@ -1,6 +1,7 @@
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { ScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const HeroSection = () => {
   return (
@@ -27,45 +28,52 @@ const HeroSection = () => {
 
       <div className="container mx-auto px-4 pt-24 pb-16 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Content */}
           <div className="space-y-8">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 bg-accent/10 border border-accent/20 rounded-full px-4 py-2 text-sm font-medium text-accent-foreground animate-fade-in stagger-1 hover-lift">
-              <Sparkles size={16} className="text-accent animate-pulse" />
-              <span>Where Ideas Meet Innovation</span>
-            </div>
+            <ScrollAnimation animation="fade-in" delay={100}>
+              <div className="inline-flex items-center gap-2 bg-accent/10 border border-accent/20 rounded-full px-4 py-2 text-sm font-medium text-accent-foreground hover-lift">
+                <Sparkles size={16} className="text-accent animate-pulse" />
+                <span>Where Ideas Meet Innovation</span>
+              </div>
+            </ScrollAnimation>
 
             {/* Heading */}
-            <div className="space-y-4">
-              <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-foreground animate-slide-up stagger-2">
-                Welcome to{" "}
-                <span className="text-gradient">IEEE Student Branch</span>
-              </h1>
-              <p className="font-heading text-2xl sm:text-3xl font-semibold text-muted-foreground animate-fade-in stagger-3">
-                Amity University Rajasthan
-              </p>
-            </div>
+            <ScrollAnimation animation="slide-up" delay={200}>
+              <div className="space-y-4">
+                <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-foreground">
+                  Welcome to{" "}
+                  <span className="text-gradient">IEEE Student Branch</span>
+                </h1>
+                <p className="font-heading text-2xl sm:text-3xl font-semibold text-muted-foreground">
+                  Amity University Rajasthan
+                </p>
+              </div>
+            </ScrollAnimation>
 
             {/* Description */}
-            <p className="text-lg text-muted-foreground max-w-xl leading-relaxed animate-fade-in stagger-4">
-              IEEE SB AUR is dedicated to advancing technology for humanity through workshops, seminars, and technical events. Join us in shaping the future of technology.
-            </p>
+            <ScrollAnimation animation="fade-in" delay={300}>
+              <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
+                IEEE SB AUR is dedicated to advancing technology for humanity through workshops, seminars, and technical events. Join us in shaping the future of technology.
+              </p>
+            </ScrollAnimation>
 
             {/* CTA Buttons */}
-            <div className="flex flex-wrap gap-4 animate-scale-in stagger-5">
-              <Link to="/events">
-                <Button variant="hero" className="group hover-glow">
-                  Explore Events
-                  <ArrowRight
-                    size={18}
-                    className="group-hover:translate-x-1 transition-transform"
-                  />
-                </Button>
-              </Link>
-              <Link to="/about">
-                <Button variant="heroOutline" className="hover-lift">Learn More</Button>
-              </Link>
-            </div>
+            <ScrollAnimation animation="scale-in" delay={400}>
+              <div className="flex flex-wrap gap-4">
+                <Link to="/events">
+                  <Button variant="hero" className="group hover-glow">
+                    Explore Events
+                    <ArrowRight
+                      size={18}
+                      className="group-hover:translate-x-1 transition-transform"
+                    />
+                  </Button>
+                </Link>
+                <Link to="/about">
+                  <Button variant="heroOutline" className="hover-lift">Learn More</Button>
+                </Link>
+              </div>
+            </ScrollAnimation>
 
             {/* Quick Stats */}
             <div className="flex flex-wrap gap-8 pt-4">
@@ -74,18 +82,20 @@ const HeroSection = () => {
                 { value: "50+", label: "Events" },
                 { value: "20+", label: "Awards" },
               ].map((stat, index) => (
-                <div key={stat.label} className={`text-center animate-bounce-in stagger-${index + 1} hover-lift`}>
-                  <p className="font-heading text-3xl font-bold text-primary">
-                    {stat.value}
-                  </p>
-                  <p className="text-sm text-muted-foreground">{stat.label}</p>
-                </div>
+                <ScrollAnimation key={stat.label} animation="bounce-in" delay={500 + index * 100}>
+                  <div className="text-center hover-lift">
+                    <p className="font-heading text-3xl font-bold text-primary">
+                      {stat.value}
+                    </p>
+                    <p className="text-sm text-muted-foreground">{stat.label}</p>
+                  </div>
+                </ScrollAnimation>
               ))}
             </div>
           </div>
 
           {/* Hero Visual */}
-          <div className="relative hidden lg:flex items-center justify-center animate-slide-in-right">
+          <ScrollAnimation animation="slide-in-right" delay={300} className="relative hidden lg:flex items-center justify-center">
             {/* Main Visual Container */}
             <div className="relative w-full max-w-lg">
               {/* Floating Cards */}
@@ -137,7 +147,7 @@ const HeroSection = () => {
               {/* Decorative Elements */}
               <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-primary/5 rounded-full blur-3xl" />
             </div>
-          </div>
+          </ScrollAnimation>
         </div>
       </div>
 
