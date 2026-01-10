@@ -87,8 +87,8 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <div
         className={cn(
-          "lg:hidden absolute top-full left-0 right-0 bg-card/98 backdrop-blur-lg shadow-lg transition-all duration-300 overflow-hidden",
-          isMobileMenuOpen ? "max-h-[500px] border-b border-border" : "max-h-0"
+          "lg:hidden absolute top-full left-0 right-0 bg-card shadow-lg transition-all duration-300 overflow-hidden border-b border-border",
+          isMobileMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0 border-b-0"
         )}
       >
         <div className="container mx-auto px-4 py-4 flex flex-col gap-2">
