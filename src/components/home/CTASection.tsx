@@ -45,23 +45,25 @@ const CTASection = () => {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-wrap justify-center gap-4 animate-scale-in stagger-4">
-            <Button
-              variant="gold"
-              size="xl"
-              className="group hover-scale hover-glow"
-            >
-              Join IEEE Now
-              <ArrowRight
-                size={18}
-                className="group-hover:translate-x-1 transition-transform"
-              />
-            </Button>
-            <Link to="/contact">
+          <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4 animate-scale-in stagger-4">
+            <a href="https://forms.google.com/your-ieee-form" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+              <Button
+                variant="gold"
+                size="xl"
+                className="group hover-scale hover-glow w-full sm:w-auto"
+              >
+                Join IEEE Now
+                <ArrowRight
+                  size={18}
+                  className="group-hover:translate-x-1 transition-transform"
+                />
+              </Button>
+            </a>
+            <Link to="/contact" className="w-full sm:w-auto">
               <Button
                 variant="outline"
                 size="xl"
-                className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground hover-scale"
+                className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground hover-scale w-full sm:w-auto"
               >
                 <Mail size={18} className="mr-2" />
                 Contact Us

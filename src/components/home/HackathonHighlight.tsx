@@ -49,20 +49,20 @@ const HackathonHighlight = () => {
                   Bring your innovative ideas to life!
                 </p>
 
-                <div className="flex flex-wrap gap-4 mb-6 animate-fade-in stagger-3">
+                <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 mb-6 animate-fade-in stagger-3">
                   <div className="flex items-center gap-2 text-sm text-muted-foreground bg-background/50 px-3 py-2 rounded-lg hover-lift">
-                    <Users className="text-primary" size={16} />
+                    <Users className="text-primary flex-shrink-0" size={16} />
                     Teams of 4-6
                   </div>
                   <div className="flex items-center gap-2 text-sm text-muted-foreground bg-background/50 px-3 py-2 rounded-lg hover-lift">
-                    <MapPin className="text-accent" size={16} />
+                    <MapPin className="text-accent flex-shrink-0" size={16} />
                     Amity Campus
                   </div>
                 </div>
 
-                <div className="flex flex-wrap gap-3 animate-scale-in stagger-4">
-                  <Link to="/whack-hackathon">
-                    <Button variant="default" size="lg" className="group hover-glow">
+                <div className="flex flex-col sm:flex-row flex-wrap gap-3 animate-scale-in stagger-4">
+                  <Link to="/whack-hackathon" className="w-full sm:w-auto">
+                    <Button variant="default" size="lg" className="group hover-glow w-full sm:w-auto">
                       Learn More
                       <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={18} />
                     </Button>
@@ -71,8 +71,9 @@ const HackathonHighlight = () => {
                     href="https://www.instagram.com/whack_hack4.0/"
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="w-full sm:w-auto"
                   >
-                    <Button variant="outline" size="lg" className="gap-2 hover-lift">
+                    <Button variant="outline" size="lg" className="gap-2 hover-lift w-full sm:w-auto">
                       <Instagram size={18} />
                       Follow
                     </Button>

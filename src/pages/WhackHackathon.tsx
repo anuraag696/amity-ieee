@@ -81,17 +81,17 @@ const WhackHackathon = () => {
                 compete with the best, and win exciting prizes!
               </p>
 
-              <div className="flex flex-wrap justify-center gap-6 mb-10 animate-fade-in stagger-4">
-                <div className="flex items-center gap-2 text-muted-foreground hover-lift">
-                  <Users className="text-primary" size={20} />
+              <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4 sm:gap-6 mb-10 animate-fade-in stagger-4">
+                <div className="flex items-center justify-center gap-2 text-muted-foreground hover-lift">
+                  <Users className="text-primary flex-shrink-0" size={20} />
                   <span>Teams of 4-6</span>
                 </div>
-                <div className="flex items-center gap-2 text-muted-foreground hover-lift">
-                  <MapPin className="text-accent" size={20} />
+                <div className="flex items-center justify-center gap-2 text-muted-foreground hover-lift">
+                  <MapPin className="text-accent flex-shrink-0" size={20} />
                   <span>Amity Campus (Final Round)</span>
                 </div>
-                <div className="flex items-center gap-2 text-muted-foreground hover-lift">
-                  <Trophy className="text-primary" size={20} />
+                <div className="flex items-center justify-center gap-2 text-muted-foreground hover-lift">
+                  <Trophy className="text-primary flex-shrink-0" size={20} />
                   <span>Exciting Prizes</span>
                 </div>
               </div>
@@ -246,6 +246,30 @@ const WhackHackathon = () => {
                   Interested in sponsoring? Contact us at the event email.
                 </p>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Registration Section for Other Universities */}
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4">
+            <div className="max-w-2xl mx-auto text-center bg-card rounded-2xl p-8 border border-border hover:border-primary/30 transition-all duration-300 hover-lift">
+              <h3 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-4">
+                From Another University?
+              </h3>
+              <p className="text-muted-foreground mb-6">
+                Students from other universities can register for Whack-Hackathon 4.0! Fill out the registration form to participate.
+              </p>
+              <a 
+                href="https://forms.google.com/your-registration-form" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <Button variant="gold" size="lg" className="hover:scale-105 transition-transform hover-glow">
+                  <Users className="mr-2" size={20} />
+                  Register (Other Universities)
+                </Button>
+              </a>
             </div>
           </div>
         </section>
