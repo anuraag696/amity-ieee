@@ -10,6 +10,7 @@ const navLinks = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
   { name: "Events", path: "/events" },
+  { name: "Whack 4.0", path: "/whack-hackathon" },
   { name: "Team", path: "/team" },
   { name: "Blog", path: "/blog" },
   { name: "Gallery", path: "/gallery" },
@@ -66,9 +67,11 @@ const Navbar = () => {
         {/* Right side: Theme Toggle + CTA */}
         <div className="hidden lg:flex items-center gap-3 animate-scale-in">
           <ThemeToggle />
-          <Button variant="gold" size="sm" className="hover:scale-105 transition-transform hover-glow">
-            Join IEEE
-          </Button>
+          <a href="https://forms.google.com/your-ieee-form" target="_blank" rel="noopener noreferrer">
+            <Button variant="gold" size="sm" className="hover:scale-105 transition-transform hover-glow">
+              Join IEEE
+            </Button>
+          </a>
         </div>
 
         {/* Mobile: Theme Toggle + Menu Button */}
@@ -107,9 +110,11 @@ const Navbar = () => {
             </Link>
           ))}
           <div className="pt-2 border-t border-border mt-2">
-            <Button variant="gold" className="w-full">
-              Join IEEE
-            </Button>
+            <a href="https://forms.google.com/your-ieee-form" target="_blank" rel="noopener noreferrer">
+              <Button variant="gold" className="w-full">
+                Join IEEE
+              </Button>
+            </a>
           </div>
         </div>
       </div>

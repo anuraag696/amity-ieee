@@ -59,9 +59,9 @@ const HeroSection = () => {
 
             {/* CTA Buttons */}
             <ScrollAnimation animation="scale-in" delay={400}>
-              <div className="flex flex-wrap gap-4">
-                <Link to="/events">
-                  <Button variant="hero" className="group hover-glow">
+              <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
+                <Link to="/events" className="w-full sm:w-auto">
+                  <Button variant="hero" className="group hover-glow w-full sm:w-auto">
                     Explore Events
                     <ArrowRight
                       size={18}
@@ -69,9 +69,9 @@ const HeroSection = () => {
                     />
                   </Button>
                 </Link>
-                <Link to="/about">
-                  <Button variant="heroOutline" className="hover-lift">Learn More</Button>
-                </Link>
+                <a href="https://forms.google.com/your-ieee-form" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                  <Button variant="heroOutline" className="hover-lift w-full sm:w-auto">Join IEEE</Button>
+                </a>
               </div>
             </ScrollAnimation>
 
