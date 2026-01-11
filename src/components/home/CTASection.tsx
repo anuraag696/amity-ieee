@@ -46,7 +46,7 @@ const CTASection = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4 animate-scale-in stagger-4">
-            <a href="https://forms.google.com/your-ieee-form" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+            <a href="https://forms.gle/C1qW8SxMaNmyMFhr6" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
               <Button
                 variant="gold"
                 size="xl"

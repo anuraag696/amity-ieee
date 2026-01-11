@@ -69,7 +69,7 @@ const HeroSection = () => {
                     />
                   </Button>
                 </Link>
-                <a href="https://forms.google.com/your-ieee-form" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                <a href="https://forms.gle/C1qW8SxMaNmyMFhr6" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                   <Button variant="heroOutline" className="hover-lift w-full sm:w-auto">Join IEEE</Button>
                 </a>
               </div>

@@ -67,7 +67,7 @@ const Navbar = () => {
         {/* Right side: Theme Toggle + CTA */}
         <div className="hidden lg:flex items-center gap-3 animate-scale-in">
           <ThemeToggle />
-          <a href="https://forms.google.com/your-ieee-form" target="_blank" rel="noopener noreferrer">
+          <a href="https://forms.gle/C1qW8SxMaNmyMFhr6" target="_blank" rel="noopener noreferrer">
             <Button variant="gold" size="sm" className="hover:scale-105 transition-transform hover-glow">
               Join IEEE
             </Button>
@@ -110,7 +110,7 @@ const Navbar = () => {
             </Link>
           ))}
           <div className="pt-2 border-t border-border mt-2">
-            <a href="https://forms.google.com/your-ieee-form" target="_blank" rel="noopener noreferrer">
+            <a href="https://forms.gle/C1qW8SxMaNmyMFhr6" target="_blank" rel="noopener noreferrer">
               <Button variant="gold" className="w-full">
                 Join IEEE
               </Button>

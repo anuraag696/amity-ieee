@@ -261,7 +261,7 @@ const WhackHackathon = () => {
                 Students from other universities can register for Whack-Hackathon 4.0! Fill out the registration form to participate.
               </p>
               <a 
-                href="https://forms.google.com/your-registration-form" 
+                href="https://forms.gle/nNPC1vzTZYLqPtJu7" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
