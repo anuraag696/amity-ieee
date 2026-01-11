@@ -75,14 +75,14 @@ const Navbar = () => {
         </div>
 
         {/* Mobile: Theme Toggle + Menu Button */}
-        <div className="lg:hidden flex items-center gap-1 mr-2">
+        <div className="lg:hidden flex items-center gap-2">
           <ThemeToggle />
           <button
-            className="p-1.5 text-foreground hover:text-primary transition-colors"
+            className="p-2 text-foreground hover:text-primary transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
-            {isMobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
+            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
       </div>
