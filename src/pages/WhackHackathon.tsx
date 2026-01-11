@@ -25,7 +25,7 @@ const timeline = [
     mode: "Offline - Amity Campus",
     icon: Code,
     description: "The final showdown! 24 hours of continuous coding at our campus. Build, innovate, and compete!",
-    date: "Feb 17-18, 2025",
+    date: "Feb 17-18, 2026",
   },
 ];
 
@@ -69,7 +69,7 @@ const WhackHackathon = () => {
 
               <div className="inline-flex items-center gap-2 bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-semibold mb-6 animate-fade-in stagger-1 animate-pulse-slow">
                 <Calendar size={16} />
-                February 17-18, 2025
+                February 17-18, 2026
               </div>
               
               <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 animate-slide-up stagger-2">
