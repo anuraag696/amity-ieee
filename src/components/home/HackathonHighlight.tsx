@@ -33,7 +33,7 @@ const HackathonHighlight = () => {
                   />
                   <div className="inline-flex items-center gap-2 bg-background/20 backdrop-blur-sm text-foreground px-4 py-2 rounded-full text-sm font-semibold animate-fade-in stagger-2">
                     <Calendar size={16} />
-                    Feb 17-18, 2025
+                    Feb 17-18, 2026
                   </div>
                 </div>
               </div>
