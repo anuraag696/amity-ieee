@@ -74,14 +74,17 @@ const Navbar = () => {
           </a>
         </div>
 
-        {/* Mobile: Menu Button */}
-        <button
-          className="lg:hidden p-1.5 mr-2 text-foreground hover:text-primary transition-colors"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          aria-label="Toggle menu"
-        >
-          {isMobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
-        </button>
+        {/* Mobile: Theme Toggle + Menu Button */}
+        <div className="lg:hidden flex items-center gap-1 mr-2">
+          <ThemeToggle />
+          <button
+            className="p-1.5 text-foreground hover:text-primary transition-colors"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            {isMobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu */}
@@ -106,11 +109,7 @@ const Navbar = () => {
               </Button>
             </Link>
           ))}
-          <div className="pt-2 border-t border-border mt-2 flex flex-col gap-2">
-            <div className="flex items-center justify-between">
-              <span className="text-sm text-muted-foreground">Theme</span>
-              <ThemeToggle />
-            </div>
+          <div className="pt-2 border-t border-border mt-2">
             <a href="https://forms.gle/C1qW8SxMaNmyMFhr6" target="_blank" rel="noopener noreferrer">
               <Button variant="gold" className="w-full">
                 Join IEEE
