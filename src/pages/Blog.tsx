@@ -11,17 +11,17 @@ const blogPosts = [
     excerpt:
       "Explore the fundamentals of machine learning, from basic concepts to practical applications in real-world scenarios.",
     author: "Tech Team",
-    date: "Dec 15, 2024",
+    date: "Dec 15, 2025",
     category: "Tutorial",
     readTime: "8 min read",
   },
   {
     id: 2,
-    title: "Highlights from TechVista 2024 Hackathon",
+    title: "Highlights from TechVista 2025 Hackathon",
     excerpt:
       "A recap of our annual hackathon featuring innovative projects, winning teams, and memorable moments.",
     author: "Events Team",
-    date: "Dec 10, 2024",
+    date: "Dec 10, 2025",
     category: "Event Recap",
     readTime: "5 min read",
   },
@@ -31,7 +31,7 @@ const blogPosts = [
     excerpt:
       "Discover the benefits of IEEE membership and how it can accelerate your professional growth and career.",
     author: "Editorial Team",
-    date: "Dec 5, 2024",
+    date: "Dec 5, 2025",
     category: "Career",
     readTime: "6 min read",
   },
@@ -41,7 +41,7 @@ const blogPosts = [
     excerpt:
       "Learn the basics of cloud computing and get started with Amazon Web Services for your projects.",
     author: "Tech Team",
-    date: "Nov 28, 2024",
+    date: "Nov 28, 2025",
     category: "Tutorial",
     readTime: "10 min read",
   },
@@ -51,7 +51,7 @@ const blogPosts = [
     excerpt:
       "A step-by-step guide to creating your first React application from scratch with modern best practices.",
     author: "Tech Team",
-    date: "Nov 20, 2024",
+    date: "Nov 20, 2025",
     category: "Tutorial",
     readTime: "12 min read",
   },
@@ -61,7 +61,7 @@ const blogPosts = [
     excerpt:
       "Expert advice and strategies to ace your technical interviews and land your dream job.",
     author: "Career Team",
-    date: "Nov 15, 2024",
+    date: "Nov 15, 2025",
     category: "Career",
     readTime: "7 min read",
   },

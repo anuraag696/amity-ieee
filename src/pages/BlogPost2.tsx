@@ -23,7 +23,7 @@ const BlogPost2 = () => {
                 Event Recap
               </span>
               <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6 animate-slide-up">
-                Highlights from TechVista 2024 Hackathon
+                Highlights from TechVista 2025 Hackathon
               </h1>
               <div className="flex flex-wrap items-center gap-6 text-muted-foreground">
                 <div className="flex items-center gap-2">
@@ -32,7 +32,7 @@ const BlogPost2 = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <Calendar size={18} className="text-accent" />
-                  <span>December 10, 2024</span>
+                  <span>December 10, 2025</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Clock size={18} className="text-primary" />
@@ -55,7 +55,7 @@ const BlogPost2 = () => {
               {/* Introduction */}
               <div className="prose prose-lg max-w-none">
                 <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                  TechVista 2024 was nothing short of spectacular! Over 500 participants from 50+ colleges gathered for 36 hours of non-stop innovation, coding, and creativity. Here's a comprehensive recap of everything that made this hackathon unforgettable.
+                  TechVista 2025 was nothing short of spectacular! Over 500 participants from 50+ colleges gathered for 36 hours of non-stop innovation, coding, and creativity. Here's a comprehensive recap of everything that made this hackathon unforgettable.
                 </p>
 
                 {/* Event Stats */}
@@ -216,7 +216,7 @@ const BlogPost2 = () => {
                 <div className="bg-card border border-primary/20 rounded-xl p-6 mb-8">
                   <h3 className="font-heading text-xl font-bold text-foreground mb-3">What's Next?</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    TechVista 2024 set a new benchmark for collegiate hackathons. But this is just the beginning! We're already planning TechVista 2025 with even bigger prizes, more tracks, and exciting surprises. Follow us on social media and stay tuned for early bird registrations opening in August 2025!
+                    TechVista 2025 set a new benchmark for collegiate hackathons. But this is just the beginning! We're already planning TechVista 2025 with even bigger prizes, more tracks, and exciting surprises. Follow us on social media and stay tuned for early bird registrations opening in August 2025!
                   </p>
                 </div>
 

@@ -32,7 +32,7 @@ const BlogPost3 = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <Calendar size={18} className="text-accent" />
-                  <span>December 5, 2024</span>
+                  <span>December 5, 2025</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Clock size={18} className="text-primary" />
@@ -178,7 +178,7 @@ const BlogPost3 = () => {
                       <p className="text-muted-foreground italic mb-3">
                         "Joining IEEE was the best decision of my college life. The workshops helped me learn skills that I couldn't get in classrooms, and the network I built led to my internship at a top tech company."
                       </p>
-                      <p className="text-sm font-semibold text-foreground">- Priya Sharma, CSE 2024</p>
+                      <p className="text-sm font-semibold text-foreground">- Priya Sharma, CSE 2025</p>
                     </div>
                     <div className="bg-card border border-border rounded-xl p-5">
                       <p className="text-muted-foreground italic mb-3">

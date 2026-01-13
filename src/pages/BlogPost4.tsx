@@ -32,7 +32,7 @@ const BlogPost4 = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <Calendar size={18} className="text-accent" />
-                  <span>November 28, 2024</span>
+                  <span>November 28, 2025</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Clock size={18} className="text-primary" />
