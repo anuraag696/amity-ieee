@@ -2,6 +2,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Calendar, User, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const blogPosts = [
   {
@@ -145,16 +146,18 @@ const Blog = () => {
                       <span className="text-xs">{post.readTime}</span>
                     </div>
 
-                    <Button
-                      variant="ghost"
-                      className="w-full justify-center group/btn text-primary hover:bg-primary/10"
-                    >
-                      Read More
-                      <ArrowRight
-                        size={16}
-                        className="ml-2 group-hover/btn:translate-x-1 transition-transform"
-                      />
-                    </Button>
+                    <Link to={`/blog/${post.id}`}>
+                      <Button
+                        variant="ghost"
+                        className="w-full justify-center group/btn text-primary hover:bg-primary/10"
+                      >
+                        Read More
+                        <ArrowRight
+                          size={16}
+                          className="ml-2 group-hover/btn:translate-x-1 transition-transform"
+                        />
+                      </Button>
+                    </Link>
                   </div>
                 </article>
               ))}
