@@ -45,24 +45,45 @@ const upcomingEvents = [
 const pastEvents = [
   {
     id: 4,
+    title: "Whack-Hackathon 3.0",
+    type: "Hackathon",
+    date: "Sep 14-15, 2024",
+    description: "Our biggest hackathon yet! 200+ participants competed in a 36-hour coding marathon with ₹80,000 prize pool.",
+    hasPage: true,
+    link: "/whack-hackathon-3",
+  },
+  {
+    id: 5,
+    title: "Whack-Hackathon 2.0",
+    type: "Hackathon",
+    date: "Feb 10-11, 2024",
+    description: "120+ participants joined for a 24-hour hackathon focusing on healthcare, sustainability, and EdTech innovations.",
+    hasPage: true,
+    link: "/whack-hackathon-2",
+  },
+  {
+    id: 6,
     title: "Spark 2025 @IEEE Day",
     type: "Event",
     date: "Oct 7, 2025",
     description: "Annual IEEE Day celebration featuring panel discussions, technical quizzes, debates, and networking sessions.",
+    hasPage: false,
   },
   {
-    id: 5,
+    id: 7,
     title: "Introspect 6",
     type: "Workshop",
     date: "Sep 26, 2024",
     description: "Cybersecurity Awareness workshop featuring expert talk on cybersecurity threats, best practices, and career opportunities in security.",
+    hasPage: false,
   },
   {
-    id: 6,
+    id: 8,
     title: "Web Development Bootcamp",
     type: "Workshop",
     date: "Dec 10, 2024",
     description: "Intensive workshop on modern web development with React, Node.js, and cloud deployment.",
+    hasPage: false,
   },
 ];
 
@@ -178,7 +199,7 @@ const Events = () => {
               {pastEvents.map((event, index) => (
                 <div
                   key={event.id}
-                  className={`bg-card rounded-2xl p-6 border border-border hover:border-primary/20 transition-all duration-300 hover-lift animate-scale-in stagger-${index + 1}`}
+                  className={`group bg-card rounded-2xl p-6 border border-border hover:border-primary/20 transition-all duration-300 hover-lift animate-scale-in stagger-${index + 1}`}
                 >
                   <div className="flex items-center gap-3 mb-4">
                     <span
@@ -187,6 +208,8 @@ const Events = () => {
                           ? "bg-accent/20 text-accent-foreground"
                           : event.type === "Event"
                           ? "bg-primary/20 text-primary"
+                          : event.type === "Hackathon"
+                          ? "bg-primary text-primary-foreground"
                           : "bg-secondary/20 text-secondary-foreground"
                       }`}
                     >
@@ -197,7 +220,15 @@ const Events = () => {
                   <h3 className="font-heading font-semibold text-lg text-foreground mb-2 group-hover:text-primary transition-colors">
                     {event.title}
                   </h3>
-                  <p className="text-sm text-muted-foreground">{event.description}</p>
+                  <p className="text-sm text-muted-foreground mb-4">{event.description}</p>
+                  {event.hasPage && (
+                    <Link to={event.link}>
+                      <Button variant="outline" size="sm" className="w-full group/btn">
+                        View Details
+                        <ArrowRight size={14} className="ml-2 group-hover/btn:translate-x-1 transition-transform" />
+                      </Button>
+                    </Link>
+                  )}
                 </div>
               ))}
             </div>
