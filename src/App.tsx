@@ -9,6 +9,12 @@ import About from "./pages/About";
 import Events from "./pages/Events";
 import Team from "./pages/Team";
 import Blog from "./pages/Blog";
+import BlogPost1 from "./pages/BlogPost1";
+import BlogPost2 from "./pages/BlogPost2";
+import BlogPost3 from "./pages/BlogPost3";
+import BlogPost4 from "./pages/BlogPost4";
+import BlogPost5 from "./pages/BlogPost5";
+import BlogPost6 from "./pages/BlogPost6";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import WhackHackathon from "./pages/WhackHackathon";
@@ -31,6 +37,12 @@ const App = () => (
             <Route path="/events" element={<Events />} />
             <Route path="/team" element={<Team />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/1" element={<BlogPost1 />} />
+            <Route path="/blog/2" element={<BlogPost2 />} />
+            <Route path="/blog/3" element={<BlogPost3 />} />
+            <Route path="/blog/4" element={<BlogPost4 />} />
+            <Route path="/blog/5" element={<BlogPost5 />} />
+            <Route path="/blog/6" element={<BlogPost6 />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/whack-hackathon" element={<WhackHackathon />} />
