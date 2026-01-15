@@ -2,8 +2,12 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Calendar, MapPin, Clock, Users, Trophy, Code, Presentation, Lightbulb, ArrowRight, Instagram, QrCode, Sparkles, ScanLine } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useCountdown } from "@/hooks/use-countdown";
 import whackLogo from "@/assets/whack-hackathon-logo.jpeg";
 import whackQR from "@/assets/whack-4-qr.png";
+
+// Target date: February 17, 2026
+const HACKATHON_DATE = new Date("2026-02-17T00:00:00");
 const timeline = [
   {
     round: "Round 1",
@@ -48,6 +52,8 @@ const prizes = [
 ];
 
 const WhackHackathon = () => {
+  const countdown = useCountdown(HACKATHON_DATE);
+
   return (
     <div className="min-h-screen">
       <Navbar />
@@ -80,6 +86,37 @@ const WhackHackathon = () => {
                 A 3-round hackathon culminating in a 24-hour coding marathon. Bring your ideas to life, 
                 compete with the best, and win exciting prizes!
               </p>
+
+              {/* Countdown Timer */}
+              <div className="mb-10 animate-scale-in stagger-3">
+                <p className="text-sm text-muted-foreground mb-4 flex items-center justify-center gap-2">
+                  <Clock size={16} className="text-primary" />
+                  {countdown.isExpired ? "Event has started!" : "Countdown to Hackathon"}
+                </p>
+                <div className="flex justify-center gap-3 sm:gap-4">
+                  {[
+                    { value: countdown.days, label: "Days" },
+                    { value: countdown.hours, label: "Hours" },
+                    { value: countdown.minutes, label: "Mins" },
+                    { value: countdown.seconds, label: "Secs" },
+                  ].map((item, index) => (
+                    <div
+                      key={item.label}
+                      className="relative group"
+                    >
+                      <div className="absolute -inset-1 bg-gradient-to-r from-primary to-accent rounded-2xl blur opacity-30 group-hover:opacity-50 transition-opacity" />
+                      <div className="relative bg-card/90 backdrop-blur-sm border border-primary/20 rounded-xl px-4 py-3 sm:px-6 sm:py-4 min-w-[70px] sm:min-w-[85px]">
+                        <div className="text-2xl sm:text-4xl font-bold text-foreground font-mono">
+                          {String(item.value).padStart(2, "0")}
+                        </div>
+                        <div className="text-xs sm:text-sm text-muted-foreground uppercase tracking-wider mt-1">
+                          {item.label}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
 
               <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4 sm:gap-6 mb-10 animate-fade-in stagger-4">
                 <div className="flex items-center justify-center gap-2 text-muted-foreground hover-lift">
