@@ -121,7 +121,7 @@ const WhackHackathon = () => {
               <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4 sm:gap-6 mb-10 animate-fade-in stagger-4">
                 <div className="flex items-center justify-center gap-2 text-muted-foreground hover-lift">
                   <Users className="text-primary flex-shrink-0" size={20} />
-                  <span>Teams of 4-6</span>
+                  <span>Teams of 2-4</span>
                 </div>
                 <div className="flex items-center justify-center gap-2 text-muted-foreground hover-lift">
                   <MapPin className="text-accent flex-shrink-0" size={20} />
@@ -155,7 +155,7 @@ const WhackHackathon = () => {
                       Scan QR or click button to apply
                     </p>
                     <a
-                      href="https://demo-registration-link.com"
+                      href="https://forms.gle/95yXC9nfsxqrcaPy9"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block"
