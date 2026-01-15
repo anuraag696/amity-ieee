@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
-import { Calendar, MapPin, Users, ArrowRight, Instagram } from "lucide-react";
+import { Calendar, MapPin, Users, ArrowRight, Instagram, ScanLine } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import whackLogo from "@/assets/whack-hackathon-logo.jpeg";
+import whackQR from "@/assets/whack-4-qr.png";
 
 const HackathonHighlight = () => {
   return (
@@ -61,23 +62,46 @@ const HackathonHighlight = () => {
                 </div>
 
                 <div className="flex flex-col sm:flex-row flex-wrap gap-3 animate-scale-in stagger-4">
-                  <Link to="/whack-hackathon" className="w-full sm:w-auto">
-                    <Button variant="default" size="lg" className="group hover-glow w-full sm:w-auto">
-                      Learn More
-                      <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={18} />
-                    </Button>
-                  </Link>
                   <a
-                    href="https://www.instagram.com/whack_hack4.0/"
+                    href="https://demo-registration-link.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full sm:w-auto"
                   >
-                    <Button variant="outline" size="lg" className="gap-2 hover-lift w-full sm:w-auto">
-                      <Instagram size={18} />
-                      Follow
+                    <Button variant="default" size="lg" className="group hover-glow w-full sm:w-auto bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90">
+                      Register Now
+                      <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={18} />
                     </Button>
                   </a>
+                  <Link to="/whack-hackathon" className="w-full sm:w-auto">
+                    <Button variant="outline" size="lg" className="group hover-lift w-full sm:w-auto">
+                      Learn More
+                      <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={18} />
+                    </Button>
+                  </Link>
+                </div>
+
+                {/* QR Code Section */}
+                <div className="mt-6 pt-6 border-t border-border/50 animate-fade-in stagger-5">
+                  <div className="flex items-center gap-4">
+                    <div className="relative group">
+                      <div className="absolute -inset-1 bg-gradient-to-r from-primary to-accent rounded-xl blur opacity-30 group-hover:opacity-50 transition-opacity" />
+                      <img
+                        src={whackQR}
+                        alt="Scan to Register"
+                        className="relative w-20 h-20 rounded-lg border-2 border-primary/30 bg-white p-1 hover:scale-105 transition-transform"
+                      />
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-sm font-medium text-foreground flex items-center gap-2">
+                        <ScanLine size={16} className="text-primary" />
+                        Quick Register
+                      </p>
+                      <p className="text-xs text-muted-foreground mt-1">
+                        Click the button above or scan QR to apply
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
