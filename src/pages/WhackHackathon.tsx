@@ -1,6 +1,6 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import { Calendar, MapPin, Clock, Users, Trophy, Code, Presentation, Lightbulb, ArrowRight, Instagram, QrCode, Sparkles } from "lucide-react";
+import { Calendar, MapPin, Clock, Users, Trophy, Code, Presentation, Lightbulb, ArrowRight, Instagram, QrCode, Sparkles, ScanLine } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import whackLogo from "@/assets/whack-hackathon-logo.jpeg";
 import whackQR from "@/assets/whack-4-qr.png";
@@ -96,11 +96,40 @@ const WhackHackathon = () => {
                 </div>
               </div>
 
-              <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-6 inline-block animate-scale-in stagger-5 hover-lift">
-                <p className="text-muted-foreground mb-3">Registration Opening Soon</p>
-                <Button variant="default" size="lg" disabled className="opacity-75">
-                  Coming Soon
-                </Button>
+              {/* Registration CTA with QR */}
+              <div className="bg-card/80 backdrop-blur-sm border border-primary/20 rounded-3xl p-8 animate-scale-in stagger-5 hover-lift max-w-xl mx-auto">
+                <div className="flex flex-col sm:flex-row items-center gap-6">
+                  {/* QR Code */}
+                  <div className="relative group flex-shrink-0">
+                    <div className="absolute -inset-2 bg-gradient-to-r from-primary to-accent rounded-2xl blur opacity-30 group-hover:opacity-50 transition-opacity" />
+                    <div className="relative bg-white p-3 rounded-xl border-2 border-primary/30">
+                      <img
+                        src={whackQR}
+                        alt="Scan to Register"
+                        className="w-28 h-28 object-contain group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                  </div>
+
+                  {/* CTA Content */}
+                  <div className="flex-1 text-center sm:text-left">
+                    <p className="text-sm font-medium text-muted-foreground mb-3 flex items-center justify-center sm:justify-start gap-2">
+                      <ScanLine size={16} className="text-primary" />
+                      Scan QR or click button to apply
+                    </p>
+                    <a
+                      href="https://demo-registration-link.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block"
+                    >
+                      <Button variant="default" size="lg" className="w-full group bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 hover-glow">
+                        Register Now
+                        <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={18} />
+                      </Button>
+                    </a>
+                  </div>
+                </div>
               </div>
 
               {/* Social Links */}
