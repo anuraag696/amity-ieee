@@ -53,7 +53,7 @@ const HackathonHighlight = () => {
                 <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 mb-6 animate-fade-in stagger-3">
                   <div className="flex items-center gap-2 text-sm text-muted-foreground bg-background/50 px-3 py-2 rounded-lg hover-lift">
                     <Users className="text-primary flex-shrink-0" size={16} />
-                    Teams of 2-4.
+                    Teams of 2-4
                   </div>
                   <div className="flex items-center gap-2 text-sm text-muted-foreground bg-background/50 px-3 py-2 rounded-lg hover-lift">
                     <MapPin className="text-accent flex-shrink-0" size={16} />
