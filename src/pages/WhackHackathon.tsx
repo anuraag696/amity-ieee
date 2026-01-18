@@ -317,18 +317,57 @@ const WhackHackathon = () => {
         </section>
 
 
-        {/* CTA Section */}
-        <section className="py-20 bg-gradient-primary">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="font-heading text-3xl sm:text-4xl font-bold text-primary-foreground mb-6 animate-slide-up">
-              Ready to Hack?
+        {/* Final CTA Section */}
+        <section className="py-20 bg-gradient-to-br from-primary via-primary/90 to-accent relative overflow-hidden">
+          {/* Animated Background Elements */}
+          <div className="absolute inset-0 overflow-hidden">
+            <div className="absolute top-10 left-10 w-32 h-32 bg-white/10 rounded-full blur-2xl animate-pulse" />
+            <div className="absolute bottom-10 right-10 w-48 h-48 bg-accent/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+            <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-white/5 rounded-full blur-xl animate-pulse" style={{ animationDelay: '0.5s' }} />
+          </div>
+          
+          <div className="container mx-auto px-4 text-center relative z-10">
+            <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm text-white px-5 py-2 rounded-full text-sm font-bold mb-6 animate-bounce-in">
+              <Sparkles size={18} className="animate-pulse" />
+              REGISTRATIONS OPEN NOW!
+              <Sparkles size={18} className="animate-pulse" />
+            </div>
+            
+            <h2 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 animate-slide-up">
+              Don't Miss Your <span className="text-accent-foreground drop-shadow-lg">Chance!</span>
             </h2>
-            <p className="text-primary-foreground/80 text-lg mb-8 max-w-xl mx-auto animate-fade-in stagger-1">
-              Form your team of 4-6 members and get ready for an incredible hackathon experience!
+            
+            <p className="text-white/90 text-lg sm:text-xl mb-10 max-w-2xl mx-auto animate-fade-in stagger-1">
+              Join 100+ innovators competing for glory. Form your team of 2-4 and showcase your skills at the biggest hackathon of 2026!
             </p>
-            <Button variant="gold" size="lg" disabled className="opacity-75 animate-scale-in stagger-2 hover-glow">
-              Registration Opening Soon
-            </Button>
+            
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-scale-in stagger-2">
+              <a
+                href="https://forms.gle/95yXC9nfsxqrcaPy9"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button size="lg" className="bg-white text-primary hover:bg-white/90 font-bold text-lg px-8 py-6 rounded-full shadow-2xl hover:scale-105 transition-all duration-300 group">
+                  <Sparkles size={20} className="mr-2" />
+                  Register Your Team Now
+                  <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
+                </Button>
+              </a>
+              
+              <a
+                href="https://www.instagram.com/whack_hack4.0/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 bg-white/20 backdrop-blur-sm text-white px-6 py-4 rounded-full font-semibold hover:bg-white/30 transition-all duration-300 hover:scale-105"
+              >
+                <Instagram size={20} />
+                Stay Updated
+              </a>
+            </div>
+            
+            <p className="text-white/70 text-sm mt-8 animate-fade-in stagger-3">
+              Limited spots available • First come, first served
+            </p>
           </div>
         </section>
       </main>
