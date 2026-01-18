@@ -13,23 +13,41 @@ const timeline = [
     round: "Round 1",
     title: "Idea Submission",
     mode: "Online",
+    date: "Feb 10, 2026",
     icon: Lightbulb,
-    description: "Submit your innovative idea and project proposal. Our panel will review and shortlist the best ideas.",
+    description: "Submit your innovative idea and project proposal.",
+    details: [
+      "Submit your idea in a Word document",
+      "Explain the idea, theme and proposed prototype",
+      "Submit through Google Form (released on submission day)",
+    ],
   },
   {
     round: "Round 2",
     title: "Presentation Round",
     mode: "Online",
+    date: "Feb 13, 2026",
     icon: Presentation,
-    description: "Present your idea to the judges. Showcase your vision, approach, and potential impact.",
+    description: "Present your idea to the judges online.",
+    details: [
+      "Submit prototype presentation in PPT format",
+      "PPT format will be shared soon",
+      "Submit via Google Form (released on submission day)",
+      "Online presentation of prototype and idea",
+    ],
   },
   {
     round: "Round 3",
-    title: "24-Hour Coding",
+    title: "24-Hour Offline Hackathon",
     mode: "Offline - Amity Campus",
-    icon: Code,
-    description: "The final showdown! 24 hours of continuous coding at our campus. Build, innovate, and compete!",
     date: "Feb 17-18, 2026",
+    icon: Code,
+    description: "The final showdown at Amity University Rajasthan!",
+    details: [
+      "24 Hours Continuous Coding",
+      "Problem statement will be given on-spot",
+      "Build, code and deploy your solution on campus",
+    ],
   },
 ];
 
@@ -219,17 +237,25 @@ const WhackHackathon = () => {
                           <span className="bg-accent/20 text-accent-foreground px-3 py-1 rounded-full text-xs font-medium">
                             {item.mode}
                           </span>
-                          {item.date && (
-                            <span className="text-sm text-muted-foreground flex items-center gap-1">
-                              <Calendar size={14} />
-                              {item.date}
-                            </span>
-                          )}
+                          <span className="text-sm font-medium text-primary flex items-center gap-1 bg-primary/5 px-3 py-1 rounded-full">
+                            <Calendar size={14} />
+                            {item.date}
+                          </span>
                         </div>
                         <h3 className="font-heading text-xl font-semibold text-foreground mb-2">
                           {item.title}
                         </h3>
-                        <p className="text-muted-foreground">{item.description}</p>
+                        <p className="text-muted-foreground mb-4">{item.description}</p>
+                        
+                        {/* Details List */}
+                        <ul className="space-y-2">
+                          {item.details.map((detail, detailIndex) => (
+                            <li key={detailIndex} className="flex items-start gap-2 text-sm text-muted-foreground">
+                              <span className="text-primary mt-0.5">•</span>
+                              {detail}
+                            </li>
+                          ))}
+                        </ul>
                       </div>
                     </div>
                   ))}
