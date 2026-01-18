@@ -87,17 +87,34 @@ const Footer = () => {
           <div>
             <h4 className="font-heading font-semibold text-accent mb-4">Contact Us</h4>
             <ul className="space-y-3">
-              <li className="flex items-start gap-3 text-sm text-secondary-foreground/80 group">
-                <MapPin size={18} className="text-accent mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
-                <span className="group-hover:text-accent transition-colors duration-300">Amity University Rajasthan, SP-1, Kant Kalwar, RIICO Industrial Area, Jaipur</span>
+              <li>
+                <a 
+                  href="https://maps.google.com/?q=Amity+University+Rajasthan,+SP-1,+Kant+Kalwar,+RIICO+Industrial+Area,+Jaipur"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-3 text-sm text-secondary-foreground/80 group cursor-pointer"
+                >
+                  <MapPin size={18} className="text-accent mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
+                  <span className="group-hover:text-accent transition-colors duration-300">Amity University Rajasthan, SP-1, Kant Kalwar, RIICO Industrial Area, Jaipur</span>
+                </a>
               </li>
-              <li className="flex items-center gap-3 text-sm text-secondary-foreground/80 group">
-                <Mail size={18} className="text-accent flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
-                <span className="group-hover:text-accent transition-colors duration-300">ieee.aur@gmail.com</span>
+              <li>
+                <a 
+                  href="mailto:ieee.aur@gmail.com"
+                  className="flex items-center gap-3 text-sm text-secondary-foreground/80 group cursor-pointer"
+                >
+                  <Mail size={18} className="text-accent flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
+                  <span className="group-hover:text-accent transition-colors duration-300">ieee.aur@gmail.com</span>
+                </a>
               </li>
-              <li className="flex items-center gap-3 text-sm text-secondary-foreground/80 group">
-                <Phone size={18} className="text-accent flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
-                <span className="group-hover:text-accent transition-colors duration-300">+91 85294 85483</span>
+              <li>
+                <a 
+                  href="tel:+918529485483"
+                  className="flex items-center gap-3 text-sm text-secondary-foreground/80 group cursor-pointer"
+                >
+                  <Phone size={18} className="text-accent flex-shrink-0 group-hover:scale-110 transition-transform duration-300" />
+                  <span className="group-hover:text-accent transition-colors duration-300">+91 85294 85483</span>
+                </a>
               </li>
             </ul>
           </div>
