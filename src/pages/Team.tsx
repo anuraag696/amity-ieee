@@ -11,6 +11,7 @@ import ashokPhoto from "@/assets/ashok-chauhan.png";
 import amitPhoto from "@/assets/amit-jain.png";
 import aseriPhoto from "@/assets/aseri.png";
 import aseemPhoto from "@/assets/aseem-chauhan.jpg";
+import madhusmitaPhoto from "@/assets/madhusmita.jpg";
 
 const supportingPillars = [{
   id: 1,
@@ -87,7 +88,8 @@ const executiveTeam = [{
   role: "General Secretary",
   linkedin: "https://www.linkedin.com/in/madhusmita-p1114/",
   instagram: "https://www.instagram.com/palak__1114/",
-  email: "madhusmita@s.ammity.edu"
+  email: "madhusmita@s.ammity.edu",
+  image: madhusmitaPhoto
 }, {
   id: 3,
   name: "Mr. Ishan Verma",

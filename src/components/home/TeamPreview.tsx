@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { ScrollAnimation } from "@/hooks/use-scroll-animation";
 import anuraagPhoto from "@/assets/anuraag-gupta.jpg";
 import manjuKaushikPhoto from "@/assets/manju-kaushik.jpg";
+import madhusmitaPhoto from "@/assets/madhusmita.jpg";
 
 const teamMembers = [
   {
@@ -26,7 +27,7 @@ const teamMembers = [
     id: 3,
     name: "Madhusmita",
     role: "General Secretary",
-    image: null,
+    image: madhusmitaPhoto,
     linkedin: "#",
     instagram: "https://www.instagram.com/palak__1114/",
   },
