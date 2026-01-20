@@ -45,13 +45,7 @@ const testimonials = [
     role: "Ex-Chairperson IEEE SB AUR",
     year: "2025"
   },
-  {
-    id: 7,
-    quote: "As the Chairperson of the IEEE Student Branch at Amity University Rajasthan, I am proud to witness the passion, innovation, and dedication our members bring to every initiative. IEEE has given us a platform to explore ideas beyond the classroom and transform them into impactful projects and events. Leading this vibrant community has strengthened my belief in collaboration, leadership, and continuous learning. Every achievement of our branch reflects the collective effort of students who strive to push boundaries. I am grateful to be a part of this journey, and I look forward to building an even stronger culture of technology, creativity, and excellence.",
-    name: "Mr. Anuraag Gupta",
-    role: "Chairperson IEEE SB AUR",
-    year: "2026"
-  }
+  
 ];
 
 const videoTestimonials = [

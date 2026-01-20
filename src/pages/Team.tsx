@@ -12,6 +12,8 @@ import amitPhoto from "@/assets/amit-jain.png";
 import aseriPhoto from "@/assets/aseri.png";
 import aseemPhoto from "@/assets/aseem-chauhan.jpg";
 import madhusmitaPhoto from "@/assets/madhusmita.jpg";
+import divyankaPhoto from "@/assets/Divyanka.jpeg";
+import dushyantPhoto from "@/assets/Dushyant.jpeg";
 
 const supportingPillars = [{
   id: 1,
@@ -103,13 +105,15 @@ const coreTeam = [{
   name: "Mr. Dushyant",
   role: "Tech Team",
   linkedin: "https://www.linkedin.com/in/b-dushyant-rajawat-69872a36b/",
-  instagram: "#"
+  instagram: "#",
+  image: dushyantPhoto
 }, {
   id: 2,
   name: "Ms. Divyanka Agarwal",
   role: "Media Team",
   linkedin: "https://www.linkedin.com/in/divyanka-agarwal-5b7a8b316/",
-  instagram: "https://www.instagram.com/simply.divyanka/"
+  instagram: "https://www.instagram.com/simply.divyanka/",
+  image: divyankaPhoto
 }, {
   id: 3,
   name: "Mr. Devyansh Sharma",
