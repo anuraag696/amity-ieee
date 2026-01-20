@@ -127,13 +127,13 @@ const coreTeam = [{
   linkedin: "https://www.linkedin.com/in/nitin-mishra-104124178/",
   instagram: "https://www.instagram.com/nitin_mishra188/",
   image: nitinPhoto
-}, {
+}, /*{
   id: 5,
   name: "Mr. Ishan Verma",
   role: "Finance Team",
   linkedin: "https://www.linkedin.com/in/ishanvermaa/",
   instagram: "https://www.instagram.com/eeshan_verma/"
-}, {
+}, */{
   id: 6,
   name: "Mr. Veer Rohra",
   role: "Marketing Team",
