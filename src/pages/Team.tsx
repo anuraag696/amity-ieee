@@ -14,6 +14,9 @@ import aseemPhoto from "@/assets/aseem-chauhan.jpg";
 import madhusmitaPhoto from "@/assets/madhusmita.jpg";
 import divyankaPhoto from "@/assets/Divyanka.jpeg";
 import dushyantPhoto from "@/assets/Dushyant.jpeg";
+import ishanPhoto from "@/assets/ishan-verma.jpeg";
+import veerPhoto from "@/assets/veer-rohra.jpeg";
+
 
 const supportingPillars = [{
   id: 1,
@@ -98,7 +101,8 @@ const executiveTeam = [{
   role: "Treasurer",
   linkedin: "https://www.linkedin.com/in/ishanvermaa/",
   instagram: "https://www.instagram.com/eeshan_verma/",
-  email: "ishan.verma1@s.amity.edu"
+  email: "ishan.verma1@s.amity.edu", 
+  image: ishanPhoto
 }];
 const coreTeam = [{
   id: 1,
@@ -132,13 +136,15 @@ const coreTeam = [{
   name: "Mr. Ishan Verma",
   role: "Finance Team",
   linkedin: "https://www.linkedin.com/in/ishanvermaa/",
-  instagram: "https://www.instagram.com/eeshan_verma/"
+  instagram: "https://www.instagram.com/eeshan_verma/", 
+  image: ishanPhoto
 }, */{
   id: 6,
   name: "Mr. Veer Rohra",
   role: "Marketing Team",
   linkedin: "https://www.linkedin.com/in/veer-rohra/",
-  instagram: "https://www.instagram.com/vvveeerrrrrrrr/"
+  instagram: "https://www.instagram.com/vvveeerrrrrrrr/", 
+  image: veerPhoto
 }];
 const TeamMemberCard = ({
   member,
