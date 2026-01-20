@@ -105,7 +105,7 @@ const coreTeam = [{
   name: "Mr. Dushyant",
   role: "Tech Team",
   linkedin: "https://www.linkedin.com/in/b-dushyant-rajawat-69872a36b/",
-  instagram: "#",
+  instagram: "https://www.instagram.com/dushyantt_rajawatt?igsh=YzhhY3c5Y2Qyb2pv",
   image: dushyantPhoto
 }, {
   id: 2,
