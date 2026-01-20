@@ -5,6 +5,7 @@ import { ScrollAnimation } from "@/hooks/use-scroll-animation";
 import anuraagPhoto from "@/assets/anuraag-gupta.jpg";
 import manjuKaushikPhoto from "@/assets/manju-kaushik.jpg";
 import madhusmitaPhoto from "@/assets/madhusmita.jpg";
+import ishanPhoto from "@/assets/ishan-verma.jpeg";
 
 const teamMembers = [
   {
@@ -28,15 +29,15 @@ const teamMembers = [
     name: "Madhusmita",
     role: "General Secretary",
     image: madhusmitaPhoto,
-    linkedin: "#",
+    linkedin: "https://www.linkedin.com/in/madhusmita-p1114?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     instagram: "https://www.instagram.com/palak__1114/",
   },
   {
     id: 4,
     name: "Ishan Verma",
     role: "Treasurer",
-    image: null,
-    linkedin: "#",
+    image: ishanPhoto,
+    linkedin: "https://www.linkedin.com/in/ishanvermaa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     instagram: "https://www.instagram.com/eeshan_verma/",
   },
 ];
