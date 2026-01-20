@@ -238,17 +238,7 @@ const Team = () => {
           </div>
         </section>
 
-        {/* Student Advisors */}
-        <section className="py-16 bg-background">
-          <div className="container mx-auto px-4">
-            <h2 className="font-heading text-2xl font-bold text-foreground mb-8 text-center animate-slide-up">
-              Student <span className="text-primary">Advisors</span>
-            </h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-3xl mx-auto">
-              {studentAdvisors.map((member, index) => <TeamMemberCard key={member.id} member={member} index={index} />)}
-            </div>
-          </div>
-        </section>
+        
 
         {/* Executive Team */}
         <section className="py-16 bg-card">
@@ -262,7 +252,7 @@ const Team = () => {
           </div>
         </section>
 
-        {/* Core Team */}
+        {/* Core Team Heads*/}
         <section className="py-16 bg-card">
           <div className="container mx-auto px-4">
             <h2 className="font-heading text-2xl font-bold text-foreground mb-8 text-center animate-slide-up">
@@ -270,6 +260,18 @@ const Team = () => {
             </h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
               {coreTeam.map((member, index) => <TeamMemberCard key={member.id} member={member} index={index} />)}
+            </div>
+          </div>
+        </section>
+
+      {/* Student Advisors */}
+        <section className="py-16 bg-background">
+          <div className="container mx-auto px-4">
+            <h2 className="font-heading text-2xl font-bold text-foreground mb-8 text-center animate-slide-up">
+              Student <span className="text-primary">Advisors</span>
+            </h2>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-3xl mx-auto">
+              {studentAdvisors.map((member, index) => <TeamMemberCard key={member.id} member={member} index={index} />)}
             </div>
           </div>
         </section>
