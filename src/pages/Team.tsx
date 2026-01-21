@@ -16,7 +16,7 @@ import divyankaPhoto from "@/assets/Divyanka.jpeg";
 import dushyantPhoto from "@/assets/Dushyant.jpeg";
 import ishanPhoto from "@/assets/ishan-verma.jpeg";
 import veerPhoto from "@/assets/veer-rohra.jpeg";
-
+import devyanshPhoto from "@/assets/devyansh_sharma.jpg";
 
 const supportingPillars = [{
   id: 1,
@@ -123,7 +123,8 @@ const coreTeam = [{
   name: "Mr. Devyansh Sharma",
   role: "Public Relations",
   linkedin: "https://www.linkedin.com/in/devyansh-sharma-a677b730b/",
-  instagram: "https://www.instagram.com/devyansh1004/"
+  instagram: "https://www.instagram.com/devyansh1004/", 
+  image: devyanshPhoto
 }, {
   id: 4,
   name: "Mr. Nitin Mishra",
