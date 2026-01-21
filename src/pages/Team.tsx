@@ -16,7 +16,7 @@ import divyankaPhoto from "@/assets/Divyanka.jpeg";
 import dushyantPhoto from "@/assets/Dushyant.jpeg";
 import ishanPhoto from "@/assets/ishan-verma.jpeg";
 import veerPhoto from "@/assets/veer-rohra.jpeg";
-import devyanshPhoto from "@/assets/devyansh_sharma.jpg";
+import devyanshPhoto from "@/assets/devyansh-sharma.jpg";
 
 const supportingPillars = [{
   id: 1,
