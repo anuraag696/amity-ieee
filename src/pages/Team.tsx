@@ -106,7 +106,7 @@ const executiveTeam = [{
 }];
 const coreTeam = [{
   id: 1,
-  name: "Mr. Dushyant",
+  name: "Mr. Dushyant Rajawat",
   role: "Tech Team",
   linkedin: "https://www.linkedin.com/in/b-dushyant-rajawat-69872a36b/",
   instagram: "https://www.instagram.com/dushyantt_rajawatt?igsh=YzhhY3c5Y2Qyb2pv",
