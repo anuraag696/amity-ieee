@@ -229,8 +229,7 @@ const TestimonialsSection = () => {
           <div className="container mx-auto px-4 mt-6">
             <div className="flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <span className="text-sm text-muted-foreground flex items-center gap-2">
-                <Pause size={14} />
-                Paused • Drag or use arrows to navigate
+                
               </span>
             </div>
           </div>
