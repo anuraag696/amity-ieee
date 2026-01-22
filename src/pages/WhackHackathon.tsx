@@ -391,9 +391,9 @@ const WhackHackathon = () => {
               </a>
             </div>
             
-            <p className="text-white/70 text-sm mt-8 animate-fade-in stagger-3">
+            {/* <p className="text-white/70 text-sm mt-8 animate-fade-in stagger-3">
               Limited spots available • First come, first served
-            </p>
+            </p> */}
           </div>
         </section>
       </main>
