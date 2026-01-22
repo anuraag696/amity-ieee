@@ -24,7 +24,7 @@ const timeline = [
   {
     round: "Round 3",
     title: "24-Hour Coding Marathon",
-    mode: "Offline - Amity Campus",
+    mode: "Offline - Amity University Rajasthan",
     icon: Code,
     date: "February 10-11, 2024",
     description: "The grand finale! 20 teams competed in a 24-hour coding sprint to bring their ideas to life.",

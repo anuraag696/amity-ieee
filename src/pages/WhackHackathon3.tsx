@@ -24,7 +24,7 @@ const timeline = [
   {
     round: "Round 3",
     title: "36-Hour Grand Finale",
-    mode: "Offline - Amity Campus",
+    mode: "Offline - Amity University Rajasthan",
     icon: Code,
     date: "September 14-15, 2024",
     description: "An extended 36-hour coding marathon with mentorship sessions, tech talks, and intense competition.",

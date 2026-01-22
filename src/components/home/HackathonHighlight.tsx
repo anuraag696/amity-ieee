@@ -46,7 +46,7 @@ const HackathonHighlight = () => {
                 </h2>
                 
                 <p className="text-muted-foreground mb-6 leading-relaxed animate-fade-in stagger-2">
-                  A 3-round hackathon experience culminating in a 24-hour coding marathon at Amity Campus. 
+                  A 3-round hackathon experience culminating in a 24-hour coding marathon at Amity University Rajasthan. 
                   Bring your innovative ideas to life!
                 </p>
 
@@ -57,7 +57,7 @@ const HackathonHighlight = () => {
                   </div>
                   <div className="flex items-center gap-2 text-sm text-muted-foreground bg-background/50 px-3 py-2 rounded-lg hover-lift">
                     <MapPin className="text-accent flex-shrink-0" size={16} />
-                    Amity Campus
+                    Amity University Rajasthan
                   </div>
                 </div>
 

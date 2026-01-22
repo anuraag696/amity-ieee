@@ -39,7 +39,7 @@ const timeline = [
   {
     round: "Round 3",
     title: "24-Hour Offline Hackathon",
-    mode: "Offline - Amity Campus",
+    mode: "Offline - Amity University Rajasthan",
     date: "Feb 17-18, 2026",
     icon: Code,
     description: "The final showdown at Amity University Rajasthan!",
@@ -143,7 +143,7 @@ const WhackHackathon = () => {
                 </div>
                 <div className="flex items-center justify-center gap-2 text-muted-foreground hover-lift">
                   <MapPin className="text-accent flex-shrink-0" size={20} />
-                  <span>Amity Campus (Final Round)</span>
+                  <span>Amity University Rajasthan (Final Round)</span>
                 </div>
                 <div className="flex items-center justify-center gap-2 text-muted-foreground hover-lift">
                   <Trophy className="text-primary flex-shrink-0" size={20} />
