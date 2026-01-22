@@ -165,9 +165,13 @@ const TestimonialsSection = () => {
 
       {/* Written Testimonials */}
       {activeTab === "written" && (
-        <div className="relative">
-          {/* Navigation Arrows */}
-          <div className="absolute left-4 top-1/2 -translate-y-1/2 z-10 hidden md:block">
+        <div 
+          className="relative group"
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
+        >
+          {/* Navigation Arrows - Only visible on hover */}
+          <div className="absolute left-4 top-1/2 -translate-y-1/2 z-10 hidden md:block opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <Button
               variant="outline"
               size="icon"
@@ -177,7 +181,7 @@ const TestimonialsSection = () => {
               <ChevronLeft size={20} />
             </Button>
           </div>
-          <div className="absolute right-4 top-1/2 -translate-y-1/2 z-10 hidden md:block">
+          <div className="absolute right-4 top-1/2 -translate-y-1/2 z-10 hidden md:block opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <Button
               variant="outline"
               size="icon"
@@ -191,9 +195,6 @@ const TestimonialsSection = () => {
           <div
             ref={scrollRef}
             className="flex gap-6 overflow-x-auto scrollbar-hide cursor-grab active:cursor-grabbing px-4 md:px-12"
-            onMouseEnter={() => setIsPaused(true)}
-            onMouseLeave={() => setIsPaused(false)}
-            onScroll={handleManualScroll}
             onTouchStart={() => setIsPaused(true)}
             onTouchEnd={() => setTimeout(() => setIsPaused(false), 3000)}
             style={{ scrollBehavior: 'auto', scrollbarWidth: 'none', msOverflowStyle: 'none' }}
@@ -201,10 +202,10 @@ const TestimonialsSection = () => {
             {[...testimonials, ...testimonials].map((testimonial, index) => (
               <div
                 key={`${testimonial.id}-${index}`}
-                className="flex-shrink-0 w-[350px] md:w-[450px] group"
+                className="flex-shrink-0 w-[350px] md:w-[450px] group/card"
               >
-                <div className="bg-card border border-border rounded-2xl p-6 h-full shadow-sm transition-all duration-500 group-hover:shadow-xl group-hover:border-primary/30 group-hover:-translate-y-2 group-hover:bg-card/80">
-                  <Quote className="h-8 w-8 text-primary/30 mb-4 transition-colors duration-300 group-hover:text-primary/60" />
+                <div className="bg-card border border-border rounded-2xl p-6 h-full shadow-sm transition-all duration-500 group-hover/card:shadow-xl group-hover/card:border-primary/30 group-hover/card:-translate-y-2 group-hover/card:bg-card/80">
+                  <Quote className="h-8 w-8 text-primary/30 mb-4 transition-colors duration-300 group-hover/card:text-primary/60" />
                   
                   <p className="text-muted-foreground leading-relaxed mb-6 italic line-clamp-6">
                     "{testimonial.quote}"
@@ -224,18 +225,13 @@ const TestimonialsSection = () => {
             ))}
           </div>
 
-          {/* Scroll Controls Info */}
+          {/* Hover hint - Only visible on hover */}
           <div className="container mx-auto px-4 mt-6">
-            <div className="flex items-center justify-center gap-4">
-              <button
-                onClick={() => setIsPaused(!isPaused)}
-                className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
-              >
-                {isPaused ? <Play size={14} /> : <Pause size={14} />}
-                {isPaused ? "Resume auto-scroll" : "Pause auto-scroll"}
-              </button>
-              <span className="text-muted-foreground/50">•</span>
-              <span className="text-sm text-muted-foreground">Drag to scroll manually</span>
+            <div className="flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <span className="text-sm text-muted-foreground flex items-center gap-2">
+                <Pause size={14} />
+                Paused • Drag or use arrows to navigate
+              </span>
             </div>
           </div>
         </div>
