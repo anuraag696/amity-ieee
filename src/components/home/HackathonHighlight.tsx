@@ -63,7 +63,7 @@ const HackathonHighlight = () => {
 
                 <div className="flex flex-col sm:flex-row flex-wrap gap-3 animate-scale-in stagger-4">
                   <a
-                    href="https://demo-registration-link.com"
+                    href="https://forms.gle/95yXC9nfsxqrcaPy9"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full sm:w-auto"
