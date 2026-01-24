@@ -24,16 +24,36 @@ const HackathonHighlight = () => {
           <div className="bg-card/80 backdrop-blur-md rounded-3xl border border-primary/20 overflow-hidden shadow-2xl hover:shadow-primary/10 transition-all duration-500 hover-lift">
             <div className="grid md:grid-cols-2 gap-0">
               {/* Left Side - Visual */}
-              <div className="relative bg-gradient-hero p-8 flex items-center justify-center min-h-[300px]">
-                <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIvPjwvZz48L2c+PC9zdmc+')] opacity-50" />
-                <div className="relative text-center animate-bounce-in">
-                  <img
-                    src={whackLogo}
-                    alt="Whack-Hackathon 4.0"
-                    className="w-40 h-40 sm:w-48 sm:h-48 mx-auto rounded-full shadow-2xl border-4 border-accent/50 mb-6 hover:scale-110 transition-transform duration-300"
-                  />
-                  <div className="inline-flex items-center gap-2 bg-background/20 backdrop-blur-sm text-foreground px-4 py-2 rounded-full text-sm font-semibold animate-fade-in stagger-2">
-                    <Calendar size={16} />
+              <div className="relative p-8 flex items-center justify-center min-h-[300px] overflow-hidden">
+                {/* Tech-themed gradient background */}
+                <div className="absolute inset-0 bg-gradient-to-br from-[#1a1a2e] via-[#16213e] to-[#0f3460]" />
+                
+                {/* Animated circuit pattern */}
+                <div className="absolute inset-0 opacity-20">
+                  <div className="absolute top-0 left-0 w-full h-full bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAyMCAwIEwgMCAwIDAgMjAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwZmZmZiIgc3Ryb2tlLXdpZHRoPSIwLjUiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')]" />
+                </div>
+                
+                {/* Glowing orbs */}
+                <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-cyan-500/30 rounded-full blur-3xl animate-pulse" />
+                <div className="absolute bottom-1/4 right-1/4 w-24 h-24 bg-purple-500/30 rounded-full blur-3xl animate-pulse delay-700" />
+                <div className="absolute top-1/2 right-1/3 w-20 h-20 bg-yellow-500/20 rounded-full blur-2xl animate-pulse delay-1000" />
+                
+                {/* Code brackets decoration */}
+                <div className="absolute top-6 left-6 text-cyan-400/40 text-4xl font-mono animate-pulse">&lt;/&gt;</div>
+                <div className="absolute bottom-6 right-6 text-purple-400/40 text-4xl font-mono animate-pulse delay-500">{ }</div>
+                
+                <div className="relative text-center animate-bounce-in z-10">
+                  {/* Logo glow effect */}
+                  <div className="relative">
+                    <div className="absolute -inset-4 bg-gradient-to-r from-cyan-500 via-purple-500 to-yellow-500 rounded-full blur-xl opacity-50 animate-pulse" />
+                    <img
+                      src={whackLogo}
+                      alt="Whack-Hackathon 4.0"
+                      className="relative w-40 h-40 sm:w-48 sm:h-48 mx-auto rounded-full shadow-2xl border-4 border-cyan-400/50 mb-6 hover:scale-110 transition-transform duration-300 ring-4 ring-purple-500/30 ring-offset-4 ring-offset-[#16213e]"
+                    />
+                  </div>
+                  <div className="inline-flex items-center gap-2 bg-black/40 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-semibold animate-fade-in stagger-2 border border-cyan-400/30">
+                    <Calendar size={16} className="text-cyan-400" />
                     Feb 17-18, 2026
                   </div>
                 </div>
