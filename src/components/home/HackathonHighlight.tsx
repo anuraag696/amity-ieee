@@ -28,19 +28,22 @@ const HackathonHighlight = () => {
                 {/* Tech-themed gradient background */}
                 <div className="absolute inset-0 bg-gradient-to-br from-[#1a1a2e] via-[#16213e] to-[#0f3460]" />
                 
-                {/* Animated circuit pattern */}
-                <div className="absolute inset-0 opacity-20">
-                  <div className="absolute top-0 left-0 w-full h-full bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAyMCAwIEwgMCAwIDAgMjAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwZmZmZiIgc3Ryb2tlLXdpZHRoPSIwLjUiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')]" />
+                {/* Logo as background pattern */}
+                <div className="absolute inset-0 overflow-hidden">
+                  <img 
+                    src={whackLogo} 
+                    alt="" 
+                    className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150%] h-[150%] object-cover opacity-10 blur-sm"
+                  />
                 </div>
                 
                 {/* Glowing orbs */}
-                <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-cyan-500/30 rounded-full blur-3xl animate-pulse" />
-                <div className="absolute bottom-1/4 right-1/4 w-24 h-24 bg-purple-500/30 rounded-full blur-3xl animate-pulse delay-700" />
-                <div className="absolute top-1/2 right-1/3 w-20 h-20 bg-yellow-500/20 rounded-full blur-2xl animate-pulse delay-1000" />
+                <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-cyan-500/20 rounded-full blur-3xl animate-pulse" />
+                <div className="absolute bottom-1/4 right-1/4 w-24 h-24 bg-purple-500/20 rounded-full blur-3xl animate-pulse delay-700" />
                 
                 {/* Code brackets decoration */}
-                <div className="absolute top-6 left-6 text-cyan-400/40 text-4xl font-mono animate-pulse">&lt;/&gt;</div>
-                <div className="absolute bottom-6 right-6 text-purple-400/40 text-4xl font-mono animate-pulse delay-500">{ }</div>
+                <div className="absolute top-6 left-6 text-cyan-400/30 text-4xl font-mono animate-pulse">&lt;/&gt;</div>
+                <div className="absolute bottom-6 right-6 text-purple-400/30 text-4xl font-mono animate-pulse delay-500">{ }</div>
                 
                 <div className="relative text-center animate-bounce-in z-10">
                   {/* Logo glow effect */}
