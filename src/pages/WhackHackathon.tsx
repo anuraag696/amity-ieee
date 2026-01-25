@@ -321,22 +321,234 @@ const WhackHackathon = () => {
         </section>
 
         {/* Sponsors Section */}
-        <section className="py-20 bg-card">
-          <div className="container mx-auto px-4">
-            <div className="text-center">
+        <section className="py-20 bg-card relative overflow-hidden">
+          {/* Background decorations */}
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent" />
+          <div className="absolute top-0 left-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
+          <div className="absolute bottom-0 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl translate-x-1/2 translate-y-1/2" />
+          
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="text-center mb-16">
               <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4 animate-fade-in">
-                Partners
+                Our Partners & Sponsors
               </span>
-              <h2 className="font-heading text-3xl sm:text-4xl font-bold text-foreground mb-6 animate-slide-up stagger-1">
-                Our <span className="text-primary">Sponsors</span>
+              <h2 className="font-heading text-3xl sm:text-4xl font-bold text-foreground mb-4 animate-slide-up stagger-1">
+                Powered by <span className="text-primary">Amazing</span> Partners
               </h2>
-              <div className="bg-background rounded-2xl border border-dashed border-border p-12 max-w-2xl mx-auto animate-scale-in stagger-2 hover-lift">
-                <p className="text-muted-foreground text-lg">
-                  Sponsor announcements coming soon!
+              <p className="text-muted-foreground max-w-xl mx-auto animate-fade-in stagger-2">
+                We're grateful to our sponsors for making Whack-Hackathon 4.0 possible
+              </p>
+            </div>
+
+            {/* Title Sponsor */}
+            <div className="mb-16 animate-scale-in">
+              <div className="text-center mb-6">
+                <span className="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-500 to-amber-500 text-white px-6 py-2 rounded-full text-sm font-bold shadow-lg">
+                  <Trophy size={18} />
+                  TITLE SPONSOR
+                </span>
+              </div>
+              <div className="max-w-lg mx-auto">
+                <div className="relative group">
+                  <div className="absolute -inset-1 bg-gradient-to-r from-yellow-400 via-amber-500 to-yellow-400 rounded-3xl blur opacity-40 group-hover:opacity-60 transition-opacity animate-pulse" />
+                  <div className="relative bg-background border-2 border-yellow-400/50 rounded-2xl p-8 text-center hover:border-yellow-400 transition-all duration-300">
+                    <div className="w-40 h-40 mx-auto bg-gradient-to-br from-yellow-50 to-amber-100 dark:from-yellow-900/20 dark:to-amber-900/20 rounded-2xl flex items-center justify-center mb-4 border-2 border-dashed border-yellow-300 dark:border-yellow-700">
+                      <div className="text-center">
+                        <Sparkles className="w-12 h-12 text-yellow-500 mx-auto mb-2" />
+                        <span className="text-sm text-yellow-600 dark:text-yellow-400 font-medium">Your Logo</span>
+                      </div>
+                    </div>
+                    <h3 className="font-heading text-2xl font-bold text-foreground">Title Sponsor Name</h3>
+                    <p className="text-muted-foreground text-sm mt-1">Premium Partner</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Gold Sponsors */}
+            <div className="mb-12 animate-fade-in stagger-1">
+              <div className="text-center mb-6">
+                <span className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-600 to-yellow-600 text-white px-5 py-1.5 rounded-full text-sm font-semibold">
+                  GOLD SPONSORS
+                </span>
+              </div>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-3xl mx-auto">
+                {[1, 2, 3].map((i) => (
+                  <div key={`gold-${i}`} className="group">
+                    <div className="bg-background border border-amber-300/50 dark:border-amber-700/50 rounded-xl p-6 text-center hover:border-amber-400 hover:shadow-lg hover:shadow-amber-500/10 transition-all duration-300 hover-lift">
+                      <div className="w-24 h-24 mx-auto bg-gradient-to-br from-amber-50 to-yellow-100 dark:from-amber-900/20 dark:to-yellow-900/20 rounded-xl flex items-center justify-center mb-3 border border-dashed border-amber-300 dark:border-amber-700">
+                        <Sparkles className="w-8 h-8 text-amber-500" />
+                      </div>
+                      <h4 className="font-semibold text-foreground">Gold Sponsor {i}</h4>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Partner Categories */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12 animate-fade-in stagger-2">
+              {/* Food Partner */}
+              <div className="group">
+                <div className="text-center mb-4">
+                  <span className="inline-flex items-center gap-1.5 bg-orange-500/20 text-orange-600 dark:text-orange-400 px-4 py-1 rounded-full text-xs font-semibold uppercase">
+                    🍕 Food Partner
+                  </span>
+                </div>
+                <div className="bg-background border border-orange-300/30 dark:border-orange-700/30 rounded-xl p-5 text-center hover:border-orange-400/50 hover:shadow-lg transition-all duration-300 hover-lift">
+                  <div className="w-20 h-20 mx-auto bg-orange-50 dark:bg-orange-900/20 rounded-xl flex items-center justify-center mb-3 border border-dashed border-orange-300 dark:border-orange-700">
+                    <span className="text-3xl">🍔</span>
+                  </div>
+                  <h4 className="font-semibold text-foreground text-sm">Food Partner</h4>
+                </div>
+              </div>
+
+              {/* Drinks Partner */}
+              <div className="group">
+                <div className="text-center mb-4">
+                  <span className="inline-flex items-center gap-1.5 bg-blue-500/20 text-blue-600 dark:text-blue-400 px-4 py-1 rounded-full text-xs font-semibold uppercase">
+                    🥤 Drinks Partner
+                  </span>
+                </div>
+                <div className="bg-background border border-blue-300/30 dark:border-blue-700/30 rounded-xl p-5 text-center hover:border-blue-400/50 hover:shadow-lg transition-all duration-300 hover-lift">
+                  <div className="w-20 h-20 mx-auto bg-blue-50 dark:bg-blue-900/20 rounded-xl flex items-center justify-center mb-3 border border-dashed border-blue-300 dark:border-blue-700">
+                    <span className="text-3xl">🧃</span>
+                  </div>
+                  <h4 className="font-semibold text-foreground text-sm">Drinks Partner</h4>
+                </div>
+              </div>
+
+              {/* Radio Partner */}
+              <div className="group">
+                <div className="text-center mb-4">
+                  <span className="inline-flex items-center gap-1.5 bg-purple-500/20 text-purple-600 dark:text-purple-400 px-4 py-1 rounded-full text-xs font-semibold uppercase">
+                    📻 Radio Partner
+                  </span>
+                </div>
+                <div className="bg-background border border-purple-300/30 dark:border-purple-700/30 rounded-xl p-5 text-center hover:border-purple-400/50 hover:shadow-lg transition-all duration-300 hover-lift">
+                  <div className="w-20 h-20 mx-auto bg-purple-50 dark:bg-purple-900/20 rounded-xl flex items-center justify-center mb-3 border border-dashed border-purple-300 dark:border-purple-700">
+                    <span className="text-3xl">🎙️</span>
+                  </div>
+                  <h4 className="font-semibold text-foreground text-sm">Radio Partner</h4>
+                </div>
+              </div>
+
+              {/* Media Partner */}
+              <div className="group">
+                <div className="text-center mb-4">
+                  <span className="inline-flex items-center gap-1.5 bg-pink-500/20 text-pink-600 dark:text-pink-400 px-4 py-1 rounded-full text-xs font-semibold uppercase">
+                    📰 Media Partner
+                  </span>
+                </div>
+                <div className="bg-background border border-pink-300/30 dark:border-pink-700/30 rounded-xl p-5 text-center hover:border-pink-400/50 hover:shadow-lg transition-all duration-300 hover-lift">
+                  <div className="w-20 h-20 mx-auto bg-pink-50 dark:bg-pink-900/20 rounded-xl flex items-center justify-center mb-3 border border-dashed border-pink-300 dark:border-pink-700">
+                    <span className="text-3xl">📺</span>
+                  </div>
+                  <h4 className="font-semibold text-foreground text-sm">Media Partner</h4>
+                </div>
+              </div>
+            </div>
+
+            {/* Silver & Tech Partners */}
+            <div className="grid md:grid-cols-2 gap-8 mb-12 animate-fade-in stagger-3">
+              {/* Silver Sponsors */}
+              <div>
+                <div className="text-center mb-4">
+                  <span className="inline-flex items-center gap-2 bg-gradient-to-r from-gray-400 to-slate-500 text-white px-4 py-1 rounded-full text-xs font-semibold">
+                    SILVER SPONSORS
+                  </span>
+                </div>
+                <div className="grid grid-cols-2 gap-3">
+                  {[1, 2, 3, 4].map((i) => (
+                    <div key={`silver-${i}`} className="bg-background border border-gray-300/30 dark:border-gray-700/30 rounded-lg p-4 text-center hover:border-gray-400/50 transition-all duration-300 hover-lift">
+                      <div className="w-14 h-14 mx-auto bg-gray-100 dark:bg-gray-800 rounded-lg flex items-center justify-center mb-2 border border-dashed border-gray-300 dark:border-gray-600">
+                        <Sparkles className="w-6 h-6 text-gray-400" />
+                      </div>
+                      <h5 className="font-medium text-foreground text-xs">Silver {i}</h5>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Tech Partners */}
+              <div>
+                <div className="text-center mb-4">
+                  <span className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-1 rounded-full text-xs font-semibold">
+                    🖥️ TECH PARTNERS
+                  </span>
+                </div>
+                <div className="grid grid-cols-2 gap-3">
+                  {[1, 2, 3, 4].map((i) => (
+                    <div key={`tech-${i}`} className="bg-background border border-cyan-300/30 dark:border-cyan-700/30 rounded-lg p-4 text-center hover:border-cyan-400/50 transition-all duration-300 hover-lift">
+                      <div className="w-14 h-14 mx-auto bg-cyan-50 dark:bg-cyan-900/20 rounded-lg flex items-center justify-center mb-2 border border-dashed border-cyan-300 dark:border-cyan-700">
+                        <Code className="w-6 h-6 text-cyan-500" />
+                      </div>
+                      <h5 className="font-medium text-foreground text-xs">Tech Partner {i}</h5>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Community & Venue Partners */}
+            <div className="grid md:grid-cols-3 gap-4 mb-12 animate-fade-in stagger-4">
+              {/* Community Partners */}
+              <div className="bg-background border border-green-300/30 dark:border-green-700/30 rounded-xl p-5 text-center hover:border-green-400/50 transition-all duration-300 hover-lift">
+                <div className="text-center mb-3">
+                  <span className="inline-flex items-center gap-1.5 bg-green-500/20 text-green-600 dark:text-green-400 px-3 py-0.5 rounded-full text-xs font-semibold">
+                    🌱 Community Partner
+                  </span>
+                </div>
+                <div className="w-16 h-16 mx-auto bg-green-50 dark:bg-green-900/20 rounded-xl flex items-center justify-center mb-2 border border-dashed border-green-300 dark:border-green-700">
+                  <Users className="w-7 h-7 text-green-500" />
+                </div>
+                <h4 className="font-semibold text-foreground text-sm">Community Partner</h4>
+              </div>
+
+              {/* Venue Partner */}
+              <div className="bg-background border border-indigo-300/30 dark:border-indigo-700/30 rounded-xl p-5 text-center hover:border-indigo-400/50 transition-all duration-300 hover-lift">
+                <div className="text-center mb-3">
+                  <span className="inline-flex items-center gap-1.5 bg-indigo-500/20 text-indigo-600 dark:text-indigo-400 px-3 py-0.5 rounded-full text-xs font-semibold">
+                    🏛️ Venue Partner
+                  </span>
+                </div>
+                <div className="w-16 h-16 mx-auto bg-indigo-50 dark:bg-indigo-900/20 rounded-xl flex items-center justify-center mb-2 border border-dashed border-indigo-300 dark:border-indigo-700">
+                  <MapPin className="w-7 h-7 text-indigo-500" />
+                </div>
+                <h4 className="font-semibold text-foreground text-sm">Venue Partner</h4>
+              </div>
+
+              {/* Gifting Partner */}
+              <div className="bg-background border border-rose-300/30 dark:border-rose-700/30 rounded-xl p-5 text-center hover:border-rose-400/50 transition-all duration-300 hover-lift">
+                <div className="text-center mb-3">
+                  <span className="inline-flex items-center gap-1.5 bg-rose-500/20 text-rose-600 dark:text-rose-400 px-3 py-0.5 rounded-full text-xs font-semibold">
+                    🎁 Gifting Partner
+                  </span>
+                </div>
+                <div className="w-16 h-16 mx-auto bg-rose-50 dark:bg-rose-900/20 rounded-xl flex items-center justify-center mb-2 border border-dashed border-rose-300 dark:border-rose-700">
+                  <span className="text-2xl">🎁</span>
+                </div>
+                <h4 className="font-semibold text-foreground text-sm">Gifting Partner</h4>
+              </div>
+            </div>
+
+            {/* Become a Sponsor CTA */}
+            <div className="text-center animate-scale-in stagger-5">
+              <div className="inline-block bg-gradient-to-r from-primary/10 via-accent/10 to-primary/10 rounded-2xl p-8 border border-primary/20">
+                <h3 className="font-heading text-xl font-bold text-foreground mb-2">
+                  Want to Sponsor Whack-Hackathon 4.0?
+                </h3>
+                <p className="text-muted-foreground text-sm mb-4 max-w-md mx-auto">
+                  Get your brand in front of 100+ talented developers and innovators. Limited spots available!
                 </p>
-                <p className="text-sm text-muted-foreground mt-2">
-                  Interested in sponsoring? Contact us at the event email.
-                </p>
+                <a
+                  href="mailto:ieee@aurlucknow.in"
+                  className="inline-flex items-center gap-2 bg-gradient-to-r from-primary to-accent text-primary-foreground px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-all duration-300 hover:scale-105"
+                >
+                  <Sparkles size={18} />
+                  Become a Sponsor
+                  <ArrowRight size={18} />
+                </a>
               </div>
             </div>
           </div>
