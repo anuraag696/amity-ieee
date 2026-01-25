@@ -341,7 +341,7 @@ const WhackHackathon = () => {
             </div>
 
             {/* Title Sponsor */}
-            <div className="mb-16 animate-scale-in">
+            {/* <div className="mb-16 animate-scale-in">
               <div className="text-center mb-6">
                 <span className="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-500 to-amber-500 text-white px-6 py-2 rounded-full text-sm font-bold shadow-lg">
                   <Trophy size={18} />
@@ -362,11 +362,11 @@ const WhackHackathon = () => {
                     <p className="text-muted-foreground text-sm mt-1">Premium Partner</p>
                   </div>
                 </div>
-              </div>
-            </div>
+              </div>*/}
+            </div> 
 
             {/* Gold Sponsors */}
-            <div className="mb-12 animate-fade-in stagger-1">
+            {/* <div className="mb-12 animate-fade-in stagger-1">
               <div className="text-center mb-6">
                 <span className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-600 to-yellow-600 text-white px-5 py-1.5 rounded-full text-sm font-semibold">
                   GOLD SPONSORS
@@ -384,12 +384,12 @@ const WhackHackathon = () => {
                   </div>
                 ))}
               </div>
-            </div>
+            </div> */}
 
             {/* Partner Categories */}
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12 animate-fade-in stagger-2">
               {/* Food Partner */}
-              <div className="group">
+              {/* <div className="group">
                 <div className="text-center mb-4">
                   <span className="inline-flex items-center gap-1.5 bg-orange-500/20 text-orange-600 dark:text-orange-400 px-4 py-1 rounded-full text-xs font-semibold uppercase">
                     🍕 Food Partner
@@ -401,10 +401,10 @@ const WhackHackathon = () => {
                   </div>
                   <h4 className="font-semibold text-foreground text-sm">Food Partner</h4>
                 </div>
-              </div>
+              </div> */}
 
               {/* Drinks Partner */}
-              <div className="group">
+              {/* <div className="group">
                 <div className="text-center mb-4">
                   <span className="inline-flex items-center gap-1.5 bg-blue-500/20 text-blue-600 dark:text-blue-400 px-4 py-1 rounded-full text-xs font-semibold uppercase">
                     🥤 Drinks Partner
@@ -416,10 +416,10 @@ const WhackHackathon = () => {
                   </div>
                   <h4 className="font-semibold text-foreground text-sm">Drinks Partner</h4>
                 </div>
-              </div>
+              </div> */}
 
               {/* Radio Partner */}
-              <div className="group">
+              {/* <div className="group">
                 <div className="text-center mb-4">
                   <span className="inline-flex items-center gap-1.5 bg-purple-500/20 text-purple-600 dark:text-purple-400 px-4 py-1 rounded-full text-xs font-semibold uppercase">
                     📻 Radio Partner
@@ -431,10 +431,10 @@ const WhackHackathon = () => {
                   </div>
                   <h4 className="font-semibold text-foreground text-sm">Radio Partner</h4>
                 </div>
-              </div>
+              </div> */}
 
               {/* Media Partner */}
-              <div className="group">
+              {/* <div className="group">
                 <div className="text-center mb-4">
                   <span className="inline-flex items-center gap-1.5 bg-pink-500/20 text-pink-600 dark:text-pink-400 px-4 py-1 rounded-full text-xs font-semibold uppercase">
                     📰 Media Partner
@@ -447,12 +447,12 @@ const WhackHackathon = () => {
                   <h4 className="font-semibold text-foreground text-sm">Media Partner</h4>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             {/* Silver & Tech Partners */}
             <div className="grid md:grid-cols-2 gap-8 mb-12 animate-fade-in stagger-3">
               {/* Silver Sponsors */}
-              <div>
+              {/* <div>
                 <div className="text-center mb-4">
                   <span className="inline-flex items-center gap-2 bg-gradient-to-r from-gray-400 to-slate-500 text-white px-4 py-1 rounded-full text-xs font-semibold">
                     SILVER SPONSORS
@@ -467,11 +467,11 @@ const WhackHackathon = () => {
                       <h5 className="font-medium text-foreground text-xs">Silver {i}</h5>
                     </div>
                   ))}
-                </div>
+                </div> */}
               </div>
 
               {/* Tech Partners */}
-              <div>
+              {/* <div>
                 <div className="text-center mb-4">
                   <span className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-1 rounded-full text-xs font-semibold">
                     🖥️ TECH PARTNERS
@@ -487,14 +487,14 @@ const WhackHackathon = () => {
                     </div>
                   ))}
                 </div>
-              </div>
+              </div> */}
             </div>
 
             {/* Community & Venue Partners */}
             <div className="grid md:grid-cols-3 gap-4 mb-12 animate-fade-in stagger-4">
               {/* Community Partners */}
               <div className="bg-background border border-green-300/30 dark:border-green-700/30 rounded-xl p-5 text-center hover:border-green-400/50 transition-all duration-300 hover-lift">
-                <div className="text-center mb-3">
+                {/* <div className="text-center mb-3">
                   <span className="inline-flex items-center gap-1.5 bg-green-500/20 text-green-600 dark:text-green-400 px-3 py-0.5 rounded-full text-xs font-semibold">
                     🌱 Community Partner
                   </span>
@@ -502,11 +502,11 @@ const WhackHackathon = () => {
                 <div className="w-16 h-16 mx-auto bg-green-50 dark:bg-green-900/20 rounded-xl flex items-center justify-center mb-2 border border-dashed border-green-300 dark:border-green-700">
                   <Users className="w-7 h-7 text-green-500" />
                 </div>
-                <h4 className="font-semibold text-foreground text-sm">Community Partner</h4>
+                <h4 className="font-semibold text-foreground text-sm">Community Partner</h4> */}
               </div>
 
               {/* Venue Partner */}
-              <div className="bg-background border border-indigo-300/30 dark:border-indigo-700/30 rounded-xl p-5 text-center hover:border-indigo-400/50 transition-all duration-300 hover-lift">
+              {/* <div className="bg-background border border-indigo-300/30 dark:border-indigo-700/30 rounded-xl p-5 text-center hover:border-indigo-400/50 transition-all duration-300 hover-lift">
                 <div className="text-center mb-3">
                   <span className="inline-flex items-center gap-1.5 bg-indigo-500/20 text-indigo-600 dark:text-indigo-400 px-3 py-0.5 rounded-full text-xs font-semibold">
                     🏛️ Venue Partner
@@ -516,10 +516,10 @@ const WhackHackathon = () => {
                   <MapPin className="w-7 h-7 text-indigo-500" />
                 </div>
                 <h4 className="font-semibold text-foreground text-sm">Venue Partner</h4>
-              </div>
+              </div> */}
 
               {/* Gifting Partner */}
-              <div className="bg-background border border-rose-300/30 dark:border-rose-700/30 rounded-xl p-5 text-center hover:border-rose-400/50 transition-all duration-300 hover-lift">
+              {/* <div className="bg-background border border-rose-300/30 dark:border-rose-700/30 rounded-xl p-5 text-center hover:border-rose-400/50 transition-all duration-300 hover-lift">
                 <div className="text-center mb-3">
                   <span className="inline-flex items-center gap-1.5 bg-rose-500/20 text-rose-600 dark:text-rose-400 px-3 py-0.5 rounded-full text-xs font-semibold">
                     🎁 Gifting Partner
@@ -530,7 +530,7 @@ const WhackHackathon = () => {
                 </div>
                 <h4 className="font-semibold text-foreground text-sm">Gifting Partner</h4>
               </div>
-            </div>
+            </div> */}
 
             {/* Become a Sponsor CTA */}
             <div className="text-center animate-scale-in stagger-5">
