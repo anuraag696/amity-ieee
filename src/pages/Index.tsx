@@ -4,6 +4,7 @@ import HeroSection from "@/components/home/HeroSection";
 import AboutSection from "@/components/home/AboutSection";
 import ActivitiesSection from "@/components/home/ActivitiesSection";
 import EventsPreview from "@/components/home/EventsPreview";
+import HackathonHighlight from "@/components/home/HackathonHighlight";
 import TeamPreview from "@/components/home/TeamPreview";
 import CTASection from "@/components/home/CTASection";
 
