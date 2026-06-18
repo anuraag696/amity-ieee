@@ -1,39 +1,39 @@
-import { ArrowRight, Calendar, MapPin, Clock } from "lucide-react";
+import { ArrowRight, Calendar, MapPin, Clock, Trophy, CheckCircle, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 const upcomingEvents = [
   {
     id: 1,
-    title: "TechVista 2024",
-    type: "Hackathon",
-    date: "Jan 15-16, 2025",
-    time: "9:00 AM",
+    title: "IEEE Tech Summit 2026",
+    type: "Conference",
+    date: "Sep 12-13, 2026",
+    time: "10:00 AM",
     location: "Main Auditorium",
     description:
-      "A 24-hour coding marathon to build innovative solutions for real-world problems.",
+      "A two-day technical conference with workshops, keynotes, and networking with industry leaders.",
     featured: true,
   },
   {
     id: 2,
-    title: "AI/ML Workshop Series",
+    title: "AI/ML Deep Dive Workshop",
     type: "Workshop",
-    date: "Jan 20, 2025",
+    date: "Oct 18, 2026",
     time: "2:00 PM",
     location: "CS Lab 301",
     description:
-      "Hands-on workshop covering machine learning fundamentals and practical applications.",
+      "Advanced hands-on workshop on large language models and real-world AI deployment.",
     featured: false,
   },
   {
     id: 3,
-    title: "Industry Connect",
-    type: "Seminar",
-    date: "Jan 25, 2025",
-    time: "10:00 AM",
-    location: "Conference Hall",
+    title: "Winter Code Challenge",
+    type: "Hackathon",
+    date: "Nov 22-23, 2026",
+    time: "9:00 AM",
+    location: "Innovation Hub",
     description:
-      "Expert session with industry leaders discussing career opportunities in tech.",
+      "48-hour coding challenge focused on open-source contributions and social good.",
     featured: false,
   },
 ];
@@ -61,6 +61,42 @@ const EventsPreview = () => {
               />
             </Button>
           </Link>
+        </div>
+
+        {/* Recently Completed Highlight */}
+        <div className="mb-10 p-6 rounded-2xl bg-gradient-to-r from-ieee-gold/10 via-primary/5 to-accent/5 border border-ieee-gold/20">
+          <div className="flex flex-col md:flex-row md:items-center gap-4">
+            <div className="flex items-center gap-3">
+              <div className="w-12 h-12 rounded-full bg-ieee-gold/20 flex items-center justify-center">
+                <Trophy className="w-6 h-6 text-ieee-gold" />
+              </div>
+              <div>
+                <div className="flex items-center gap-2">
+                  <h3 className="font-heading font-bold text-lg text-foreground">
+                    Whack Hackathon 4.0
+                  </h3>
+                  <span className="text-xs bg-green-500/20 text-green-600 px-2 py-0.5 rounded-full flex items-center gap-1">
+                    <CheckCircle className="w-3 h-3" /> Completed
+                  </span>
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  Feb 17-18, 2026 · 500+ participants · 120+ teams · 24 hours of innovation
+                </p>
+              </div>
+            </div>
+            <div className="md:ml-auto">
+              <Link to="/whack-hackathon">
+                <Button className="group/btn bg-gradient-to-r from-primary to-accent hover:opacity-90">
+                  <Sparkles className="w-4 h-4 mr-2" />
+                  View Recap
+                  <ArrowRight
+                    size={16}
+                    className="ml-2 group-hover/btn:translate-x-1 transition-transform"
+                  />
+                </Button>
+              </Link>
+            </div>
+          </div>
         </div>
 
         {/* Events Grid */}
