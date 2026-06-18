@@ -14,6 +14,7 @@ const Index = () => {
       <Navbar />
       <main>
         <HeroSection />
+        <HackathonHighlight />
         <AboutSection />
         <ActivitiesSection />
         <EventsPreview />
