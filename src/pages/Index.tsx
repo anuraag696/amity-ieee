@@ -6,7 +6,6 @@ import ActivitiesSection from "@/components/home/ActivitiesSection";
 import EventsPreview from "@/components/home/EventsPreview";
 import TeamPreview from "@/components/home/TeamPreview";
 import CTASection from "@/components/home/CTASection";
-
 import TestimonialsSection from "@/components/home/TestimonialsSection";
 
 const Index = () => {
@@ -15,7 +14,6 @@ const Index = () => {
       <Navbar />
       <main>
         <HeroSection />
-        
         <AboutSection />
         <ActivitiesSection />
         <EventsPreview />
