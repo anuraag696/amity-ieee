@@ -8,39 +8,27 @@ import sparkImage from "@/assets/spark-2.jpg";
 const upcomingEvents = [
   {
     id: 1,
-    title: "Whack-Hackathon 4.0",
+    title: "Whack-Hackathon 5.0",
     type: "Hackathon",
-    date: "Feb 17-18, 2026",
+    date: "Feb 2027",
     time: "9:00 AM",
-    location: "Main Auditorium/Amphitheatre",
+    location: "Amity Campus",
     description:
-      "A 24-hour coding marathon to build innovative solutions for real-world problems.",
+      "The next edition of our flagship 24-hour coding marathon. Form teams of 4-6 and build innovative solutions for real-world problems.",
     featured: true,
     image: null,
   },
   {
-    id: 3,
-    title: "Spark 2025 @IEEE Day",
+    id: 2,
+    title: "Spark 2026 @IEEE Day",
     type: "Event",
-    date: "Oct 7, 2025",
+    date: "Oct 7, 2026",
     time: "10:00 AM",
     location: "Main Auditorium",
     description:
-      "Annual IEEE Day celebration with panel discussions, technical quizzes, and networking.",
+      "Annual IEEE Day celebration with panel discussions, technical quizzes, debates, and networking.",
     featured: false,
     image: sparkImage,
-  },
-  {
-    id: 2,
-    title: "Introspect 6",
-    type: "Workshop",
-    date: "September 26, 2025",
-    time: "3:00 PM",
-    location: "Amity Innovation Incubator, AUR",
-    description:
-      "Hands-on workshop covering cyber security and practical applications.",
-    featured: false,
-    image: introspectImage,
   },
 ];
 
