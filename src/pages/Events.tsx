@@ -16,6 +16,7 @@ const upcomingEvents = [
     description:
       "The next edition of our flagship 24-hour coding marathon. Form teams of 4-6 and build innovative solutions for real-world problems!",
     hasPage: false,
+    link: "",
   },
   {
     id: 2,
@@ -27,6 +28,7 @@ const upcomingEvents = [
     description:
       "Annual IEEE Day celebration featuring panel discussions, technical quizzes, debates, and networking sessions.",
     hasPage: false,
+    link: "",
   },
 ];
 
