@@ -10,7 +10,6 @@ const navLinks = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
   { name: "Events", path: "/events" },
-  { name: "Whack 4.0", path: "/whack-hackathon" },
   { name: "Team", path: "/team" },
   { name: "Blog", path: "/blog" },
   { name: "Gallery", path: "/gallery" },
