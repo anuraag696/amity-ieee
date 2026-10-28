@@ -286,7 +286,7 @@ const WhackHackathon = () => {
                 </div>
                 <div className="flex items-center justify-center gap-2 text-muted-foreground hover-lift">
                   <Building2 className="text-primary flex-shrink-0" size={20} />
-                  <span>Organized by IEEE SB AUR & E-Cell, AUR</span>
+                  <span>Organized by IEEE Student Branch, AUR</span>
                 </div>
               </div>
 
