@@ -325,7 +325,7 @@ const WhackHackathon = () => {
                 <div className="absolute -inset-2 bg-gradient-to-r from-primary via-accent to-primary rounded-3xl blur opacity-25 group-hover:opacity-40 transition-opacity animate-pulse" />
                 <div className="relative bg-background border-2 border-primary/20 rounded-3xl p-3 shadow-2xl hover-lift">
                   <img
-                    src={whackPoster.url}
+                    src={whackPoster}
                     alt="Whack-Hackathon 4.0 official event poster — 17-18 February 2026, Amity University Rajasthan, featuring The After Hours, Sessions | Whack Hack, Game-It-On and The Black Market"
                     className="w-full rounded-2xl"
                     loading="lazy"
