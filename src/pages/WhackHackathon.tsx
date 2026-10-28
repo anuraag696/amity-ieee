@@ -162,19 +162,19 @@ const organizers = [
     detail: "Director, E-Cell & Centre of IoT · IEEE SB Counsellor, AUR",
   },
   {
-    name: "Dr. Pallavi Mishra",
-    role: "Moderator",
-    detail: "Associate Professor, ASCo, AUR",
-  },
-  {
     name: "Anuraag Gupta",
     role: "Overall Student Head",
     detail: "Chairperson, IEEE Student Branch AUR",
   },
   {
     name: "Madhusmita",
-    role: "Student Coordinator",
-    detail: "IEEE Student Branch AUR",
+    role: "Overall Student Head",
+    detail: "General Secretary, IEEE Student Branch AUR",
+  },
+  {
+    name: "Ishan Verma",
+    role: "Overall Student Head",
+    detail: "Treasurer, IEEE Student Branch AUR",
   },
 ];
 
