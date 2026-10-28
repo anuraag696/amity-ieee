@@ -27,7 +27,7 @@ import {
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import whackLogo from "@/assets/whack-hackathon-logo.jpeg";
-import whackPoster from "@/assets/whack-4-poster.png.asset.json";
+import whackPoster from "@/assets/whack-4-poster.png";
 
 const stats = [
   { icon: Users, value: "150+", label: "Participants" },
